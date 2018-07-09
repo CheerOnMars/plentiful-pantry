@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ user.username }}'s Inventory!</h1>
+    <ul>
+      {% for ingredient in ingredients %}
+      <li>{{ ingredient[0] }}</li>
+      </div>
+      {% endfor %}
+    </ul>
+{% endblock %}

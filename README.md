@@ -8,3 +8,5 @@ Uses Flask
   - (venv) $ pip install flask (install flask)
   - (venv) $ export FLASK_APP=plentiful_pantry.py
   - (venv) $ flask run
+
+Flask-WTF
