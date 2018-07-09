@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - Plentiful Pantry </title>
+    {% else %}
+    <title>Welcome to Plentiful Pantry!</title>
+    {% endif %}
+  </head>
+    <body>
+        <div>Plentiful Pantry: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
