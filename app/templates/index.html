@@ -1,0 +1,26 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Plentiful Pantry </title>
+      {% else %}
+      <title>Welcome to Plentiful Pantry!</title>
+      {% endif %}Plentiful Pantry
+    <body>
+        <h1>{{ user.username }}'s Recipes!</h1>
+        {% for recipe in recipes %}
+        <div><p><b>{{ recipe.name }}</b></p>
+          <ul>
+            {% for ingredient in recipe.recipeIngredient %}
+            <li>  {{ ingredient }}</li>
+            {% endfor %}
+          </ul>
+          <ol>
+            <p><b>Instructions</b></p>
+            {% for step in recipe.recipeInstructions %}
+            <li>  {{ step }}</li>
+            {% endfor %}
+          </ol>
+        </div>
+        {% endfor %}
+    </body>
+</html>
