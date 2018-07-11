@@ -1,4 +1,4 @@
-ingredient,ingredient_category,ingredient_subcategory,storage_location
+ingredient,ingredient_category,ingredient_subcategory,storage_location, is_present
 adobo sauce,Condiments,
 all spice,Spices,
 allspice berries,Spices,

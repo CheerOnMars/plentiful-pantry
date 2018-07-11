@@ -1,4 +1,8 @@
-from flask import render_template
+"""
+This module will provide RESTful endpoints for all requests
+necessary to fulfill the requirements.
+"""
+from flask import render_template, flash, redirect, url_for
 from app import app
 
 import json
@@ -16,7 +20,7 @@ def index():
     user = {'username': 'Super Sario'}
     return render_template('index.html', title='Home', user=user, recipes=recipes_struct)
 
-@app.route('/inventory')
-def inventory():
+@app.route('/ingredients')
+def ingredients():
     user = {'username': 'Super Sario'}
-    return render_template('inventory.html', title='Home', user=user, ingredients=ingredients_struct)
+    return render_template('ingredient_list.html', title='Home', user=user, ingredients=ingredients_struct)

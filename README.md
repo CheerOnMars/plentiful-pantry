@@ -10,3 +10,4 @@ Uses Flask
   - (venv) $ flask run
 
 Flask-WTF
+  - (venv) $ pip install flask-wtf

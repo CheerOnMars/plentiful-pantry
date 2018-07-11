@@ -7,8 +7,9 @@
     {% endif %}
   </head>
     <body>
-        <div>Plentiful Pantry: <a href="/index">Home</a>
-
+        <div>Plentiful Pantry:
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('ingredients') }}">Ingredient List</a>
         </div>
         <hr>
         {% with messages = get_flashed_messages() %}
@@ -19,7 +20,7 @@
           {% endfor %}
         </ul>
         {% endif %}
-        {% endwith %}
+{% endwith %}
         {% block content %}{% endblock %}
     </body>
 </html>
