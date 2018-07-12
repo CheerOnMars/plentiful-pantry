@@ -9,5 +9,9 @@ Uses Flask
   - (venv) $ export FLASK_APP=plentiful_pantry.py
   - (venv) $ flask run
 
+Flask-SQLAlchemy,
+  - (venv) $ pip install flask-sqlalchemy
+  - (venv) $ pip install flask-migrate
+
 Flask-WTF
   - (venv) $ pip install flask-wtf
