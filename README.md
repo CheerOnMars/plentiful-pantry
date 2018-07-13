@@ -15,3 +15,6 @@ Flask-SQLAlchemy,
 
 Flask-WTF
   - (venv) $ pip install flask-wtf
+
+psycopg2 2.6.1
+  - pip install psycopg2
