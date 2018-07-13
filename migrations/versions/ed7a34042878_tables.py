@@ -1,8 +1,8 @@
-"""recipes table
+"""tables
 
-Revision ID: c2e8c0fab94f
+Revision ID: ed7a34042878
 Revises: 
-Create Date: 2018-07-12 14:45:04.197271
+Create Date: 2018-07-13 07:58:10.431055
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'c2e8c0fab94f'
+revision = 'ed7a34042878'
 down_revision = None
 branch_labels = None
 depends_on = None
