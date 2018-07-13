@@ -18,3 +18,6 @@ Flask-WTF
 
 psycopg2 2.6.1
   - pip install psycopg2
+
+Sqlalchemy Seeder
+  - pip install sqlalchemy-seeder
