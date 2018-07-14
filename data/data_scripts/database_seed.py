@@ -25,7 +25,7 @@ def create_or_retrieve_ingredient(record):
     return ing
 
 for recipe in get_recipes():
-    print(f"Creating recipe {recipe['name']}")
+    # print(f"Creating recipe {recipe['name']}")
     ingredients = []
 
     for ingredient in recipe['recipeIngredient']:

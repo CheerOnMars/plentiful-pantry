@@ -499,12 +499,11 @@
       "1/2 cup unsalted butter ((1 stick))",
       "1 1/4 cups all purpose flour",
       "1/2 tsp kosher salt",
-      "2 Tbsp white or brown sugar",
+      "4 Tbsp white or brown sugar",
       "1/4 cup plus 1 Tbsp water",
       "3 cups blueberries",
       "2 Tbsp cornstarch or flour",
       "1/2  lemon ((zested and juiced, or a whole lime or equivalent of orange works))",
-      "2 Tbsp white or brown sugar",
       "1  egg",
       "1 Tbsp white sugar"
     ],
@@ -543,11 +542,10 @@
       "1 1/4 tsp salt",
       "3/4 cup water",
       "4 Tbsp butter (melted)",
-      "1 large egg",
+      "2 large eggs",
       "1 large egg yolk",
       "12 oz cheddar (finely cubed)",
       "olive oil or butter (for greasing tins)",
-      "1 large egg",
       "3  scallions (finely chopped)",
       "2   jalape\u00f1o or chile pepper (finely chopped)",
       "2 tsp smoked paprika",
@@ -646,8 +644,7 @@
       "1 Tbsp yogurt",
       "1 tsp olive oil",
       "1 tsp lemon juice",
-      "1 tsp fresh dill (chopped)",
-      "Salt and pepper"
+      "1 tsp fresh dill (chopped)"
     ],
     "recipeInstructions": [
       "Slice the stem of the broccoli into 1/8th inch discs. If you can't get them that thin, don't worry, but the thinner the better if you have the patience! Once you reach the crown of the broccoli, cut each of the florets off and slice each of them as thinly as you can as well. Set the broccoli in a bowl.",
@@ -707,9 +704,8 @@
       "3 cups all-purpose or bread flour",
       "1 1/2 tsp salt",
       "1 tsp instant yeast",
-      "1 Tbsp olive oil",
+      "2 Tbsp olive oil",
       "1 1/4 cups water",
-      "1 Tbsp olive oil",
       "1 bunch broccoli rabe (chopped)",
       "4 cloves garlic (finely chopped)",
       "1/2-1 tsp chile flakes",
@@ -989,7 +985,8 @@
       "To make the sauce, melt the butter in a saucepan on medium heat. Add the garlic, chile flakes, and bay leaf, then cook for about 1 minute. Add the flour and stir quickly. The flour-butter mixture is called a roux. You want the roux to get just a little brown; this will probably take another minute. Slowly add the milk to the pot, stirring all the while to incorporate the roux. Bring the sauce to a boil, stirring every now and then to make sure the sauce doesn\u2019t get scorched on the bottom. Once it comes to a boil, turn off the heat and stir in the cheese. Drop in any additions at this point. Taste the sauce and add salt and pepper as needed. You should have a creamy, smooth, savory sauce.",
       "Pour the sauce over the cauliflower. Place the dish in the oven for 40 minutes, or until the top is brown and bubbly. You can also add some breadcrumbs to the top of the dish before baking if you like extra crunch.",
       "Enjoy with a green salad. I also like mine with salsa."
-    ]
+    ],
+    "recipeCategory": "Undefined"
   },
   {
     "@context": "http://schema.org/",
@@ -1086,8 +1083,7 @@
       "1 cup popcorn",
       "1  lime (juiced)",
       "1 Tbsp olive oil",
-      "1/2 tsp chili powder",
-      "Salt and pepper"
+      "1/2 tsp chili powder"
     ],
     "recipeInstructions": [
       "Chop off both ends of the zucchini, then slice each into four long sticks. Shuck the corn. Lay the zucchini and corn on a baking tray, then rub them with oil, making sure they're well coated. Sprinkle with salt and pepper.",
@@ -1296,7 +1292,7 @@
     "cookTime": "PTM",
     "recipeIngredient": [
       "1 Tbsp chipotle in adobo (finely chopped)",
-      "1/2  lime (juiced)",
+      "1  lime (juiced)",
       "1 Tbsp honey",
       "olive oil (for pan)",
       "2  Tilapia fillets ((or any white fish you prefer))",
@@ -1304,7 +1300,6 @@
       "4  corn tortillas",
       "2  mangos (diced)",
       "3  scallions (finely chopped)",
-      "1/2  lime (juiced)",
       "2 Tbsp cilantro",
       "Salt and pepper"
     ],
