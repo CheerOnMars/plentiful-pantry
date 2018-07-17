@@ -21,3 +21,9 @@ psycopg2 2.6.1
 
 Sqlalchemy Seeder
   - pip install sqlalchemy-seeder
+
+Requests module
+  - pip install requests
+
+Beautiful Soup
+  - pip install beautifulsoup4
