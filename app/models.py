@@ -8,33 +8,40 @@ recipe_ingredients = db.Table('recipe_ingredients',
 
 class Ingredient(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    ingredient_name = db.Column(db.String(64), index=True, unique=True)
-    ingredient_category = db.Column(db.Text)
-    ingredient_subcategory = db.Column(db.Text)
+    name = db.Column(db.String(64), index=True, unique=True)
+    category = db.Column(db.Text)
+    subcategory = db.Column(db.Text)
     storage_location = db.Column(db.Text)
     is_present = db.Column(db.Boolean)
-    include = db.Column(db.Boolean)
+    is_included = db.Column(db.Boolean)
 
     def __repr__(self):
-        return '<Ingredient {}>'.format(self.ingredient_name)
+        return '<Ingredient {}>'.format(self.name)
 
 class Recipe(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    recipe_name = db.Column(db.String(128), index=True, unique=True)
+    name = db.Column(db.String(128), index=True, unique=True)
     image = db.Column(db.Text)
     description = db.Column(db.Text)
-    recipe_category = db.Column(db.Text)
+    category = db.Column(db.Text)
     source = db.Column(db.Text)
     recipe_yield = db.Column(db.Text)
-    include = db.Column(db.Boolean)
+    url = db.Column(db.Text)
+    is_included = db.Column(db.Boolean)
+    # instruction_list = db.Column(db.Text)
     ingredients = db.relationship('Ingredient', secondary=recipe_ingredients, lazy='subquery',
         backref=db.backref('recipes', lazy=True))
     instructions = db.relationship('Instruction', backref='recipe', lazy=True)
 
     def __repr__(self):
-        return '<Recipe {}>'.format(self.recipe_name)
+        return '<Recipe {}>'.format(self.name)
 
 class Instruction(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    instruction_text = db.Column(db.Text)
+    text = db.Column(db.Text)
+    recipe_id = db.Column(db.Integer, db.ForeignKey('recipe.id'))
+
+class Category(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.Text)
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipe.id'))
