@@ -1856,56 +1856,6 @@
   {
     "@context": "http://schema.org/",
     "@type": "Recipe",
-    "name": "Deviled Eggs",
-    "author": {
-      "@type": "Person",
-      "name": "Leanne Brown"
-    },
-    "datePublished": "2015-01-27 19:03:00",
-    "image": "https://www.leannebrown.com/wp-content/uploads/2015/01/deviled-eggs.jpeg",
-    "description": "6 ideas for the classic finger food of hard boiled eggs with flavored yolks.",
-    "recipeYield": "24 egg halves",
-    "prepTime": "PTM",
-    "cookTime": "PTM",
-    "recipeIngredient": [
-      "12  eggs",
-      "Salt and pepper",
-      "2  scallions (finely chopped (optional))",
-      "paprika ((optional))",
-      "2 Tbsp mayonnaise",
-      "2 Tbsp mustard",
-      "2  Tbsp pickle juice, lemon juice or water",
-      "2 Tbsp mayonnaise",
-      "2 Tbsp lime juice",
-      "1  jalapeno (finely chopped)",
-      "2 Tbsp mayonnaise",
-      "2 Tbsp water",
-      "4 tsp curry powder ((or a tsp each of coriander, turmeric, cayenne and cumin))",
-      "2 Tbsp mayonnaise",
-      "2 Tbsp soy sauce",
-      "1 Tbsp rice vinegar",
-      "chile sauce (to taste)",
-      "2 Tbsp mayonnaise",
-      "1/4 cup tomato (chopped (or equivalent of tomato sauce))",
-      "2 Tbsp mayonnaise",
-      "2 Tbsp chorizo (cooked)",
-      "1 tsp smoked paprika"
-    ],
-    "recipeInstructions": [
-      "Place a layer of eggs at the bottom of a pot that is large enough to fit them with a bit of wiggle room. If you can\u2019t fit all your eggs, don\u2019t stack them\u2014they might crack. Split them into batches instead.",
-      "Cover the eggs with cold water. Bring the pot to a boil over medium heat without a lid. As soon as the water is boiling, turn off the heat and cover the pot with a tight lid. Set a timer for 10 minutes.",
-      "When the timer goes off, gently pour out the hot water and cover the eggs with very cold water. The cold water stops the cooking process so that you don't end up with that slightly icky blue-green skin around your yolk.",
-      "Peel the eggs. Everyone has their own technique, but I like to gently roll each egg across the counter to crack the shell. Roll the egg around until it looks like a cracked desert landscape, then peel it starting from the bottom. Once peeled, rinse the egg and set it aside. Repeat until you have peeled all the eggs.",
-      "Slice each egg in half lengthwise. Pop the yolks out and put them in a medium bowl. Don't worry if you leave a little yolk behind. Set the whites aside on a plate.",
-      "Sprinkle the yolks with salt and pepper, then choose a a flavor and add the ingredients of your choice to the bowl. (choose from one of the types I suggest or make up your own!) Mash with a fork and mix until it becomes a relatively smooth paste.",
-      "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
-      "Sprinkle with the scallions and some paprika for color. Have a great party!"
-    ],
-    "recipeCategory": "Appetizer"
-  },
-  {
-    "@context": "http://schema.org/",
-    "@type": "Recipe",
     "name": "Double Chocolate Orange Cookies",
     "author": {
       "@type": "Person",
@@ -1985,7 +1935,7 @@
   {
     "@context": "http://schema.org/",
     "@type": "Recipe",
-    "name": "Dumplings 2 Ways",
+    "name": "Dumplings - Veggine Filling",
     "author": {
       "@type": "Person",
       "name": "Leanne Brown"
@@ -1997,7 +1947,7 @@
     "recipeIngredient": [
       "4 cups all purpose flour",
       "salt (to taste)",
-      "2 large eggs",
+      "4 large eggs",
       "1 cup warm water",
       "3 cups broccoli (finely chopped)",
       "2 cups carrot (grated)",
@@ -2005,13 +1955,45 @@
       "2 Tbsp  soy sauce",
       "1 tsp  toasted sesame oil",
       "2  scallions (chopped)",
-      "2 large eggs",
+      "ginger root (grated)",
+      "garlic"
+    ],
+    "recipeInstructions": [
+      "If you\u2019re making your own dumpling dough, add the flour and salt to a large bowl. Make a crater in the middle and crack in the eggs along with the water. Use one hand like a shovel to mix the dough into a shaggy mass. If it seems too dry, add water a few drops at a time. Knead the dough for a minute, then cover it with plastic wrap or a damp towel and let it rest for 30 minutes to 2 hours.",
+      "Choose one filling or the other. Mix all the filling ingredients in a large bowl.",
+      "Once the dough has rested, split it into four chunks. Dust your countertop with flour, then roll the first piece of dough into a log. Leave the other pieces covered so that they don\u2019t dry out.",
+      "Cut the log into 15 equal slices, then use your hands to form one of the slices into a flat disc. With a rolling pin, flatten the disc into an almost paper-thin circle about the size of a drink coaster.",
+      "Place a heaping tablespoon of filling in the center of the dough. Lift all the edges to meet in the middle, then pinch it closed like a little parcel. If the dough won\u2019t stick to itself, wet your fingertips and dab the edges.",
+      "Repeat until you run out of either filling or dough. This is a great time to ask for help from family or friends\u2014one person rolling while others fill and cook.",
+      "Now, a tough decision: do you want to steam, fry, or boil your dumplings?",
+      "To steam them, spread a small amount of oil around a large pan. Fill the pan with dumplings\u2014as many as you can fit without them sticking to each other. Turn the heat to medium and let them sizzle for about a minute. Once the dough has absorbed most of the oil, add about \u00bd cup of water to the pan, then quickly cover with a lid. The water will splatter and sizzle loudly. Leave the lid on for about a minute to steam the dumplings, then turn the heat down to low and remove the lid. Let it keep cooking until the water evaporates, then turn off\r\nthe heat. Your dumplings should be steamed on top with crispy, brown bottoms.",
+      "To pan-fry them instead, start following the technique above, but use more oil. Skip the water and the lid  entirely. Just keep frying! Once the dumplings are golden on one side, flip them to fry the other side. This method is awkward with parcel-style dumplings but works well for other shapes, so plan accordingly.",
+      "Alternatively, boil the dumplings by dropping them into a pot of boiling water. When they rise to the top, they\u2019re ready to eat, usually in 1 or 2 minutes."
+    ],
+    "recipeCategory": "Appetizer"
+  },
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "name": "Dumplings - Pork Filling",
+    "author": {
+      "@type": "Person",
+      "name": "Leanne Brown"
+    },
+    "datePublished": "2017-05-11 11:00:08",
+    "image": "https://www.leannebrown.com/wp-content/uploads/2017/03/dumplings-main.jpg",
+    "description": "Homemade dumplings made with either vegetables and tofu or pork and greens. You decide; steamed, boiled or pan-fried!",
+    "recipeYield": "60 dumplings",
+    "recipeIngredient": [
+      "4 cups all purpose flour",
+      "salt (to taste)",
+      "4 large eggs",
+      "1 cup warm water",
       "1 lb ground pork or sausage (cooked or raw)",
       "3 cups collards, chard, spinach or scallions (finely chopped)",
       "2 Tbsp soy sauce",
       "1 tsp toasted sesame oil",
-      "2  scallions (chopped)",
-      "2 large eggs",
+      "2 scallions (chopped)",
       "ginger root (grated)",
       "garlic"
     ],
@@ -2044,7 +2026,7 @@
     "recipeIngredient": [
       "2 Tbsp butter",
       "1 15 oz can black beans (drained and rinsed)",
-      "1  green pepper or green chile",
+      "1 green pepper or green chile",
       "Salt and pepper (to taste)",
       "1/2 cup salsa",
       "6  eggs",
@@ -2209,20 +2191,18 @@
     "recipeIngredient": [
       "1/2 cup butter ((1 stick))",
       "1 1/4 cups all purpose flour",
-      "1/2 tsp salt",
+      "1 tsp salt",
       "1/4  cup +1 Tbsp water",
       "2 large eggs",
       "2 cups pumpkin or squash puree",
       "3/4 cup dark brown sugar (packed)",
-      "1/2 tsp salt",
       "1 Tbsp orange zest ((or one small orange worth))",
       "2 tsp cinnamon",
       "1 tsp ginger powder",
       "1 tsp cardamom powder",
       "1/2 tsp nutmeg (freshly grated)",
       "1/4 tsp ground cloves",
-      "1 cup whipping cream",
-      "1 cup whipping cream",
+      "2 cup whipping cream",
       "2 Tbsp sugar",
       "1/2 tsp cinnamon or orange zest"
     ],
@@ -2243,7 +2223,8 @@
       "Once the filling is no longer jiggly, pull it out of the oven and let it cool to room temperature (this usually takes 1 to 2 hours).",
       "Once the pie is cool prepare the whipped cream. In a large bowl or stand mixer add the whipping cream, sugar and zest or cinnamon. Whip it with a whisk, or electric mixer until soft peaks form. Taste the cream and if you think it needs a little more sugar, zest or cinnamon add it now. Whip it a few more times until it's a consistency where if you drop it off the spoon it stays fairly well in place rather than oozing out.",
       "Spread the whipped cream over the top of the cooled pie in a nice even layer, or in dollops, whatever way you like. Sprinkle with more cinnamon or orange zest if you like. Serve immediately or leave in the fridge until ready to serve."
-    ]
+    ],
+    "recipeCategory": "Dessert"
   },
   {
     "@context": "http://schema.org/",
@@ -3173,7 +3154,7 @@
     "prepTime": "PTM",
     "cookTime": "PTM",
     "recipeIngredient": [
-      "1 Tbsp lemongrass (finely chopped)",
+      "2 Tbsp lemongrass (finely chopped)",
       "2 Tbsp fish sauce",
       "3 cloves garlic (grated)",
       "1 Tbsp sugar",
@@ -3182,7 +3163,6 @@
       "2  chicken breasts or thighs (chopped into bite-size pieces)",
       "1/2  shallot or red onion (finely chopped)",
       "2 cloves garlic (finely chopped)",
-      "1 Tbsp lemongrass (finely chopped)",
       "1 - 2 cups vegetable broth or chicken broth or water with 1 Tbsp soy sauce",
       "oil (for frying)",
       "rice, noodles or a wrap (or)",
@@ -3470,7 +3450,8 @@
     "recipeInstructions": [
       "Cook according to package instructions. Drain the water and sprinkle with a generous amount of oil to keep them from sticking. Approximately 2 Tbsp works for me, but you may need a little more or less. Do what makes sense to you. I like udon or soba noodles, but spaghetti works great. Store them in a sealed container in the fridge.",
       "Honestly, after a night in the fridge they will usually be a little stuck together. It seems unavoidable. But also who cares? Just try your best and they should come apart once you are tossing them in the dressing and vegetables even if they are a bit sticky at first. Okay, that's done. On to the fun part!"
-    ]
+    ],
+    "recipeCategory": "Side dish"
   },
   {
     "@context": "http://schema.org/",
@@ -3719,7 +3700,8 @@
       "Use the same process as at left, but add only \u00bd teaspoon of yeast to the flour mixture. Rather than room temperature, the water should be very cold.",
       "After you place the dough ball in a bowl and cover it, put it into the fridge overnight. Letting the yeast work\r\novernight creates a better flavor; it also makes the dough more elastic and easier to work with.",
       "The next day, 2 to 3 hours before you want to bake your\r\npizzas, remove the dough from the fridge to return to room temperature."
-    ]
+    ],
+    "recipeCategory": "Undefined"
   },
   {
     "@context": "http://schema.org/",
@@ -3845,7 +3827,6 @@
       "1 1/2  cups vegetable broth",
       "1 tsp soy sauce",
       "1/2 tsp  cayenne pepper",
-      "Salt and pepper",
       "6 leaves fresh sage (finely chopped (optional))"
     ],
     "recipeInstructions": [
@@ -3956,21 +3937,19 @@
     "recipeIngredient": [
       "1/2 cup butter ((1 stick))",
       "1 1/4 cups all purpose flour",
-      "1/2 tsp salt",
       "4 to 6 Tbsp ice water",
       "1  egg yolk",
       "2 cups pumpkin or squash puree",
-      "1 cup whipping cream",
+      "2 cups whipping cream",
       "2 large eggs",
       "3/4 cup dark brown sugar (packed)",
-      "1/2 tsp salt",
+      "1 tsp salt",
       "1 Tbsp orange zest ((about 1 small orange worth))",
       "2 tsp cinnamon",
       "1 tsp ginger powder",
       "1 tsp cardamom",
       "1/2 tsp nutmeg (freshly grated)",
       "1/4 tsp cloves",
-      "1 cup whipping cream",
       "4 tsp sugar",
       "1/2 tsp cinnamon"
     ],
@@ -4101,6 +4080,7 @@
     "datePublished": "2017-03-23 11:00:55",
     "image": "https://www.leannebrown.com/wp-content/uploads/2017/03/roasted-veg.jpg",
     "description": "Roasting is easy, it warms up the kitchen, and it makes the house smell like the holidays. If you\u2019re uncertain how to prepare a new vegetable, you usually can\u2019t go wrong with roasting\u2014 most things end up sweeter, with nice crunchy bits.",
+    "recipeYield": "Undefined",
     "recipeIngredient": [
       "vegetables (chopped or kept whole in some cases)",
       "olive oil or butter",
@@ -5316,5 +5296,215 @@
       "In a small bowl, gently beat the egg for the egg wash. Brush it over the scones, then sprinkle salt and pepper over each one. Bake for 25 minutes or until the scones are golden brown."
     ],
     "recipeCategory": "Bread / pastry"
+  },
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "name": "Deviled Eggs - Classic",
+    "author": {
+      "@type": "Person",
+      "name": "Leanne Brown"
+    },
+    "datePublished": "2015-01-27 19:03:00",
+    "image": "https://www.leannebrown.com/wp-content/uploads/2015/01/deviled-eggs.jpeg",
+    "description": "6 ideas for the classic finger food of hard boiled eggs with flavored yolks.",
+    "recipeYield": "24 egg halves",
+    "prepTime": "PTM",
+    "cookTime": "PTM",
+    "recipeIngredient": [
+      "12  eggs",
+      "Salt and pepper",
+      "2  scallions (finely chopped (optional))",
+      "paprika ((optional))",
+      "2 Tbsp mayonnaise",
+      "2 Tbsp mustard",
+      "2 Tbsp pickle juice, lemon juice or water"
+    ],
+    "recipeInstructions": [
+      "Place a layer of eggs at the bottom of a pot that is large enough to fit them with a bit of wiggle room. If you can\u2019t fit all your eggs, don\u2019t stack them\u2014they might crack. Split them into batches instead.",
+      "Cover the eggs with cold water. Bring the pot to a boil over medium heat without a lid. As soon as the water is boiling, turn off the heat and cover the pot with a tight lid. Set a timer for 10 minutes.",
+      "When the timer goes off, gently pour out the hot water and cover the eggs with very cold water. The cold water stops the cooking process so that you don't end up with that slightly icky blue-green skin around your yolk.",
+      "Peel the eggs. Everyone has their own technique, but I like to gently roll each egg across the counter to crack the shell. Roll the egg around until it looks like a cracked desert landscape, then peel it starting from the bottom. Once peeled, rinse the egg and set it aside. Repeat until you have peeled all the eggs.",
+      "Slice each egg in half lengthwise. Pop the yolks out and put them in a medium bowl. Don't worry if you leave a little yolk behind. Set the whites aside on a plate.",
+      "Sprinkle the yolks with salt and pepper, add the ingredients to the bowl. Mash with a fork and mix until it becomes a relatively smooth paste.",
+      "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
+      "Sprinkle with the scallions and some paprika for color. Have a great party!"
+    ],
+    "recipeCategory": "Appetizer"
+  },
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "name": "Deviled Eggs - Chile and Lime",
+    "author": {
+      "@type": "Person",
+      "name": "Leanne Brown"
+    },
+    "datePublished": "2015-01-27 19:03:00",
+    "image": "https://www.leannebrown.com/wp-content/uploads/2015/01/deviled-eggs.jpeg",
+    "description": "6 ideas for the classic finger food of hard boiled eggs with flavored yolks.",
+    "recipeYield": "24 egg halves",
+    "prepTime": "PTM",
+    "cookTime": "PTM",
+    "recipeIngredient": [
+      "12  eggs",
+      "Salt and pepper",
+      "2  scallions (finely chopped (optional))",
+      "paprika ((optional))",
+      "2 Tbsp mayonnaise",
+      "2 Tbsp lime juice",
+      "1 jalapeno (finely chopped)"
+    ],
+    "recipeInstructions": [
+      "Place a layer of eggs at the bottom of a pot that is large enough to fit them with a bit of wiggle room. If you can\u2019t fit all your eggs, don\u2019t stack them\u2014they might crack. Split them into batches instead.",
+      "Cover the eggs with cold water. Bring the pot to a boil over medium heat without a lid. As soon as the water is boiling, turn off the heat and cover the pot with a tight lid. Set a timer for 10 minutes.",
+      "When the timer goes off, gently pour out the hot water and cover the eggs with very cold water. The cold water stops the cooking process so that you don't end up with that slightly icky blue-green skin around your yolk.",
+      "Peel the eggs. Everyone has their own technique, but I like to gently roll each egg across the counter to crack the shell. Roll the egg around until it looks like a cracked desert landscape, then peel it starting from the bottom. Once peeled, rinse the egg and set it aside. Repeat until you have peeled all the eggs.",
+      "Slice each egg in half lengthwise. Pop the yolks out and put them in a medium bowl. Don't worry if you leave a little yolk behind. Set the whites aside on a plate.",
+      "Sprinkle the yolks with salt and pepper, add the ingredients to the bowl. Mash with a fork and mix until it becomes a relatively smooth paste.",
+      "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
+      "Sprinkle with the scallions and some paprika for color. Have a great party!"
+    ],
+    "recipeCategory": "Appetizer"
+  },
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "name": "Deviled Eggs - Curried",
+    "author": {
+      "@type": "Person",
+      "name": "Leanne Brown"
+    },
+    "datePublished": "2015-01-27 19:03:00",
+    "image": "https://www.leannebrown.com/wp-content/uploads/2015/01/deviled-eggs.jpeg",
+    "description": "6 ideas for the classic finger food of hard boiled eggs with flavored yolks.",
+    "recipeYield": "24 egg halves",
+    "prepTime": "PTM",
+    "cookTime": "PTM",
+    "recipeIngredient": [
+      "12  eggs",
+      "Salt and pepper",
+      "2  scallions (finely chopped (optional))",
+      "paprika ((optional))",
+      "2 Tbsp mayonnaise",
+      "2 Tbsp water ",
+      "4 tsp curry powder ((or a tsp each of coriander, turmeric, cayenne and cumin))"
+    ],
+    "recipeInstructions": [
+      "Place a layer of eggs at the bottom of a pot that is large enough to fit them with a bit of wiggle room. If you can\u2019t fit all your eggs, don\u2019t stack them\u2014they might crack. Split them into batches instead.",
+      "Cover the eggs with cold water. Bring the pot to a boil over medium heat without a lid. As soon as the water is boiling, turn off the heat and cover the pot with a tight lid. Set a timer for 10 minutes.",
+      "When the timer goes off, gently pour out the hot water and cover the eggs with very cold water. The cold water stops the cooking process so that you don't end up with that slightly icky blue-green skin around your yolk.",
+      "Peel the eggs. Everyone has their own technique, but I like to gently roll each egg across the counter to crack the shell. Roll the egg around until it looks like a cracked desert landscape, then peel it starting from the bottom. Once peeled, rinse the egg and set it aside. Repeat until you have peeled all the eggs.",
+      "Slice each egg in half lengthwise. Pop the yolks out and put them in a medium bowl. Don't worry if you leave a little yolk behind. Set the whites aside on a plate.",
+      "Sprinkle the yolks with salt and pepper, add the ingredients to the bowl. Mash with a fork and mix until it becomes a relatively smooth paste.",
+      "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
+      "Sprinkle with the scallions and some paprika for color. Have a great party!"
+    ],
+    "recipeCategory": "Appetizer"
+  },
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "name": "Deviled Eggs - Ramen-Inspired",
+    "author": {
+      "@type": "Person",
+      "name": "Leanne Brown"
+    },
+    "datePublished": "2015-01-27 19:03:00",
+    "image": "https://www.leannebrown.com/wp-content/uploads/2015/01/deviled-eggs.jpeg",
+    "description": "6 ideas for the classic finger food of hard boiled eggs with flavored yolks.",
+    "recipeYield": "24 egg halves",
+    "prepTime": "PTM",
+    "cookTime": "PTM",
+    "recipeIngredient": [
+      "12 eggs",
+      "Salt and pepper",
+      "2 scallions (finely chopped (optional))",
+      "paprika ((optional))",
+      "2 Tbsp mayonnaise",
+      "2 Tbsp soy sauce",
+      "1 Tbsp rice vinegar",
+      "chile sauce (to taste)"
+    ],
+    "recipeInstructions": [
+      "Place a layer of eggs at the bottom of a pot that is large enough to fit them with a bit of wiggle room. If you can\u2019t fit all your eggs, don\u2019t stack them\u2014they might crack. Split them into batches instead.",
+      "Cover the eggs with cold water. Bring the pot to a boil over medium heat without a lid. As soon as the water is boiling, turn off the heat and cover the pot with a tight lid. Set a timer for 10 minutes.",
+      "When the timer goes off, gently pour out the hot water and cover the eggs with very cold water. The cold water stops the cooking process so that you don't end up with that slightly icky blue-green skin around your yolk.",
+      "Peel the eggs. Everyone has their own technique, but I like to gently roll each egg across the counter to crack the shell. Roll the egg around until it looks like a cracked desert landscape, then peel it starting from the bottom. Once peeled, rinse the egg and set it aside. Repeat until you have peeled all the eggs.",
+      "Slice each egg in half lengthwise. Pop the yolks out and put them in a medium bowl. Don't worry if you leave a little yolk behind. Set the whites aside on a plate.",
+      "Sprinkle the yolks with salt and pepper, add the ingredients to the bowl. Mash with a fork and mix until it becomes a relatively smooth paste.",
+      "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
+      "Sprinkle with the scallions and some paprika for color. Have a great party!"
+    ],
+    "recipeCategory": "Appetizer"
+  },
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "name": "Deviled Eggs - Tomato",
+    "author": {
+      "@type": "Person",
+      "name": "Leanne Brown"
+    },
+    "datePublished": "2015-01-27 19:03:00",
+    "image": "https://www.leannebrown.com/wp-content/uploads/2015/01/deviled-eggs.jpeg",
+    "description": "6 ideas for the classic finger food of hard boiled eggs with flavored yolks.",
+    "recipeYield": "24 egg halves",
+    "prepTime": "PTM",
+    "cookTime": "PTM",
+    "recipeIngredient": [
+      "12  eggs",
+      "Salt and pepper",
+      "2  scallions (finely chopped (optional))",
+      "paprika ((optional))",
+      "2 Tbsp mayonnaise",
+      "1/4 cup tomato (chopped (or equivalent of tomato sauce))"
+    ],
+    "recipeInstructions": [
+      "Place a layer of eggs at the bottom of a pot that is large enough to fit them with a bit of wiggle room. If you can\u2019t fit all your eggs, don\u2019t stack them\u2014they might crack. Split them into batches instead.",
+      "Cover the eggs with cold water. Bring the pot to a boil over medium heat without a lid. As soon as the water is boiling, turn off the heat and cover the pot with a tight lid. Set a timer for 10 minutes.",
+      "When the timer goes off, gently pour out the hot water and cover the eggs with very cold water. The cold water stops the cooking process so that you don't end up with that slightly icky blue-green skin around your yolk.",
+      "Peel the eggs. Everyone has their own technique, but I like to gently roll each egg across the counter to crack the shell. Roll the egg around until it looks like a cracked desert landscape, then peel it starting from the bottom. Once peeled, rinse the egg and set it aside. Repeat until you have peeled all the eggs.",
+      "Slice each egg in half lengthwise. Pop the yolks out and put them in a medium bowl. Don't worry if you leave a little yolk behind. Set the whites aside on a plate.",
+      "Sprinkle the yolks with salt and pepper, add the ingredients to the bowl. Mash with a fork and mix until it becomes a relatively smooth paste.",
+      "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
+      "Sprinkle with the scallions and some paprika for color. Have a great party!"
+    ],
+    "recipeCategory": "Appetizer"
+  },
+  {
+    "@context": "http://schema.org/",
+    "@type": "Recipe",
+    "name": "Deviled Eggs -  Chorizo",
+    "author": {
+      "@type": "Person",
+      "name": "Leanne Brown"
+    },
+    "datePublished": "2015-01-27 19:03:00",
+    "image": "https://www.leannebrown.com/wp-content/uploads/2015/01/deviled-eggs.jpeg",
+    "description": "6 ideas for the classic finger food of hard boiled eggs with flavored yolks.",
+    "recipeYield": "24 egg halves",
+    "prepTime": "PTM",
+    "cookTime": "PTM",
+    "recipeIngredient": [
+      "12  eggs",
+      "Salt and pepper",
+      "2  scallions (finely chopped (optional))",
+      "paprika ((optional))",
+      "2 Tbsp mayonnaise",
+      "2 Tbsp chorizo (cooked)",
+      "1 tsp smoked paprika"
+    ],
+    "recipeInstructions": [
+      "Place a layer of eggs at the bottom of a pot that is large enough to fit them with a bit of wiggle room. If you can\u2019t fit all your eggs, don\u2019t stack them\u2014they might crack. Split them into batches instead.",
+      "Cover the eggs with cold water. Bring the pot to a boil over medium heat without a lid. As soon as the water is boiling, turn off the heat and cover the pot with a tight lid. Set a timer for 10 minutes.",
+      "When the timer goes off, gently pour out the hot water and cover the eggs with very cold water. The cold water stops the cooking process so that you don't end up with that slightly icky blue-green skin around your yolk.",
+      "Peel the eggs. Everyone has their own technique, but I like to gently roll each egg across the counter to crack the shell. Roll the egg around until it looks like a cracked desert landscape, then peel it starting from the bottom. Once peeled, rinse the egg and set it aside. Repeat until you have peeled all the eggs.",
+      "Slice each egg in half lengthwise. Pop the yolks out and put them in a medium bowl. Don't worry if you leave a little yolk behind. Set the whites aside on a plate.",
+      "Sprinkle the yolks with salt and pepper, add the ingredients to the bowl. Mash with a fork and mix until it becomes a relatively smooth paste.",
+      "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
+      "Sprinkle with the scallions and some paprika for color. Have a great party!"
+    ],
+    "recipeCategory": "Appetizer"
   }
 ]
