@@ -37,7 +37,8 @@
       "For some fruits, you can also choose to leave the pulp: it\u2019s particularly great when making a melon agua fresca since it mostly disappears.",
       "Serve over ice. Try some of the variations I\u2019ve suggested or whatever fruits you like!"
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/agua-fresca-way/"
   },
   {
     "@context": "http://schema.org/",
@@ -69,7 +70,8 @@
       "This recipe is extremely loose. Basically, just stir some of your favorite chopped vegetables into yogurt and add salt and pepper. Use this as a stepping stone to develop your own.",
       "After you stir all the ingredients together, store the raita in a covered container in the fridge until you\u2019re ready to use it."
     ],
-    "recipeCategory": "Condiment"
+    "recipeCategory": "Condiment",
+    "recipeURL": "https://www.leannebrown.com/anything-goes-raita/"
   },
   {
     "@context": "http://schema.org/",
@@ -115,7 +117,8 @@
       "Bake in the oven for 8 minutes or until the crust is lightly brown on the edges.",
       "Take the pizza out of the oven and squeeze a little lemon juice and sprinkle a bit more romano. Cut into rectangles and serve hot."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/asparagus-pizza/"
   },
   {
     "@context": "http://schema.org/",
@@ -143,7 +146,8 @@
       "Cut the avocado in half and remove the core with your knife. Using a pairing knife make 5 or 6 long incisions in the avocado all the way from top to bottom, running the knife through the flesh of the avocado until you hit the skin. Then do the same incision 6 to 8 times horizontally. You should now have a criss-cross pattern on your avocado. Now use a spoon to scoop the avocado flesh from the skin. As you remove the flesh it will fall away into little square pieces. It\u2019s a lot like cutting a mango",
       "Add the avocado pieces, black beans, a healthy pinch of salt and the noodles you made earlier to the bowl and toss gently to coat. If your avocado is really ripe you will squish the avocado a bit as you toss the salad and it will become kind of like guacamole noodles. Taste and add more salt or lime juice if you like."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/avocado-chile-lime-black-bean-noodles/"
   },
   {
     "@context": "http://schema.org/",
@@ -168,7 +172,8 @@
     "recipeInstructions": [
       "Toss all the ingredients in a blender and whizz them up! Let it go for a while because the avocados need to break down and blend with the milk. Once the liquid is Kermit the Frog green, it\u2019s ready. Taste it and add more sugar or lime juice as needed."
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/avocado-milkshake/"
   },
   {
     "@context": "http://schema.org/",
@@ -197,7 +202,8 @@
       "Toast your bread or naan bread or flat bread until crispy and brown.",
       "Top your toasts generously with the avocado salad and eat with your hands or a knife and fork."
     ],
-    "recipeCategory": "Sandwich"
+    "recipeCategory": "Sandwich",
+    "recipeURL": "https://www.leannebrown.com/avocado-white-bean-grapefruit-toasts/"
   },
   {
     "@context": "http://schema.org/",
@@ -225,7 +231,8 @@
       "Immediately turn the heat to low and place a lid on the pot. Cook for 5 minutes, until the oats are soft and tender and most of the water has cooked off. You can add more water if you like your oatmeal smooth and thin, or use slightly less if you want a thick oatmeal.",
       "Once it\u2019s cooked, top each bowl with another tablespoon of honey and a tablespoon of nuts."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/baklava-oatmeal/"
   },
   {
     "@context": "http://schema.org/",
@@ -252,7 +259,8 @@
       "Add the dates and water to a blender or food processor and blend for two minutes until you have a smooth, milky looking mixture. A few small chunks are okay!",
       "Add the banana and vanilla and blend until smooth. Pour into a glass and enjoy!"
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/banana-date-smoothie/"
   },
   {
     "@context": "http://schema.org/",
@@ -288,7 +296,8 @@
       "As soon as the batter is in the pan, place 3 to 4 banana slices on top of the uncooked side of the pancake. Once the edges of the pancake start to dry up and you can see the middle start to bubble, flip the pancake over. Cook until it is browned on both sides. Stack the finished pancake on a plate in a warm oven and repeat the above process until you run out of batter.",
       "Serve hot, with butter and syrup."
     ],
-    "recipeCategory": "Bread / pastry"
+    "recipeCategory": "Bread / pastry",
+    "recipeURL": "https://www.leannebrown.com/banana-pancakes/"
   },
   {
     "@context": "http://schema.org/",
@@ -328,7 +337,8 @@
       "Add the dressing to the bowl and mix until everything is lightly coated. Split into 4 portions and top each with 4 pieces of fried tofu, cilantro to taste and wedge of lime.",
       "Squeeze the lime juice overtop and enjoy!"
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/banh-mi-salad/"
   },
   {
     "@context": "http://schema.org/",
@@ -370,7 +380,8 @@
       "Check on the beef. If the water has reduced to approximately a cup of thick, flavorful liquid and the beef is tender, it\u2019s done! If not, let it cook a little longer. Once it\u2019s ready, stir in the mushrooms, sour cream, and mustard. Turn the heat down to low to keep it warm until the pasta is ready. Once again, taste and add more salt, pepper, and paprika if needed.",
       "Put the noodles into bowls and top with the stew. Sprinkle a little paprika over top and enjoy!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/beef-stroganoff/"
   },
   {
     "@context": "http://schema.org/",
@@ -398,7 +409,8 @@
       "Mix up the dressing ingredients in another small bowl and stir to combine. Taste and adjust the salt and pepper to\r\nyour liking.",
       "Add the dressing to the other bowl and mix up all the ingredients. Let it sit for about 5 minutes so that the flavors can soak into the vegetables and the beet juices can mingle with the dressing."
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/beet-chickpea-salad/"
   },
   {
     "@context": "http://schema.org/",
@@ -446,7 +458,8 @@
       "To assemble, distribute the filling evenly between the 4 or 6 tortillas, then roll them up. Place them in a baking dish and smother them with the sauce. Grate some cheese over the top if you\u2019d like.",
       "Bake for 15 to 20 minutes, or until the sauce is bubbling around the edges. Serve immediately with any of the garnishes suggested."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/black-bean-enchiladas/"
   },
   {
     "@context": "http://schema.org/",
@@ -479,7 +492,8 @@
       "Once the peas are cooked, add the collards to the pot and put the lid back on. Add 1 teaspoon of salt and some freshly ground pepper, then stir. Taste the liquid and peas and add more salt as needed. Cover the pan with a lid and leave for about 10 to 15 minutes. Once the collards are tender, turn off the heat.",
       "Serve this over rice or any other grain, or with some toast or flatbread"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/black-eyed-peas-and-collards/"
   },
   {
     "@context": "http://schema.org/",
@@ -521,7 +535,8 @@
       "Remove the crostata from the oven and let it cool for about 20 minutes before you try to remove it from the pan. Cool completely and place in the fridge for later, or serve right away.",
       "Don't be shy about eating the whole thing in one sitting. That's what you made it for!"
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/blueberry-crostata/"
   },
   {
     "@context": "http://schema.org/",
@@ -573,7 +588,8 @@
       "Set the muffin tins on top of a larger sheet pan to catch any of the cheese grease that will inevitably drool out the sides of the pan (this will prevent it from burning on the bottom of the oven). Bake for 25 minutes.",
       "Remove the cheese buns from the oven and let them cool in the tins for at least 20 minutes. There will be a lot of hot, crunchy cheese that has exploded out of the buns and is baked onto the tray (yum!). Carefully remove them from the tins, using a butter knife to pry them up if required."
     ],
-    "recipeCategory": "Bread / pastry"
+    "recipeCategory": "Bread / pastry",
+    "recipeURL": "https://www.leannebrown.com/brioche-cheddar-cheese-buns/"
   },
   {
     "@context": "http://schema.org/",
@@ -619,7 +635,8 @@
       "Place the empanadas on the baking pan. Once you have finished assembling them brush them with the egg wash you made and then sprinkle them with a little bit of kosher salt if you have it. This is entirely optional!",
       "Place them into the oven and let them bake for 15 minutes or until they turn golden brown. Eat them hot with whatever sauce you like. Chimichurri sauce is the best, so I\u2019ll have to share that with you another time."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/broccoli-and-cheddar-empanadas/"
   },
   {
     "@context": "http://schema.org/",
@@ -653,7 +670,8 @@
       "Pour the dressing over the bowl of vegetables and mix it all together.",
       "If you put a plate in the fridge for 10 minutes before serving the salad, it'll stay crisp slightly longer. For the best presentation, pile the salad as high and tight as you can manage."
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/broccoli-apple-salad/"
   },
   {
     "@context": "http://schema.org/",
@@ -686,7 +704,8 @@
       "Now scrape about half the broccoli pesto into a bowl with your noodles and save the rest for another use (maybe another salad or on toast!). Or you can use it all if you're so inclined of course!",
       "Toss the noodles you made earlier with the pesto and you're done!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/broccoli-pesto-noodles/"
   },
   {
     "@context": "http://schema.org/",
@@ -722,7 +741,8 @@
       "Divide the pizza dough into 4 equal pieces. Sprinkle flour over the countertop and place one of the four pieces of dough on it. Using your hands or a rolling pin, roll out the dough into a thin, flat circle. Pile \u00bc of your\r\nbroccoli rabe mixture and \u00bd cup of mozzarella onto one side of the circle, leaving a lip around the edge. Gather up the half of the dough that isn\u2019t weighed down with filling and fold it over top. Pinch the edges of the dough together to create a half-moon shape. Place it carefully on the prepared baking sheet and repeat until you have\r\nfour calzones.",
       "Bake for 6 to 8 minutes or until the calzones are golden-brown on the outside. Be careful whenyou bite into them\u2014they\u2019ll be hot!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/broccoli-rabe-and-mozzarella-calzones/"
   },
   {
     "@context": "http://schema.org/",
@@ -748,7 +768,8 @@
       "If you have maple syrup on hand, use it instead of sugar for even more flavor.",
       "This breakfast will make a grapefruit lover out of you!"
     ],
-    "recipeCategory": "Snack"
+    "recipeCategory": "Snack",
+    "recipeURL": "https://www.leannebrown.com/broiled-grapefruit/"
   },
   {
     "@context": "http://schema.org/",
@@ -777,7 +798,8 @@
       "Crack the eggs into separate areas of the pan. Sprinkle them with salt and pepper. Pour in 2 tablespoons of water and cover with a lid. Let the eggs steam, undisturbed, for 2 minutes.",
       "Once the whites of the eggs are cooked through, turn off the heat and sprinkle everything with lemon juice."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/brussels-sprouts-hash-eggs/"
   },
   {
     "@context": "http://schema.org/",
@@ -805,7 +827,8 @@
       "Roast for 20 to 25 minutes or until the center of each piece of carrot can be easily pierced with a fork.",
       "Top with a little chopped parsley or dill if you have it around and finish with the rest of the ginger butter to your taste."
     ],
-    "recipeCategory": "Side dish"
+    "recipeCategory": "Side dish",
+    "recipeURL": "https://www.leannebrown.com/buttery-ginger-carrots/"
   },
   {
     "@context": "http://schema.org/",
@@ -850,7 +873,8 @@
       "Pour the rosemary butter onto the popcorn and toss. Add a little cheese and toss. Repeat until you have used up all the butter or have the desired coverage.",
       "Once your caramel corn is ready, mix it together with your rosemary popcorn and serve."
     ],
-    "recipeCategory": "Snack"
+    "recipeCategory": "Snack",
+    "recipeURL": "https://www.leannebrown.com/caramel-and-rosemary-parmesan-popcorn/"
   },
   {
     "@context": "http://schema.org/",
@@ -873,7 +897,8 @@
       "Melt the butter in a non-stick or cast-iron pan on medium-high heat. Add the sugar and let it melt into the butter for about 2 minutes. Place the bananas face\r\ndown in the butter-sugar mixture, then cook for 2 minutes or until they become brown and sticky. Carefully flip them over and do the same to the other side.",
       "Serve them whole or split them into quarters. Drizzle any caramel left in the pan over the bananas. Serve with ice cream, on top of pudding or cake or simply on their own."
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/caramelized-bananas/"
   },
   {
     "@context": "http://schema.org/",
@@ -899,7 +924,8 @@
       "Melt 1/2 tablespoon of butter in a small pan on medium heat. Place the two slices of bread in the pan and let them cook for about 2 minutes, then lift them with a spatula to check whether they\u2019re golden brown underneath. When they are, flip \u2019em over. Add the rest of the butter to the pan to make sure the second side of the toast becomes just as golden as the first. Sprinkle the top of the bread with salt and pepper. Once the second side is golden, set the bread on a plate to await its topping.",
       "Spread them over toast and top with slices of sharp cheddar, salt, and pepper. Put the toast back in the pan and cover with a lid until the cheese is bubbly, then serve it up."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/caramelized-onion-cheddar-toast/"
   },
   {
     "@context": "http://schema.org/",
@@ -947,7 +973,8 @@
       "Swirls and imperfections look lovely so don't worry about making it perfect. Carefully remove the parchment from beneath the cake.",
       "Once the cake is frosted you can stop there or add any other flourishes like candied pineapple or fresh pineapple chunks or even sprinkles. Enjoy your beautiful creation!"
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/carrot-pineapple-cake/"
   },
   {
     "@context": "http://schema.org/",
@@ -986,7 +1013,8 @@
       "Pour the sauce over the cauliflower. Place the dish in the oven for 40 minutes, or until the top is brown and bubbly. You can also add some breadcrumbs to the top of the dish before baking if you like extra crunch.",
       "Enjoy with a green salad. I also like mine with salsa."
     ],
-    "recipeCategory": "Undefined"
+    "recipeCategory": "Undefined",
+    "recipeURL": "https://www.leannebrown.com/cauliflower-cheese/"
   },
   {
     "@context": "http://schema.org/",
@@ -1018,7 +1046,8 @@
       "On medium high heat warm up the tortillas one or two at a time until light brown spots appear on both sides and they are pliable and just a little bit crispy.",
       "Place two to three tortillas on each plate and fill with a\r\ngenerous serving of cauliflower. Sprinkle the grated cheese over top and drizzle with salsa or sauce of your choice."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/cauliflower-tacos/"
   },
   {
     "@context": "http://schema.org/",
@@ -1058,7 +1087,8 @@
       "Let the ghee (clarified butter) melt in a small saucepan over medium-low heat. (Ghee is the traditional Indian choice, but you can substitute butter if you can't find ghee.) Once the ghee begins to sizzle, add the cumin seeds and stir for about 5 seconds. Add the onion and saute for 2 minutes. Add the garlic and cook for 1 minute. Add the ginger and jalapeno and cook for 1 more minute. Add the spices and then the pureed tomatoes. Mix, then put a lid on the pan and let everything cook down for 5 to 10 minutes.",
       "Once the tomato has reduced and the ghee starts to separate from the sauce, add the chickpeas and water. Mix, then bring it to a boil before reducing to a simmer. Cook for 10 minutes, then squish a few chickpeas with a spoon to thicken the sauce. Garnish with yogurt and cilantro. For a full meal, serve over rice or with roti."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/chana-masala/"
   },
   {
     "@context": "http://schema.org/",
@@ -1091,7 +1121,8 @@
       "Mix the dressing in a large bowl. Taste it and adjust to your preferences.",
       "Chop the zucchini into bite-sized pieces and slice the corn kernels from the cob. Transfer the vegetables into the bowl with the dressing. Add the crumbled cotija or feta and mix. Sprinkle popcorn over top, then dust with a little extra chili powder, salt, and pepper."
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/charred-summer-salad-2/"
   },
   {
     "@context": "http://schema.org/",
@@ -1128,7 +1159,8 @@
       "Once the salmon has cooled enough to touch use a fork to gently break it up into pieces. Taste and sprinkle with a little more smoked paprika or salt if needed.",
       "Spread a couple tablespoons (or whatever amount you like!) on the toast and top with about 1/4-1/3 of the salmon. Top with cucumber slices and a squeeze of fresh lemon juice."
     ],
-    "recipeCategory": "Snack"
+    "recipeCategory": "Snack",
+    "recipeURL": "https://www.leannebrown.com/cheaty-smoky-salmon-toast/"
   },
   {
     "@context": "http://schema.org/",
@@ -1171,7 +1203,8 @@
       "If you\u2019re planning to freeze some of the perogies, let them cool down post-boiling and then put them in freezer bags with the air squeezed out. I usually\r\ndo 12 to a bag, but you can portion them out in whatever way suits you. They will keep for at least 6 months in the freezer.",
       "You can eat the perogies just boiled, but if you\u2019re anything like my family, you\u2019ll prefer them fried afterwards. Melt a tablespoon of butter in a pan on medium heat, then fry up as many perogies as you want. (Six per person is plenty, these are really rich and filling.) Flip them every few minutes until they\u2019re browned on all sides. Serve with scallions and a dollop of sour cream."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/cheddar-potato-perogies/"
   },
   {
     "@context": "http://schema.org/",
@@ -1205,7 +1238,8 @@
       "Add the green chiles to the pot and stir. Cook for another two minutes or so, then add the chickpeas and a little more salt. Stir and cook until everything is warmed through. Taste and add more salt if you think it needs it.",
       "Now assemble the bowl! Spoon the warm chickpea mixture in the middle of the bowl and pile shredded lettuce on one side and sprinkle cheese on the other. Add any other additions you have around."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/chickpea-taco-bowl-green-chile-tomato-cheddar/"
   },
   {
     "@context": "http://schema.org/",
@@ -1240,7 +1274,8 @@
       "In the bowl with the dressing, add the chickpeas, shredded cabbage, and carrots and toss it all together with tongs until everything is coated.",
       "Pile it into bowls and top with scallions, chopped cilantro, and peanuts if desired."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/chickpea-vegetable-bowl-peanut-dressing/"
   },
   {
     "@context": "http://schema.org/",
@@ -1274,7 +1309,8 @@
       "Now add the chickpeas, cucumber, tomato, avocado and tortilla chips. With a pair of tongs or a spoon toss all the ingredients together with the dressing until everything is nicely coated and mixed. Just like this.",
       "Pile it as prettily as you can into a bowl, sprinkle it with chopped scallions and serve! I eat all of this myself, but usually not all in one sitting. I eat most of it at lunch and then slowly grab a bite or two throughout the afternoon. It keeps me going so I can wait for a later evening dinner."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/chickpeas-supreme/"
   },
   {
     "@context": "http://schema.org/",
@@ -1312,7 +1348,8 @@
       "Place the fillets in the oven under the broiler and set the timer for 5 minutes. Watch carefully. You will need to adjust the cooking time depending on the size of your fillets. For the small Tilapia fillets we had they took 5 minutes and were perfectly juicy and flaky. If you have bigger fillets or thicker cuts like Halibut then leave them in a few more minutes. You can tell they are properly cooke when they flake apart when poked with a knife.",
       "Toast your tortillas in a pan on medium heat until a few light brown bubbles form on each side. Place two tortillas on two plates and divide the two fillets across the four tortillas. Spoon mango salsa generously over each and sprinkle with more scallions and cilantro."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/chipotle-glazed-tilapia-tacos-with-mango-salsa/"
   },
   {
     "@context": "http://schema.org/",
@@ -1349,7 +1386,8 @@
       "To be 100% your chicken is cooked through you can use a meat thermometer. Stab the thermometer into the center of the thickest part of the meat and if it registers 165F you're good! You can also cut into the meat to make sure, but 25 minutes at that heat should be good enough, and to avoid dry meat it's best to let the chicken rest a bit before cutting into it so you don't lose the juices.",
       "After you have pulled the pan out of the oven and let the chicken rest for a few minutes, serve it up by piling plates high with brussels sprouts, then slice the chicken into a few pieces and lay it on top of the brussels sprouts pile. Drizzle the remaining sauce over the top and enjoy!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/chipotle-honey-roasted-chicken-brussels-sprouts/"
   },
   {
     "@context": "http://schema.org/",
@@ -1376,7 +1414,8 @@
       "Leave the jar for 2 to 4 weeks shaking it once each day.",
       "When ready to use, line a strainer with cheese cloth and place it over a bowl. Pour the mixture into the bowl through the strainer. To get every last drop of the good stuff grab the cheese cloth and squeeze all the liquid out into the bowl."
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/chocolate-and-chile-bitters/"
   },
   {
     "@context": "http://schema.org/",
@@ -1425,7 +1464,8 @@
       "Using a butter knife or chopstick, gently instert your knife into the chocolate side of the pie filling and pull some of the chocolate filling across into the coconut side. Do this a few times to swirl them together a bit without completely mixing them up.",
       "Once the fillings are swirled to your satisfaction bake in the oven for 40 minutes or until the center is no longer jiggly. Cool to room temperature, then place in fridge to chill fully. Once completely cool, pull out, cut into slices and serve at room temperature."
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/chocolate-coconut-pie/"
   },
   {
     "@context": "http://schema.org/",
@@ -1461,7 +1501,8 @@
       "With a spoon, dollop the batter into the muffin tins until each cup is 3/4 full and bake for 20 minutes.",
       "Pull the muffins out and poke with a toothpick or knife. If it comes out wet, bake the muffins for 5 more minutes. Let the muffins cool in their tins for 20 to 30 minutes, then eat them warm!"
     ],
-    "recipeCategory": "Bread / pastry"
+    "recipeCategory": "Bread / pastry",
+    "recipeURL": "https://www.leannebrown.com/chocolate-zucchini-muffins/"
   },
   {
     "@context": "http://schema.org/",
@@ -1491,7 +1532,8 @@
       "Add the tomatoes and beans, then simmer until the sauce is thick and the sausage is cooked, about 5 minutes on medium heat. Taste and add salt and pepper as needed.",
       "Because this sauce contains meat, it won\u2019t keep especially long in the fridge, but you can freeze it for later use if you don\u2019t plan to eat it all within a few days."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/chorizo-white-bean-ragu/"
   },
   {
     "@context": "http://schema.org/",
@@ -1520,7 +1562,8 @@
       "In a mixing bowl add the tahini, peanut butter, hot sauce, soy sauce and water. Whisk until you have a smooth, thin dressing. Add a little more water if it\u2019s too thick. Taste and add more hot sauce or soy sauce if you think it is not quite salty or spicy enough.",
       "Add the noodles you made earlier and toss to coat. Then add the scallion and cucumber and toss again. Sprinkle with sesame seeds for a pretty garnish and enjoy!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/classic-sesame-noodles-cucumbers/"
   },
   {
     "@context": "http://schema.org/",
@@ -1561,7 +1604,8 @@
       "Continue the process until you've baked all the cookies.",
       "Store the finished cookies in an airtight container."
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/coconut-chocolate-chip-cookies/"
   },
   {
     "@context": "http://schema.org/",
@@ -1588,7 +1632,8 @@
       "Immediately turn the heat to low and place a lid on the pot. Cook for 5 minutes, until the oats are soft and tender and most of the water has cooked off. You can add more water if you like your oatmeal smooth and thin, or use slightly less if you want a thick oatmeal.",
       "Turn off the heat and squeeze the juice of half a lime over the top."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/coconut-lime-oatmeal/"
   },
   {
     "@context": "http://schema.org/",
@@ -1623,7 +1668,8 @@
       "Let the noodles sit in the fridge for about an hour if you can. The flavors will mingle and become more intense.",
       "Think of this as a recipe that you can really make your own. Use whatever sauce or dressing you like and\r\nwhatever vegetables you have around, or just a few scallions."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/cold-asian-noodles/"
   },
   {
     "@context": "http://schema.org/",
@@ -1666,7 +1712,8 @@
       "Carefully spread the crusted green beans onto the baking sheet. Repeat until you've done them all. If you run out of any of the three mixtures, just mix up a bit more.",
       "Bake for 10 to 15 minutes, until golden and crispy. Enjoy hot with your favorite dipping sauce!"
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/cornmeal-crusted-vegetables/"
   },
   {
     "@context": "http://schema.org/",
@@ -1703,7 +1750,8 @@
       "With an immersion blender, blitz the soup until creamy (don\u2019t worry about getting every last piece). Taste it, then add salt and pepper and heavy cream (if using). If you like your soup a little thinner, add a bit more broth. Taste and adjust salt and pepper to your taste.",
       "Sprinkle cheddar and green onions on top before serving, preferably alongside a sliced and toasted baguette."
     ],
-    "recipeCategory": "Soup"
+    "recipeCategory": "Soup",
+    "recipeURL": "https://www.leannebrown.com/creamy-spicy-cauliflower-soup/"
   },
   {
     "@context": "http://schema.org/",
@@ -1735,7 +1783,8 @@
       "Meanwhile, melt a tablespoon of butter in a pan on medium heat. Add the garlic and chile flakes. Let them sizzle for 30 seconds to a minute, then add the zucchini. Stir the vegetables to coat them. Cook for 5 to 7 minutes, stirring occasionally, until some of the water has cooked off and the veggies are tender when stabbed with a fork. Young summer zucchini doesn't need much cooking. Add the lemon zest. Stir!",
       "Drain the cooked fettuccine and add it to the zucchini pan along with the rest of the butter, the cream, and most of the Romano cheese. Toss the fettuccine around the pan to get everything mixed. Add salt to taste and lots of freshly ground pepper. Top with a bit more cheese and serve immediately."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/creamy-zucchini-fettucine/"
   },
   {
     "@context": "http://schema.org/",
@@ -1770,7 +1819,8 @@
       "Add the lentils and water and bring the stew to a boil. Turn the heat down to low and let it simmer with a lid slightly askew for 20 to 30 minutes until the lentils are cooked through. Add the spinach and stir until it is wilted and incorporated. Cook for about 5 more minutes if using frozen. If using fresh once the spinach is wilted it's ready.",
       "Taste the stew and add salt and fresh cilantro or any other seasonings according to your taste."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/curried-red-lentil-spinach-stew/"
   },
   {
     "@context": "http://schema.org/",
@@ -1812,7 +1862,8 @@
       "Once seasoned to your liking, take the soup off the heat and pur\u00e9e it with an immersion blender or let it cool to room temperature and use a food processor or blender.",
       "Serve with freshly chopped cilantro or green onions as\r\nwell as a dollop of sour cream."
     ],
-    "recipeCategory": "Soup"
+    "recipeCategory": "Soup",
+    "recipeURL": "https://www.leannebrown.com/curried-sweet-potato-soup/"
   },
   {
     "@context": "http://schema.org/",
@@ -1851,7 +1902,8 @@
       "Lightly oil a large casserole dish. Spread the lentil-rice-sausage mixture into an even layer. Next, spread the cabbage mixture on top. Then, as evenly as possible, pour the pur\u00e9ed tomatoes over top. Sprinkle with salt and pepper.",
       "Bake until hot and bubbly, approximately 30 minutes."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/deconstructed-cabbage-rolls/"
   },
   {
     "@context": "http://schema.org/",
@@ -1891,7 +1943,8 @@
       "Continue to bake them in batches until you have used up all the cookie dough.",
       "Try to enjoy these within 1 to 3 days of baking. They do not age well."
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/double-chocolate-orange-cookies/"
   },
   {
     "@context": "http://schema.org/",
@@ -1930,7 +1983,8 @@
       "Optionally, if you want to make a sauce from the pot full of drippings, bring it to a gentle boil on the stovetop over medium-high heat. Let the juices thicken for 20 to 30 minutes. The fat will rise to the top: it's the clear, thick layer, not the thin, red liquid below. Skim off as much of the fat as possible. Mix a few spoonfuls of the pan drippings with the pork before serving.",
       "Feel free to add a little barbecue sauce to the pork if it isn't flavorful enough for you, but try it first, I think you'll be surprised!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/dry-rubbed-pulled-pork/"
   },
   {
     "@context": "http://schema.org/",
@@ -1970,7 +2024,8 @@
       "To pan-fry them instead, start following the technique above, but use more oil. Skip the water and the lid  entirely. Just keep frying! Once the dumplings are golden on one side, flip them to fry the other side. This method is awkward with parcel-style dumplings but works well for other shapes, so plan accordingly.",
       "Alternatively, boil the dumplings by dropping them into a pot of boiling water. When they rise to the top, they\u2019re ready to eat, usually in 1 or 2 minutes."
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/dumplings-2-ways/"
   },
   {
     "@context": "http://schema.org/",
@@ -2009,7 +2064,8 @@
       "To pan-fry them instead, start following the technique above, but use more oil. Skip the water and the lid  entirely. Just keep frying! Once the dumplings are golden on one side, flip them to fry the other side. This method is awkward with parcel-style dumplings but works well for other shapes, so plan accordingly.",
       "Alternatively, boil the dumplings by dropping them into a pot of boiling water. When they rise to the top, they\u2019re ready to eat, usually in 1 or 2 minutes."
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/dumplings-2-ways/"
   },
   {
     "@context": "http://schema.org/",
@@ -2045,7 +2101,8 @@
       "Time to assemble. On each plate place 2 tortillas. Spoon approximately 1/6th of the bean mixture (take it off the back burner you had it on and turn off the heat) on each tortilla. Gently place an egg on top of the bean mixture. Drizzle with salsa and sprinkle green onions.",
       "Add any other additions you have around, but these are perfect just as they are."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/easiest-huevos-rancheros/"
   },
   {
     "@context": "http://schema.org/",
@@ -2084,7 +2141,8 @@
       "If you like eggs over-easy (my favorite), wait until the yolks are cooked but still look runny, then flip each egg with a spatula and let the other side cook for about 15 seconds. That\u2019ll get your whites fully cooked, but keep the yolks runny\u2014the best. If you prefer hard yolks (please no!), then cook for a little longer.",
       "Toast the bread or bun, then assemble it into a sandwich, using any condiments you like. Way better than what you\u2019ll find at the corner deli."
     ],
-    "recipeCategory": "Sandwich"
+    "recipeCategory": "Sandwich",
+    "recipeURL": "https://www.leannebrown.com/egg-sandwich-mushroom-hash/"
   },
   {
     "@context": "http://schema.org/",
@@ -2121,7 +2179,8 @@
       "Chop a handful of scallions and sprinkle them over top. Toss the salad once more, then taste and adjust the salt, pepper, and vinegar as you see fit.",
       "This keeps very well and travels nicely to a picnic or potluck. Have fun!"
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/ever-popular-potato-salad/"
   },
   {
     "@context": "http://schema.org/",
@@ -2147,7 +2206,8 @@
       "When you see lovely watermelons, honeydews, and cantaloupes on sale, buy them up. Eat half, then cube and freeze the other half. When you want a quick dessert or smoothie, pull out a bag of frozen melon and whip this up.",
       "Add all the ingredients to a food processor or blender  and process until just smooth. Don't blend too much, or the sorbet will become oversoft. Serve immediately or stick it into the freezer to enjoy later."
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/fast-melon-sorbet/"
   },
   {
     "@context": "http://schema.org/",
@@ -2174,7 +2234,8 @@
       "Once you have practiced, you can roll out one roti while another cooks in the pan to make the process quicker.",
       "Keep them under a towel on the counter or in a warm oven until ready to serve."
     ],
-    "recipeCategory": "Bread / pastry"
+    "recipeCategory": "Bread / pastry",
+    "recipeURL": "https://www.leannebrown.com/fast-simple-roti/"
   },
   {
     "@context": "http://schema.org/",
@@ -2224,7 +2285,8 @@
       "Once the pie is cool prepare the whipped cream. In a large bowl or stand mixer add the whipping cream, sugar and zest or cinnamon. Whip it with a whisk, or electric mixer until soft peaks form. Taste the cream and if you think it needs a little more sugar, zest or cinnamon add it now. Whip it a few more times until it's a consistency where if you drop it off the spoon it stays fairly well in place rather than oozing out.",
       "Spread the whipped cream over the top of the cooled pie in a nice even layer, or in dollops, whatever way you like. Sprinkle with more cinnamon or orange zest if you like. Serve immediately or leave in the fridge until ready to serve."
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/favorite-pumpkin-pie/"
   },
   {
     "@context": "http://schema.org/",
@@ -2268,7 +2330,8 @@
       "About 20 minutes before the adobo is ready, pour the rice into a medium pot with 4 cups of water. Add two pinches of salt. Bring to a boil over medium heat with the lid off. Turn the heat down and cover with a lid that is slightly askew to let the steam escape. Cook about 20 minutes, until the water is all gone.",
       "Remove the bay leaves from the adobo. In a small bowl, mix the cornstarch with a tablespoon of water, then stir it into the sauce. Let the sauce boil and thicken until the  chicken and vegetables are well glazed. Serve over the rice."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/filipino-chicken-adobo/"
   },
   {
     "@context": "http://schema.org/",
@@ -2300,7 +2363,8 @@
       "Once you've rolled out one or two tortillas, put a non-stick or cast iron pan on medium-high heat. Let it get nice and hot. Place a tortilla in the pan. Once it starts to dry up around the edges, flip it over with a spatula, then gently press it down to give it some color underneath. Once the tortilla has brown spots on both sides, remove it from the pan and continue with the next. Work quickly! As you wait for each tortilla to cook, roll out more. You'll get better at this part with practice.",
       "If you're serving the tortillas soon, place them in a warm oven to keep them pliable. If they're for later in the day, pile them under a cloth while you finish making them. Once you're done, wrap them in aluminum foil and put them in the fridge. Heat in the oven before serving."
     ],
-    "recipeCategory": "Bread / pastry"
+    "recipeCategory": "Bread / pastry",
+    "recipeURL": "https://www.leannebrown.com/flour-tortillas/"
   },
   {
     "@context": "http://schema.org/",
@@ -2341,7 +2405,8 @@
       "Now it\u2019s time to make cheese toast! If you want classic French onion soup\u2014 with the toast directly in the soup, which makes it a bit soggy\u2014place a piece of bread on top of each bowl of soup, sprinkle with cheese, then heat the bowls under your oven\u2019s broiler until the cheese is bubbly.",
       "If you don\u2019t like soggy toast, just make the cheese toast on its own and serve it on the side to dunk."
     ],
-    "recipeCategory": "Soup"
+    "recipeCategory": "Soup",
+    "recipeURL": "https://www.leannebrown.com/french-onion-soup/"
   },
   {
     "@context": "http://schema.org/",
@@ -2370,7 +2435,8 @@
       "Boil in heavily salted water. Fresh pasta cooks in as little as 30 seconds if the noodles are thin. It\u2019s ready when it changes color and starts to float.",
       "You can keep uncooked pasta for up to 2 days in the fridge."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/fresh-pasta/"
   },
   {
     "@context": "http://schema.org/",
@@ -2418,7 +2484,8 @@
       "To make the sauce simply mix the mayonnaise, mustard and hot sauce together quickly with a spoon and set aside.",
       "Slice each bread roll down the side leaving the very ends uncut so that you create a nice pocket to fill with shrimp. Slather each roll with sauce on one side and then stuff in a layer of lettuce, tomato and pickle. Finally stuff the sandwich with as much shrimp as you can fit. I could barely manage six per sandwich, but if you can do more, go for it! Drizzle with more sauce and add more tomato, pickles or lettuce to your taste and serve."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/fried-shrimp-po-boys/"
   },
   {
     "@context": "http://schema.org/",
@@ -2465,7 +2532,8 @@
       "Ladle the soup into bowls. For a little crunch, top with bean sprouts and the green bits of the scallions. Add any other additions you like.",
       "If you have leftovers, you\u2019ll find you like this soup even more the next day. Overnight, the flavors will infuse into the tofu, as well as combining with each other. You might want to store the noodles separately, though, because otherwise they\u2019ll get soggy."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/ginger-mushroom-tofu-hot-pot/"
   },
   {
     "@context": "http://schema.org/",
@@ -2509,7 +2577,8 @@
       "Check the puffs after 20 minutes to see if they are evenly golden brown. Sometimes they require a few more minutes so don't be afraid to leave them in a little longer, up to 25 minutes.",
       "Take the puffs out of the oven and quickly remove them from the pans, dunking them straight into the glaze. Roll them over in the glaze to evenly coat and then let the excess glaze drip off. Place each puff onto a cooling rack. If you like, sprinkle them with a little sugar and cinnamon. Enjoy while hot!"
     ],
-    "recipeCategory": "Bread / pastry"
+    "recipeCategory": "Bread / pastry",
+    "recipeURL": "https://www.leannebrown.com/glazed-apple-cider-puffs/"
   },
   {
     "@context": "http://schema.org/",
@@ -2543,7 +2612,8 @@
       "Enjoy the chicken with rice, a big salad or anything else you'd serve chicken with!"
     ],
     "recipeCategory": "Main course",
-    "recipeCuisine": "Korean"
+    "recipeCuisine": "Korean",
+    "recipeURL": "https://www.leannebrown.com/gochujang-roast-chicken/"
   },
   {
     "@context": "http://schema.org/",
@@ -2579,7 +2649,8 @@
       "Serve on its own, or on a bed of rice or noodles. This dish keeps well in a sealed container for 2 to 3 days."
     ],
     "recipeCategory": "Main course",
-    "recipeCuisine": "Korean"
+    "recipeCuisine": "Korean",
+    "recipeURL": "https://www.leannebrown.com/gochujang-tofu-cauliflower/"
   },
   {
     "@context": "http://schema.org/",
@@ -2603,7 +2674,8 @@
       "The ginger syrup here is from the homemade ginger ale recipe so go make that first.",
       "In a glass, mix the ginger syrup with the grapefruit juice with a long spoon. Top with the seltzer and ice."
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/grapefruit-ginger-drink/"
   },
   {
     "@context": "http://schema.org/",
@@ -2630,7 +2702,8 @@
       "Add the cucumbers, red pepper, black olives, feta, lemon juice and a pinch of salt to a mixing bowl and toss it together. Feel totally free to use more or less of any vegetable. This is completely to taste so use more vegetables if you want a noodle bowl really jammed with veggies.",
       "Add the noodles you made earlier and toss everything together."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/greek-salad-noodles/"
   },
   {
     "@context": "http://schema.org/",
@@ -2671,7 +2744,8 @@
       "Add the cream cheese, and cheddar and stir until it melts into the chili. Taste it and adjust salt, pepper and cayenne according to your taste.",
       "Serve the chili with finely chopped scallions or a bit of cilantro on top and some nice crusty bread on the side."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/green-and-white-chili/"
   },
   {
     "@context": "http://schema.org/",
@@ -2695,7 +2769,8 @@
       "Spread 1/4 cup of green chilies evenly over one tortilla. Sprinkle 1/4 cup of cheese over the chilies, then top with half the cilantro. Place another tortilla on top of each prepared tortilla to form a quesadilla. Repeat!",
       "Place a large, non-stick pan on medium heat. Once it\u2019s hot, add a quesadilla and toast for about 1 minute. Flip it over and brown the second side, then do the same for the other quesadilla. Slice into triangles and enjoy with some fresh salsa and sour cream."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/green-chile-cheddar-quesadillas/"
   },
   {
     "@context": "http://schema.org/",
@@ -2729,7 +2804,8 @@
       "Top your toast or make a sandwich or save for later. It should keep for a week or so sealed in a container in the fridge."
     ],
     "recipeCategory": "Sandwich",
-    "recipeCuisine": "American"
+    "recipeCuisine": "American",
+    "recipeURL": "https://www.leannebrown.com/green-chile-egg-salad/"
   },
   {
     "@context": "http://schema.org/",
@@ -2765,7 +2841,8 @@
       "Take the shakshuka off the heat and drizzle yogurt over the top. Alternatively you can serve it and drizzle the yogurt over each bowl.",
       "Serve in bowls with the toast or pita and enjoy!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/green-shakshuka/"
   },
   {
     "@context": "http://schema.org/",
@@ -2808,7 +2885,8 @@
       "If you want to make burritos: Place your tortilla on a clean cutting board. Scoop \u00bc or \u2153 of the rice onto the tortilla (depending on how many you are feeding and appetites!). Top with \u00bc or \u2153 of the fish and vegetable mixture and finally with a dollop of guacamole. Fold the ends of the burrito in toward the centre and roll it up like a carpet. Slice it in half to serve or keep it whole.",
       "For a bowl: Same instructions as above, but scoop into a bowl instead of a burrito. Top with a little chopped cilantro and a squeeze of lime if you have it."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/green-white-fish-burritos-burrito-bowls/"
   },
   {
     "@context": "http://schema.org/",
@@ -2843,7 +2921,8 @@
       "Serve on toasted buns with your favorite condiments and fresh vegetables. Burgers are a great place to be adventurous!",
       "If you won\u2019t eat all the burgers at once, wrap the raw patties in plastic. Refrigerate for a few days or freeze for up to 2 weeks."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/half-veggie-burgers/"
   },
   {
     "@context": "http://schema.org/",
@@ -2883,7 +2962,8 @@
       "Once the brine has simmered for 10 minutes (be sure to put your kitchen fan on during this process as the vinegar smell can get intense and make you cough otherwise) pour the brine over the vegetables in the jars. Fill them up to the brim. It's hard to get this amount just right so you may have some leftover or occasionally you may not have enough. If you don't have enough just boil up another cup of water and vinegar along with a Tbsp of salt and use that to top everything up.",
       "Once the brine has cooled to room temperature place the lids on the jars and seal them. Leave the pickles in the fridge for 2 weeks. Once 2 weeks is up open and enjoy!"
     ],
-    "recipeCategory": "Side dish"
+    "recipeCategory": "Side dish",
+    "recipeURL": "https://www.leannebrown.com/holiday-gift-idea-homemade-sour-dill-pickles/"
   },
   {
     "@context": "http://schema.org/",
@@ -2913,7 +2993,8 @@
       "Pour the syrup through a sieve to catch the ginger. You should have about 1 cup of syrup, if it is a bit less than a cup, add water until it is 1 cup so it isn\u2019t too sweet and syrupy.",
       "To make one drink add 2 Tbsp syrup to a glass and pour \u00bd cup of seltzer on top. Squeeze a little lime into it. If you want to make a larger quantity, mix all the syrup with the liter of seltzer and squeeze lime to taste in each drink."
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/homemade-ginger-ale/"
   },
   {
     "@context": "http://schema.org/",
@@ -2939,7 +3020,8 @@
       "Keep grinding and will start to become a recognizable, chunky peanut butter. But keep going, it will get smoother and looser.",
       "Grind until it reaches a consistency you like. I would suggest that if you like a chunky peanut butter to keep some peanuts aside at the beginning and then break them up a bit with a knife and simply stir them into your creamy peanut butter. Scoop into a jar and enjoy!"
     ],
-    "recipeCategory": "Condiment"
+    "recipeCategory": "Condiment",
+    "recipeURL": "https://www.leannebrown.com/homemade-peanut-butter/"
   },
   {
     "@context": "http://schema.org/",
@@ -2968,7 +3050,8 @@
       "In a cast-iron pan on medium heat melt the butter. Add the honey and chipotle and whisk to combine. Add the sweet potatoes and toss to coat. Sprinkle generously with salt and pepper.",
       "Place the pan in the oven and bake the potatoes for approximately 20 minutes. Test to see if they are cooked through by piercing them with a knife. If it goes in easily they are done. When you take them out of the oven quickly stir them to make sure all of the glaze ends up on the sweet potatoes rather than wasted in the pan!"
     ],
-    "recipeCategory": "Side dish"
+    "recipeCategory": "Side dish",
+    "recipeURL": "https://www.leannebrown.com/honey-and-chipotle-glazed-sweet-potatoes/"
   },
   {
     "@context": "http://schema.org/",
@@ -3009,7 +3092,8 @@
       "Turn off the heat and add the ginger and pinch of salt. Stir and taste. Adjust with more salt, ginger or honey to your taste. Let it cool at room temperature.",
       "To serve, spoon it onto your pudding once the pudding has set just a bit. That way you will have a lovely layer of pudding and a layer of compote. Yum!"
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/honey-pudding-strawberry-ginger-compote/"
   },
   {
     "@context": "http://schema.org/",
@@ -3040,7 +3124,8 @@
       "Throw out the pulpy almond/rice mixture. Now add the vanilla bean paste and 1/2 cup of brown rice syrup. Add the brown rice syrup, whisk it thoroughly, and taste it. If it needs more sweetening add more brown rice syrup. Once you're satisfied with the sweetness pour the Horchata into a jug and put it in the fridge. Serve it in ice filled glasses.",
       "It will keep for a couple of days in the fridge, but not much longer. And honestly, if you can leave it for more than 2 days I will be shocked."
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/horchata/"
   },
   {
     "@context": "http://schema.org/",
@@ -3067,7 +3152,8 @@
       "Scrub the sweet potatoes and stab them with a fork a few times. Lay them on a baking sheet. Bake for 60 to 75 minutes. Because sweet potatoes vary greatly in size, check them after an hour by stabbing with a long knife. If it goes through easily, they're ready. If not, bake longer. Let cool for 15 minutes.",
       "Make a long cut along the top of each potato and open them gently, beating with a fork to fluff up the soft, orange middle. Sprinkle with salt and pepper. Let each person add sour cream and scallions (or more salt and pepper) to their taste."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/jacket-sweet-potatoes/"
   },
   {
     "@context": "http://schema.org/",
@@ -3102,7 +3188,8 @@
       "Toss the kale in the bowl to coat it with dressing. Set aside for 10 minutes or leave in the fridge for a few hours. The kale will become tender as it marinates.",
       "Before serving, toss in the croutons and top with Romano cheese."
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/kale-caesar-salad/"
   },
   {
     "@context": "http://schema.org/",
@@ -3137,7 +3224,8 @@
       "Pack the mixture tightly into a clean 2-liter glass jar with a tight-fitting lid and seal the jar.",
       "Let sit in a cool, dark place for 24 hours (the mixture may bubble). Open the jar to let the gases escape, then reseal and refrigerate at least 48 hours before eating (kimchi is best after fermenting about 1 week). Refrigerate for up to 1 month."
     ],
-    "recipeCategory": "Condiment"
+    "recipeCategory": "Condiment",
+    "recipeURL": "https://www.leannebrown.com/kimchi-and-hot-dogs/"
   },
   {
     "@context": "http://schema.org/",
@@ -3179,7 +3267,8 @@
       "Add enough broth to almost cover the chicken in the pan. Cover with a lid and cook for about 5 minutes, until the sauce thickens and everything is cooked through.",
       "Serve over rice (maybe fried rice) or in a wrap with cooked vegetables like green beans, pea pods, or carrots."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/lemongrass-chile-chicken/"
   },
   {
     "@context": "http://schema.org/",
@@ -3220,7 +3309,8 @@
       "If you have an immersion blender, you can pur\u00e9e the soup in the pot. If you have a normal blender, wait until the soup has cooled before transferring it to the blender. Pur\u00e9e until smooth, then taste again and add any more salt and pepper it might need.",
       "You can enjoy the soup as-is or serve it with another drizzle of coconut milk or a dollop of sour cream, plus some chopped scallions or cilantro."
     ],
-    "recipeCategory": "Soup"
+    "recipeCategory": "Soup",
+    "recipeURL": "https://www.leannebrown.com/lightly-curried-butternut-squash-soup/"
   },
   {
     "@context": "http://schema.org/",
@@ -3262,7 +3352,8 @@
       "Gotta gnaw off every bit of the mango flesh!  Don't worry if it gets stuck in your teeth. You'll get it out ... eventually.",
       "Okay, so now just take your mango and spoon a layer of it into each glass. Top it with some coconut cream and then add the rest of the mango. Then drizzle the rest of the coconut cream overtop aaaaaand you're done! Not much to this one, but it is soooooo delicious and quite rich from the coconut cream. Now pick someone you really love to share this with and enjoy!"
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/mango-coconut-cream-parfait/"
   },
   {
     "@context": "http://schema.org/",
@@ -3287,7 +3378,8 @@
     "recipeInstructions": [
       "Blend the mango and yogurt together (and the vanilla if using). If it's too thick to drink with a straw, add some milk to thin it out. A ripe and juicy mango combined with thin yogurt is often all you need, but if your yogurt is thicker you may need to thin it out. Be warned: if you make this for children, they will request it over and over."
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/mango-lassi/"
   },
   {
     "@context": "http://schema.org/",
@@ -3325,7 +3417,8 @@
       "Lastly, in a large pan, toast the corn tortillas one or more at a time until they are light brown in a couple of spots and bubbles form. This will warm them and make them more pliable.",
       "On each plate assemble the tacos by placing 2 to 3 tortillas on each plate and piling them high first with cabbage slaw and then with tofu."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/marinated-tofu-red-cabbage-peanut-slaw-tacos/"
   },
   {
     "@context": "http://schema.org/",
@@ -3356,7 +3449,8 @@
       "Sprinkle chile powder over the corn, but not too heavy or it'll be gritty. Use any chile powder you like; ancho or cayenne are great.",
       "Lastly, squeeze lime juice all over and serve hot!"
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/mexican-street-corn/"
   },
   {
     "@context": "http://schema.org/",
@@ -3402,7 +3496,8 @@
       "Once they are cool enough to touch use a butter knife to gently unstick the edges of the pie from the tin and remove onto a plate for serving.",
       "Dust them with a little powdered sugar for extra presentation points and serve!"
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/mini-apple-pies/"
   },
   {
     "@context": "http://schema.org/",
@@ -3429,7 +3524,8 @@
       "Mix all the ingredients into a pot and heat on the stove until the beans are warmed through. Give it a stir and serve. Or do it all in the microwave, it works just as well!",
       "Serve with rice, or just in a bowl. For an English-style breakfast, try spreading the beans over toast. Or throw them into a burrito, or scramble them with eggs, or stir-fry with onions and bell pepper."
     ],
-    "recipeCategory": "Side dish"
+    "recipeCategory": "Side dish",
+    "recipeURL": "https://www.leannebrown.com/my-dads-baked-beans/"
   },
   {
     "@context": "http://schema.org/",
@@ -3451,7 +3547,8 @@
       "Cook according to package instructions. Drain the water and sprinkle with a generous amount of oil to keep them from sticking. Approximately 2 Tbsp works for me, but you may need a little more or less. Do what makes sense to you. I like udon or soba noodles, but spaghetti works great. Store them in a sealed container in the fridge.",
       "Honestly, after a night in the fridge they will usually be a little stuck together. It seems unavoidable. But also who cares? Just try your best and they should come apart once you are tossing them in the dressing and vegetables even if they are a bit sticky at first. Okay, that's done. On to the fun part!"
     ],
-    "recipeCategory": "Side dish"
+    "recipeCategory": "Side dish",
+    "recipeURL": "https://www.leannebrown.com/noodles-for-cold-salads/"
   },
   {
     "@context": "http://schema.org/",
@@ -3481,7 +3578,8 @@
       "While the water is coming to a boil, splash the olive oil into a wide pan on medium-high heat. Let it get hot. Add the eggplant cubes and sprinkle them with salt, then cook for about 5 minutes. If the eggplant starts to look too dry, add a bit of water. Once the cubes are a little brown on all sides, add the garlic and chile flakes and stir. Add the tomatoes and cook for about 15 minutes, stirring occasionally. Again, if it looks too dry, add a bit of water. Everything will shrink up and become a sort of loose, thick sauce. Add half the cheese and half the basil, if you have it.",
       "Once the pasta is cooked, drain it and add it to the saucepan. Toss everything together, then turn off the heat. Add salt and pepper to taste. Serve it in bowls sprinkled with more Romano and Basil."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/pasta-eggplant-tomato/"
   },
   {
     "@context": "http://schema.org/",
@@ -3522,7 +3620,8 @@
       "Serve hot with extra parsley and grated Romano. Squeeze a little lemon juice on it if you feel like it.",
       "Serve as is or for a little crunch add some crushed almonds or toasted breadcrumbs."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/pea-pesto-pasta/"
   },
   {
     "@context": "http://schema.org/",
@@ -3557,7 +3656,8 @@
       "Pop the pan into the oven for 25 minutes, until it\u2019s toasty and brown around the edges. Mmm. Crunchy.",
       "Leave the bars in the pan until they cool completely, about an hour, then slice into 12 bars."
     ],
-    "recipeCategory": "Snack"
+    "recipeCategory": "Snack",
+    "recipeURL": "https://www.leannebrown.com/peanut-butter-jelly-granola-bars/"
   },
   {
     "@context": "http://schema.org/",
@@ -3597,7 +3697,8 @@
       "Place a pan on medium heat and add just enough oil to keep things from sticking. Add the broccoli and tofu. Stir-fry gently until the noodles are ready. Once the noodles are cooked, drain all but about 1/2 cup of water and dump the noodles and water into the pan with the tofu and broccoli. Add your peanut sauce and use tongs to swirl, and mix everything together in the pan. Add more water if you need it. It may get a little gummy and you don't want the noodles to stick together too much.",
       "Squeeze lime juice all over the dish and taste. Add salt and pepper as needed and serve it up."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/peanut-sauce-noodles-with-broccoli-and-smoked-tofu/"
   },
   {
     "@context": "http://schema.org/",
@@ -3627,7 +3728,8 @@
       "Splash the vegetable oil in a saucepan on medium heat. Once it\u2019s warm, add the chili, garlic, and shallot and saut\u00e9 until everything\u2019s translucent. Add the turmeric (if using), coconut milk or water, and chile paste if using instead of fresh chile.",
       "Let it come just to a boil, then turn the heat down. Add the peanut butter and soy sauce and stir to\r\ncombine. It should thicken quite a bit. If the oil is separating from the sauce a bit (this can happen from the oil in the coconut milk and the peanut butter, but it's easy to fix!), add water a few drops at a time and whisk until it comes smoothly back together. Once it\u2019s all combined, taste it and add whatever you think it needs\u2014but think about the salt and spice in particular."
     ],
-    "recipeCategory": "Condiment"
+    "recipeCategory": "Condiment",
+    "recipeURL": "https://www.leannebrown.com/peanut-sauce/"
   },
   {
     "@context": "http://schema.org/",
@@ -3671,7 +3773,8 @@
       "Pour the topping over the filling in the pan and use a spatula to spread it as smoothly as possible\u2014it doesn't have to be perfect. Sprinkle the 1/4 cup of pistachios (chopped as finely as possible, ideally in a food processor or coffee grinder) all over the chocolate to finish. Chill the bars in the fridge until they are set.",
       "Once set, cut into 48 small or 24 larger bars. Keep in the fridge. They get soft quickly at room temperature. They freeze well and make great gifts for friends and co-workers!"
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/pistachio-nanaimo-bars/"
   },
   {
     "@context": "http://schema.org/",
@@ -3701,7 +3804,8 @@
       "After you place the dough ball in a bowl and cover it, put it into the fridge overnight. Letting the yeast work\r\novernight creates a better flavor; it also makes the dough more elastic and easier to work with.",
       "The next day, 2 to 3 hours before you want to bake your\r\npizzas, remove the dough from the fridge to return to room temperature."
     ],
-    "recipeCategory": "Undefined"
+    "recipeCategory": "Undefined",
+    "recipeURL": "https://www.leannebrown.com/pizza-dough-2-ways/"
   },
   {
     "@context": "http://schema.org/",
@@ -3728,7 +3832,8 @@
       "Toss the tomatoes, salami, olive oil and basil in the bowl with a healthy pinch of salt, to taste. In addition to bringing out the flavor, the salt will also make the juices from the tomato release so you get a kind of dressing from the tomato juice. Mix it. Add the noodles you made earlier and toss it all together. The juices from the tomatoes will make the noodles very slurpable.",
       "Taste the noodles and add more salt or tomatoes or anything you think it needs. Enjoy!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/pizza-noodles/"
   },
   {
     "@context": "http://schema.org/",
@@ -3768,7 +3873,8 @@
       "To assemble the rolls, scoop 1/8 of the mixture into the center of a roti, distributing it in an even line. Roll it up.",
       "Serve two roti per person with cilantro and a generous dollop of raita, either over the top or on the side."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/potato-kale-roti-rolls-raita/"
   },
   {
     "@context": "http://schema.org/",
@@ -3800,7 +3906,8 @@
       "Now layer it with \u00bc of the potato and leek mixture and \u00bc of the shredded mozzarella. Bake for 5 to 8 minutes. If it\u2019s your first time, simply keep an eye on the oven to see when the pizza\u2019s done. The crust should be light brown and the cheese melted.",
       "Repeat the process until you\u2019ve baked all your pizzas. If your oven is big enough, you can of course do more than one pizza at a time."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/potato-leek-pizza/"
   },
   {
     "@context": "http://schema.org/",
@@ -3838,7 +3945,8 @@
       "After the fries have baked for 20 minutes, remove them\r\nfrom the oven. Lift them with a spatula and test their\r\ntenderness with a fork. If it goes through easily, the fries\r\nare ready. If you want them a little more crispy, flip\r\nthem over and put them back in the over for a few more\r\nminutes.",
       "Once they\u2019re done, pile one layer of fries onto a plate.\r\nTop with cheese and then the hot gravy. Repeat with a\r\nsecond layer before sprinkling with scallions and more\r\nfreshly ground black pepper."
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/poutine/"
   },
   {
     "@context": "http://schema.org/",
@@ -3869,7 +3977,8 @@
       "The next day, add the salt and vanilla and stir. Pour it into a jar.",
       "To make one drink, pour one tablespoon (or shot!) of the syrup in a glass over ice. Top with 1/4 cup of seltzer, (or to taste) and a squeeze of lime if using. I'd suggest making the drinks one at a time to your taste rather than mixing the syrup with the seltzer all at once. There is something ritualistic about mixing up a little drink for yourself so make it part of the experience."
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/pregnancy-whiskey-proxy/"
   },
   {
     "@context": "http://schema.org/",
@@ -3918,7 +4027,8 @@
       "Bake the rolls for 15 to 20 minutes, until they are puffed up and golden. I like them a little gooier\u2014that is, slightly undercooked\u2014so I usually pull them out at 15 to 16 minutes. If you like your buns a little firmer, (or properly cooked!) leave them for the full 20.",
       "If you are making the frosting, use an electric mixer to beat the cream cheese, butter, sugar, and cinnamon together until light and fluffy. It should take 5 to 7 minutes. Once the rolls are room temperature, slather them with frosting and enjoy!"
     ],
-    "recipeCategory": "Bread / pastry"
+    "recipeCategory": "Bread / pastry",
+    "recipeURL": "https://www.leannebrown.com/pumpkin-cinnamon-rolls/"
   },
   {
     "@context": "http://schema.org/",
@@ -3973,7 +4083,8 @@
       "15 minutes before serving, add the cream, sugar and cinnamon to a bowl and whisk until stiff peaks form.",
       "Slice the pie into pieces and serve with a dollop of cinnamon-whipped cream on top. Enjoy your hard work!"
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/pumpkin-pie-with-john-sexton/"
   },
   {
     "@context": "http://schema.org/",
@@ -4011,7 +4122,8 @@
       "Sprinkle with chopped scallions and enjoy with lots of tortilla chips!!",
       "Tip: This is also a great recipe to make in a slow cooker because you can keep it warm in there when you are serving it."
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/queso-fundido/"
   },
   {
     "@context": "http://schema.org/",
@@ -4039,7 +4151,8 @@
       "Stir the squash, pumpkin, or sweet potato with 1\u00bd cups of water, then pour it into a pot with 1 cup of uncooked rice and two pinches of salt. (You can also use frozen, boiled, or saut\u00e9ed squash.) Cook as above.",
       "Chop up the spinach as much as you like. The more finely chopped, the more it will disperse into the rice. Cook normal rice, as above, for about 15 minutes, until most of the water is gone but not quite all. Mix the spinach into the rice. Cook with the lid off for the last 5 minutes. Adding the spinach at the end keeps it lush and bright, rather than the sad color of overcooked spinach."
     ],
-    "recipeCategory": "Side dish"
+    "recipeCategory": "Side dish",
+    "recipeURL": "https://www.leannebrown.com/rainbow-rice/"
   },
   {
     "@context": "http://schema.org/",
@@ -4067,7 +4180,8 @@
       "Chop the ramps roughly and transfer them to a food processor. Add the almonds and romano. Process for about a minute to break everything up. Add the olive oil a bit at a time while processing. Once the pesto is as smooth and runny as you prefer, stop adding olive oil and taste it. Add salt and pepper and taste again. Adjust anything else according to your taste, add more romano or salt as needed. Sometimes if it tastes a little flat you can add a squeeze of lemon to brighten it up.",
       "If you don't have a food processor you can use a hand blender or you can chop it up by hand or with a mortar and pestle. Basically just finely chop and mash everything up. Chunky pestos are delicious!"
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/ramp-pesto/"
   },
   {
     "@context": "http://schema.org/",
@@ -4121,7 +4235,8 @@
       "After you pull the vegetables out of the oven, push\r\nthem around with a spatula to free them from the pan.\r\nRemove any garlic cloves and smash them into a fine\r\npaste (removing the skins at this point), then put the\r\ngarlic back in the pan and mix together.",
       "Squeeze the juice out of any lemons and discard the\r\nwoody bits of any cooked herbs. Add a little more\r\nbutter, a bit of favorite sauce, a little soft cheese or\r\nmayonnaise, and serve."
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/roasted-vegetables-primer/"
   },
   {
     "@context": "http://schema.org/",
@@ -4158,7 +4273,8 @@
       "Taste the salsa. You're looking for a balance of spicy from the peppers, sweet from the tomatoes, and bright and fresh from the herbs and lime juice. If something is out of balance, add the appropriate ingredient to bring it back into balance.",
       "Store in an air-tight container in the fridge. Fresh salsa won't last as long as store-bought salsa because it doesn't have any preservatives, but it's so tasty that I'm sure you'll finish it fast!"
     ],
-    "recipeCategory": "Condiment"
+    "recipeCategory": "Condiment",
+    "recipeURL": "https://www.leannebrown.com/salsa-for-any-season/"
   },
   {
     "@context": "http://schema.org/",
@@ -4189,7 +4305,8 @@
       "Melt 1/2 tablespoon of butter in a small pan on medium heat. Place the two slices of bread in the pan and let them sizzle for about 2 minutes, then lift them with a spatula to check whether they're golden brown underneath. When they are, flip 'em over. Add another 1/2 Tbsp of the butter to the pan to make sure the second side of the toast becomes just as golden as the first. Sprinkle the top of the bread with salt and pepper. Once the second side is golden, set the bread on a plate to await its topping. Repeat if feeding 2.",
       "To make the broccoli: Warm up the oil in a pan on medium heat. Add the garlic and chili flakes and cook for 2 minutes, until they smell great but are not yet brown. Add the anchovy and cook for another minute. Add the broccoli and about xbc cup of water. Cover the pan, steam for 3 minutes, then toss and cook for 2 minutes, until the broccoli is tender and the water is gone. Spoon onto toast; top with cheese, salt, and pepper!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/salty-broccoli-toast/"
   },
   {
     "@context": "http://schema.org/",
@@ -4228,7 +4345,8 @@
       "Once the vegetable mixture has cooked for 25 minutes, quickly top it with small clumps of biscuit dough. The vegetables should still be visible in some areas.",
       "Bake for 10 to 25 minutes or until the vegetables are bubbly and the topping is lightly browned. Top with some more cheddar and some chopped herbs, then enjoy!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/savory-summer-cobbler/"
   },
   {
     "@context": "http://schema.org/",
@@ -4265,7 +4383,8 @@
       "Turn the heat down to low and add the eggs into the pan all at once, gently stirring the eggs and vegetables together using a spatula or wooden spoon. Continue until the eggs are still soft and creamy, but fully cooked.",
       "Turn off the heat and add a sprinkling of cilantro to taste and stir. Spoon onto plates with fresh roti or flat bread or just toast if that's what you have. Sprinkle a little more cilantro and enjoy."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/scrambled-eggs-south-asian-style/"
   },
   {
     "@context": "http://schema.org/",
@@ -4287,7 +4406,8 @@
     "recipeInstructions": [
       "Lightly crush the sprigs of mint in your hand to bruise them and let a little more of their flavor infuse into the drink. Drop them into a tall glass. Drop the lemon and/or lime slices in the same glass. Top with seltzer."
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/seltzer-mint-citrus/"
   },
   {
     "@context": "http://schema.org/",
@@ -4322,7 +4442,8 @@
       "Add a dribble of water to keep everything loose and saucy, then toss in the shrimp. Cook, stirring occasionally, until the shrimp are pink all over. Add salt and pepper to taste.",
       "Once the grits are ready, take them off the heat and add\r\nthe cheese and most of the scallions, then stir. Ladle the\r\ngrits into bowls and top with the shrimp, vegetables,\r\nand a few more scallions."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/shrimp-and-grits/"
   },
   {
     "@context": "http://schema.org/",
@@ -4361,7 +4482,8 @@
       "For the buns, turn on the broiler. Brush the inside of your hot dog buns with the garlic butter generously. It\u2019s traditional to use the New England style buns that have the slit in the top instead of the side, but a side slit will not hurt you. Lay the buns open and as flat as possible on a baking tray under the broiler. Watch carefully until the buns are just beginning to brown. Be careful not to burn them! Get them as toasty as you like.",
       "Heap each bun with shrimp salad and serve! Feel free to drizzle a little leftover garlic butter overtop for extra decadence."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/shrimp-corn-garlic-butter-brushed-rolls/"
   },
   {
     "@context": "http://schema.org/",
@@ -4391,7 +4513,8 @@
       "Taste the oil. If it isn\u2019t strongly spicy, let it infuse for a few more hours. Once it\u2019s ready, strain through a sieve to remove the spices.",
       "Store in a jar in the fridge for up to a week."
     ],
-    "recipeCategory": "Condiment"
+    "recipeCategory": "Condiment",
+    "recipeURL": "https://www.leannebrown.com/sichuan-inspired-spice-oil/"
   },
   {
     "@context": "http://schema.org/",
@@ -4431,7 +4554,8 @@
       "Grab the tough spine of each piece of kale with one hand, then with the other hand clasp the bottom of the leaf and pull up quickly to remove the spine. If some of the spine is left in it's not a problem, but it is tough, so you want to get rid of most of it without sacrificing your tasty leaves. Slice the leaves in half lengthwise, then cut into thin ribbons. Cutting the leaves into thin ribbons will disguise its naturally tough texture. Add the kale to the bowl and toss to coat it with the dressing. Set aside for 10 minutes or leave in the fridge for a few hours. The kale will become more tender if it marinates in the dressing for a while.",
       "Before serving, add the croutons and grate some romano over everything and toss. Then nestle the eggs into the top."
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/soft-boiled-egg-breakfast-salad/"
   },
   {
     "@context": "http://schema.org/",
@@ -4469,7 +4593,8 @@
       "Let the cookies cool on the pan once they come out of the oven for about 2 minutes. As you remove them, sprinkle them with a little bit of kosher salt, if using. They will seem gooey, but they will harden up as they cool. Once they are no longer too soft to move, place the cookies on a wire wrack to cool completely.",
       "Eat right away or store in a sealed container."
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/soft-chewy-brown-sugar-nutmeg-cookies/"
   },
   {
     "@context": "http://schema.org/",
@@ -4505,7 +4630,8 @@
       "Remove the salmon and potatoes from the oven and toss the scallions with the potatoes and mix well to coat everything in butter and scallions.",
       "Dole out a generous pile of potatoes on each plate and top with a piece of salmon and a Tbsp chopped kimchi, if using. This makes a large helping of potatoes so you may have leftovers."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/soy-garlic-glazed-salmon-and-scallion-roasted-potatoes/"
   },
   {
     "@context": "http://schema.org/",
@@ -4537,7 +4663,8 @@
       "With a layer of smashed peas with salt. There's a little smashed cashew on the top too. Very springy!",
       "I know it seems weird, but soy sauce marinated tofu is a great bacon replacement. Here it is with lettuce and tomato. The tomatoes around here are still terrible, so I've used some leftover tomato sauce."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/soy-sauce-tofu-on-toast/"
   },
   {
     "@context": "http://schema.org/",
@@ -4574,7 +4701,8 @@
       "Scoop the polenta into a pair of bowls. Add some Romano and lots of salt and pepper. Layer about half the vegetables over the polenta.",
       "Once the whites of the eggs are cooked, remove the eggs from the pan with a spatula and lay them over the polenta and vegetables. Top with the rest of the vegetables and further sprinklings of cheese."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/spicy-crunchy-creamy-polenta/"
   },
   {
     "@context": "http://schema.org/",
@@ -4609,7 +4737,8 @@
       "Place your cookie sheet with green beans under the broiler. Watch it carefully. You want the green beans to soften and cook and the coconut to get nicely browned, but not burnt. Use an oven mitt and occasionally move the cookie sheet to make sure that the beans and coconut are getting evenly toasted. It will be fast! It took my broiler about 2 minutes to cook the beans and toast the coconut.",
       "Take the beans out of the oven and shovel them into a large bowl. Cover them with the dressing and toss to coat. Serve warm."
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/spicy-double-coconut-green-beans/"
   },
   {
     "@context": "http://schema.org/",
@@ -4638,7 +4767,8 @@
       "The beans should have turned bright green. Add\r\nabout \u00bc cup of water to the pan. Cook another\r\n2 minutes, until the water is mostly gone. Pour\r\nthe sauce into the pan and toss gently to coat.\r\nCook another 2 minutes, until everything is fragrant and most of the liquid is gone. Poke the beans with a fork: if it goes through easily, they\u2019re done. They should take about 5 minutes.",
       "Taste and add more chili sauce or soy sauce if you want the beans hotter or saltier."
     ],
-    "recipeCategory": "Side dish"
+    "recipeCategory": "Side dish",
+    "recipeURL": "https://www.leannebrown.com/spicy-green-beans/"
   },
   {
     "@context": "http://schema.org/",
@@ -4674,7 +4804,8 @@
       "Place 4 small or two large tortillas on two plates. Pile the filling evenly onto one half of the tortilla. Sprinkle a bit of cheddar cheese on top if using. Now, with the filling side facing you, fold the left and right sides of the tortilla over the filling and then, working from the side closest to you, gently roll the tortilla over to create a tight roll.",
       "Slice it in half and serve it with salsa on the side and cilantro leaves sprinkled on top."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/spicy-potato-and-black-bean-burritos/"
   },
   {
     "@context": "http://schema.org/",
@@ -4707,7 +4838,8 @@
       "Broil for 4 to 7 minutes. The fish will cook very quickly, so after 4 minutes, check to see if they are done by gently inserting a butter knife into the thickest part. If it goes through easily and the fish flakes apart, you're done. If the knife meets resistance and the fish stays together, put the fillets back under the broiler for another few minutes. Once you've done this once or twice, you'll be able to tell when your fish is done at a glance.",
       "When the fish is done, squeeze lime juice all over it. Serve with rice or a favorite side dish like spicy green beans"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/spicy-tilapia-with-lime/"
   },
   {
     "@context": "http://schema.org/",
@@ -4736,7 +4868,8 @@
       "In a small bowl add the chimichurri (make your own!), olive oil, lime juice and water and mix together. Taste it and add a little salt and pepper if you think it needs it.",
       "Pour the dressing over the greens and mix together with your hands so everything is coated. Serve immediately."
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/spring-greens-asparagus-salad-chimichurri-dressing/"
   },
   {
     "@context": "http://schema.org/",
@@ -4769,7 +4902,8 @@
       "Throw the cucumbers, strawberries and bread cubes into the bowl with the dressing. Toss everything to coat and to mingle with the strawberry juices. Let the salad sit for about 10 minutes to let the bread soak up the juices. Taste it and add more salt or lemon juice according to your taste.",
       "You can add a sprinkling of sugar if you want to bring out the sweetness in the salad. Add finely chopped basil or mint leaves if you have them."
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/strawberry-panzanella-salad/"
   },
   {
     "@context": "http://schema.org/",
@@ -4805,7 +4939,8 @@
       "Place the chile halves facing upward in a greased baking dish. Fill each chile with the black bean filling. Bake for 30 minutes.",
       "Top with chopped avocado, sour cream and cilantro and serve!"
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/stuffed-green-chiles/"
   },
   {
     "@context": "http://schema.org/",
@@ -4843,7 +4978,8 @@
       "Mix the other ingredients in a large bowl. Pour the dressing over just before serving and toss to coat the salad evenly.",
       "Eat immediately, maybe with a few extra tortilla chips on the side. If you'd like some salsa with your salad, make your own!"
     ],
-    "recipeCategory": "Salad"
+    "recipeCategory": "Salad",
+    "recipeURL": "https://www.leannebrown.com/taco-salad/"
   },
   {
     "@context": "http://schema.org/",
@@ -4878,7 +5014,8 @@
       "Once the water is boiling, drop the stem pieces of broccoli into the pot and boil for 1 minute before adding the florets. Boil for another 3 minutes. Remove a piece of broccoli from the water. If it is tender enough that a fork goes through with no resistance you're done. If not, leave them to boil for another minute or two. When tender, pour the broccoli into a strainer and let it stand until it's cool enough to touch. Add salt to the broccoli to taste.",
       "Assembly time! Split the brioche buns in half. Toast them in the toaster oven or under the broiler until light golden. Slather the bottom of the bun in a generous layer of the chili mayo. Top the bottom half with mozzarella and toast again until the mozzarella just begins to melt. Carefully place a layer of broccoli on top of the bottom bun. Sprinkle a few of the toasted garlic pieces on top and continue to add more broccoli until you have used it all up or you worry that your tower of broccoli will not hold. This is like jenga. Try to create a nest that will hold once you bite into the sandwich. Sprinkle with the remaining garlic chips. Slather the top bun half with the rest of the chili mayo and top the sandwich."
     ],
-    "recipeCategory": "Sandwich"
+    "recipeCategory": "Sandwich",
+    "recipeURL": "https://www.leannebrown.com/the-best-broccoli-sandwich/"
   },
   {
     "@context": "http://schema.org/",
@@ -4917,7 +5054,8 @@
       "Ricotta topped with sliced grapes.",
       "Ricotta topped with candied walnuts. Super good and very holiday. I made these by coating them with simple syrup, (equal parts water and sugar boiled until sugar dissolves), salt and a little cayenne pepper powder. Then spread them on a baking tray and baked at 350F for 10 minutes."
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/toasting-the-holidays/"
   },
   {
     "@context": "http://schema.org/",
@@ -4945,7 +5083,8 @@
       "Set a sieve over a bowl and juice the orange, lime and lemon over it so that the sieve will catch any seeds.",
       "Add about 1/3 cup olive oil, and a healthy sprinkling of salt and pepper to the bowl and whisk. Taste it and adjust with more salt and pepper or more olive oil if you think it needs it. Store in a sealed container or glass jar for a couple of weeks. Just be sure to shake it up to mix before using."
     ],
-    "recipeCategory": "Condiment"
+    "recipeCategory": "Condiment",
+    "recipeURL": "https://www.leannebrown.com/triple-citrus-dressing/"
   },
   {
     "@context": "http://schema.org/",
@@ -4971,7 +5110,8 @@
       "Add the olive oil to a saucepan on medium heat. Saut\u00e9 the garlic for 1 minute, until it smells great and becomes translucent. Add the chili flakes and cook for 30 seconds. Add the can of tomatoes, mix, and cook until warmed through. Add a little lemon zest, then salt and pepper to taste. Since canned tomatoes are often already salted, you may not need to add any.",
       "If you want a thicker sauce that will stick to pasta better, cook for 10 to 20 minutes to evaporate more of the liquid. Use immediately or keep in a jar in the fridge for later use."
     ],
-    "recipeCategory": "Condiment"
+    "recipeCategory": "Condiment",
+    "recipeURL": "https://www.leannebrown.com/ultra-simple-tomato-sauce/"
   },
   {
     "@context": "http://schema.org/",
@@ -5016,7 +5156,8 @@
       "Add the rice and slowly pour in the broth. Reduce the heat to medium and let the dish cook until the rice absorbs all the liquid. It should take about 20 to 25 minutes.",
       "If you're using any of the additions, throw them in at about the 15-minute mark to let them warm up."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/vegetable-jambalaya/"
   },
   {
     "@context": "http://schema.org/",
@@ -5052,7 +5193,8 @@
       "Bake the quiche in the oven for 1 hour. Once the surface is lightly brown all the way across, it's fully cooked.",
       "Let the quiche cool for about 20 minutes, then slice into wedges and serve with a side salad."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/vegetable-quiche-hold-the-crust/"
   },
   {
     "@context": "http://schema.org/",
@@ -5089,7 +5231,8 @@
       "Spread half the batter over the bottom of the buttered\r\npan. Evenly distribute 16 of the pear slices over top.\r\n(There should be 32 in total.) Spread the other half of\r\nthe batter over the peaches, then top with the remaining\r\npear slices, perhaps creating a pattern if you feel like it. Sprinkle with a tablespoon or so of sugar and place the cake in the oven.",
       "Bake for 1 hour or until a knife inserted into the center\r\ncomes out clean. Let it cool for about a half hour, but it is delicious if eaten while still warm."
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/warm-brown-sugar-pear-cake/"
   },
   {
     "@context": "http://schema.org/",
@@ -5125,7 +5268,8 @@
       "Next add the farro, and toss. Cook for 2 minutes more just until the farro is warmed up. Add a bit of salt and taste to see if the cauliflower is soft enough for your taste. Add kale and the zest of the lemon. Stir to wilt the kale, it shouldn't take more than a minute.",
       "Add a bit more salt and taste, if it\u2019s a bit under-salted that is okay because you\u2019ll get more saltiness from the goat cheese in a moment. If it tastes good, turn off the heat and add the goat cheese and a generous squeeze of lemon juice. Taste one more time and add more salt, lemon or goat cheese if you think it needs it. Serve warm."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/warm-farro-salad-cauliflower-kale-goat-cheese-lemon/"
   },
   {
     "@context": "http://schema.org/",
@@ -5154,7 +5298,8 @@
       "Leave the jar for 2 to 4 weeks shaking it once each day or when you think of it.",
       "When ready to use, line a strainer with cheese cloth and place it over a bowl. Pour the mixture into the bowl through the strainer. To get every last drop of the good stuff grab the cheese cloth and squeeze all the liquid out into the bowl."
     ],
-    "recipeCategory": "Drink"
+    "recipeCategory": "Drink",
+    "recipeURL": "https://www.leannebrown.com/warmly-spiced-bitters/"
   },
   {
     "@context": "http://schema.org/",
@@ -5192,7 +5337,8 @@
       "In a pan on medium heat melt the last Tbsp of butter. Add the broccoli stem pieces and cook for 2 minutes, tossing occasionally. Add the broccoli crown pieces and salt and cook, tossing now and then, for about 4 minutes, or until just tender. Taste and add more salt if you think it needs it.",
       "To assemble the final dish, turn the heat in the sauce pot to low and add the drained pasta and broccoli. Using a wooden spoon or serving spoon mix everything together to coat it. Heap into bowls and serve."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/welsh-rarebit-mac-cheese-broccoli/"
   },
   {
     "@context": "http://schema.org/",
@@ -5218,7 +5364,8 @@
       "If using frozen fruit, either thaw at room temperature until the fruit no longer has ice crystals clinging to the outside, but still holds it's form. Or you can microwave the fruit for a short time, maybe a minute or so, to defrost faster.",
       "Pile about 1/2 cup of fruit into each bowl or glass. Add about 1/4 cup of whipped cream into each glass and either leave in as is or mix it together as I did in the photographs above. ENJOY!"
     ],
-    "recipeCategory": "Dessert"
+    "recipeCategory": "Dessert",
+    "recipeURL": "https://www.leannebrown.com/whipped-cream-meets-fruit/"
   },
   {
     "@context": "http://schema.org/",
@@ -5258,7 +5405,8 @@
       "Remove the fish and potatoes from the oven. Toss the potatoes back into the bowl you mixed them in before and add a few spoonfuls of chimichurri. Toss and coat!",
       "Drizzle copious amounts of chimichurri sauce all over the fish and serve."
     ],
-    "recipeCategory": "Main course"
+    "recipeCategory": "Main course",
+    "recipeURL": "https://www.leannebrown.com/white-fish-fingerling-potatoes-chimichurri-sauce/"
   },
   {
     "@context": "http://schema.org/",
@@ -5295,7 +5443,8 @@
       "Sprinkle flour on a clean countertop and dump the dough onto it. Gently shape the dough into a disc about 1 1/2 inches thick. Cut the dough into six triangles, like a pizza, and move them to the cookie sheet.",
       "In a small bowl, gently beat the egg for the egg wash. Brush it over the scones, then sprinkle salt and pepper over each one. Bake for 25 minutes or until the scones are golden brown."
     ],
-    "recipeCategory": "Bread / pastry"
+    "recipeCategory": "Bread / pastry",
+    "recipeURL": "https://www.leannebrown.com/whole-wheat-jalapeno-cheddar-scones/"
   },
   {
     "@context": "http://schema.org/",
@@ -5330,7 +5479,8 @@
       "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
       "Sprinkle with the scallions and some paprika for color. Have a great party!"
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/deviled-eggs/"
   },
   {
     "@context": "http://schema.org/",
@@ -5365,7 +5515,8 @@
       "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
       "Sprinkle with the scallions and some paprika for color. Have a great party!"
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/deviled-eggs/"
   },
   {
     "@context": "http://schema.org/",
@@ -5400,7 +5551,8 @@
       "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
       "Sprinkle with the scallions and some paprika for color. Have a great party!"
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/deviled-eggs/"
   },
   {
     "@context": "http://schema.org/",
@@ -5436,7 +5588,8 @@
       "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
       "Sprinkle with the scallions and some paprika for color. Have a great party!"
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/deviled-eggs/"
   },
   {
     "@context": "http://schema.org/",
@@ -5470,7 +5623,8 @@
       "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
       "Sprinkle with the scallions and some paprika for color. Have a great party!"
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/deviled-eggs/"
   },
   {
     "@context": "http://schema.org/",
@@ -5505,6 +5659,7 @@
       "Arrange the whites on a plate and spoon the yolk mixture back into each hole. Pile the filling high! Alternatively, scoop the filling into a plastic sandwich bag. Cut off the corner of the sandwich bag and squeeze the yolk mixture into the whites.",
       "Sprinkle with the scallions and some paprika for color. Have a great party!"
     ],
-    "recipeCategory": "Appetizer"
+    "recipeCategory": "Appetizer",
+    "recipeURL": "https://www.leannebrown.com/deviled-eggs/"
   }
 ]
