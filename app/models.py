@@ -32,6 +32,7 @@ class Recipe(db.Model):
     ingredients = db.relationship('Ingredient', secondary=recipe_ingredients, lazy='subquery',
         backref=db.backref('recipes', lazy=True))
     instructions = db.relationship('Instruction', backref='recipe', lazy=True)
+    categories = db.relationship('Category', backref='recipe', lazy=True)
 
     def __repr__(self):
         return '<Recipe {}>'.format(self.name)

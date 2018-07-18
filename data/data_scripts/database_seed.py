@@ -39,11 +39,14 @@ def create_or_retrieve_category(record):
 for recipe in get_recipes():
     # print(f"Creating recipe {recipe['name']}")
     ingredients = []
+    categories = []
 
     for ingredient in recipe['recipeIngredient']:
         ingredients.append(create_or_retrieve_ingredient(ingredient))
 
     instructions = "\n".join(recipe['recipeInstructions'])
+
+    categories.append(create_or_retrieve_category(recipe['recipeCategory']))
 
     rec = m.Recipe(
         name=recipe['name'],
@@ -56,7 +59,8 @@ for recipe in get_recipes():
         is_included=True,
         # instruction_list=recipe['recipeInstructions'],
         ingredients=ingredients,
-        instructions=[m.Instruction(text=instructions)]
+        instructions=[m.Instruction(text=instructions)],
+        categories=categories
     )
     db.session.add(rec)
     db.session.commit()
