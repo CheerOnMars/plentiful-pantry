@@ -18,7 +18,8 @@ with open('data/ingredients.csv', 'r') as f:
 @app.route('/index')
 def index():
     user = {'username': 'Super Sario'}
-    return render_template('index.html', title='Home', user=user, recipes=json_recipes_struct)
+    recipes = Recipe.query.order_by(Recipe.name.asc())
+    return render_template('index.html', title='Home', user=user, recipes=recipes)
 
 @app.route('/ingredients')
 def ingredients():
@@ -30,3 +31,9 @@ def recipes():
     user = {'username': 'Super Sario'}
     recipes = Recipe.query.order_by(Recipe.name.asc())
     return render_template('recipes.html', title='Recipes', user=user, recipes=recipes)
+
+@app.route('/recipe/<id>')
+def recipe(id):
+    user = {'username': 'Super Sario'}
+    recipe = Recipe.query.get(id)
+    return render_template('recipe.html', title='Recipe', user=user, recipe=recipe)

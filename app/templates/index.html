@@ -4,17 +4,7 @@
     <h1>{{ user.username }}'s Recipes!</h1>
     {% for recipe in recipes %}
     <div><p><b>{{ recipe.name }}</b></p>
-      <ul>
-        {% for ingredient in recipe.recipeIngredient %}
-        <li>  {{ ingredient }}</li>
-        {% endfor %}
-      </ul>
-      <ol>
-        <p><b>Instructions</b></p>
-        {% for step in recipe.recipeInstructions %}
-        <li>  {{ step }}</li>
-        {% endfor %}
-      </ol>
+      <p> {{ recipe.description }} </p>
     </div>
     {% endfor %}
 {% endblock %}
