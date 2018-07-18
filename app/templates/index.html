@@ -3,8 +3,7 @@
 {% block content %}
     <h1>{{ user.username }}'s Recipes!</h1>
     {% for recipe in recipes %}
-    <div><p><b>{{ recipe.name }}</b></p>
-      <p> <a href="{{ url_for('recipe', id=recipe.id) }}">{{ recipe.name }}</a></p>
+    <div><p><b><a href="{{ url_for('recipe', id=recipe.id) }}">{{ recipe.name }}</a></b></p>
       <p> {{ recipe.description }} </p>
     </div>
     {% endfor %}
