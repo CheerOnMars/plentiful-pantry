@@ -106,3 +106,8 @@ venv.bak/
 # misc
 pretrash_files/
 .DS_Store
+TEMP/
+
+# db files
+/app.db
+/migrations/*
