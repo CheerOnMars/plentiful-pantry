@@ -16,7 +16,7 @@ class Ingredient(db.Model):
     is_included = db.Column(db.Boolean)
 
     def __repr__(self):
-        return '<Ingredient {}>'.format(self.name)
+        return '{}'.format(self.name)
 
 class Recipe(db.Model):
     id = db.Column(db.Integer, primary_key=True)
