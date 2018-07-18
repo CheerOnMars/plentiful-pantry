@@ -22,6 +22,20 @@ def create_or_retrieve_ingredient(record):
 
     return ing
 
+def create_instruction(record):
+    """Create or retrieve an instruction.
+
+    If the instruction exists load and return the Model instance.
+    Otherwise create the instruction and return the Model instance.
+    """
+    step = m.Instruction.query.filter_by(text=record).first()
+    if not step:
+        step = m.Instruction(text=record)
+        db.session.add(step)
+        db.session.commit()
+
+    return step
+
 def create_or_retrieve_category(record):
     """Create or retrieve an category.
 
@@ -40,11 +54,14 @@ for recipe in get_recipes():
     # print(f"Creating recipe {recipe['name']}")
     ingredients = []
     categories = []
+    instructions = []
 
     for ingredient in recipe['recipeIngredient']:
         ingredients.append(create_or_retrieve_ingredient(ingredient))
 
-    instructions = "\n".join(recipe['recipeInstructions'])
+    for instruction in recipe['recipeInstructions']:
+        instructions.append(create_instruction(instruction))
+    # instructions = "\n".join(recipe['recipeInstructions'])
 
     categories.append(create_or_retrieve_category(recipe['recipeCategory']))
 
@@ -59,7 +76,8 @@ for recipe in get_recipes():
         is_included=True,
         # instruction_list=recipe['recipeInstructions'],
         ingredients=ingredients,
-        instructions=[m.Instruction(text=instructions)],
+        instructions=instructions,
+        # instructions=[m.Instruction(text=instructions)],
         categories=categories
     )
     db.session.add(rec)

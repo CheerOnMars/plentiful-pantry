@@ -42,7 +42,13 @@ class Instruction(db.Model):
     text = db.Column(db.Text)
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipe.id'))
 
+    def __repr__(self):
+        return '<Instruction {}>'.format(self.text)
+
 class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.Text)
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipe.id'))
+
+    def __repr__(self):
+        return '<Category {}>'.format(self.name)
