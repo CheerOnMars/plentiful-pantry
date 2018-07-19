@@ -51,15 +51,15 @@ class Category(db.Model):
 class Substitution(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     option = db.Column(db.Text)
-    recipe_item_id = db.Column(db.Integer, db.ForeignKey('recipe_item.id'))
+    recipe_ingredient_id = db.Column(db.Integer, db.ForeignKey('recipe_ingredient.id'))
 
 class RecipeIngredient(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipe.id'))
     ingredient_id = db.Column(db.Integer, db.ForeignKey('ingredient.id'))
     is_optional = db.Column(db.Boolean)
-    substitutions = db.relationship('Substitution', backref='recipeItem', lazy=True)
+    substitutions = db.relationship('Substitution', backref='RecipeIngredient', lazy=True)
     ingredient_text = db.Column(db.Text)
 
     def __repr__(self):
-        return '<Recipe Item {}>'.format(self.name)
+        return '<Recipe Ingredient {}>'.format(self.name)
