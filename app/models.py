@@ -1,17 +1,15 @@
 from datetime import datetime
 from app import db
 
-recipe_ingredients = db.Table('recipe_ingredients',
-    db.Column('recipe_id', db.Integer, db.ForeignKey('recipe.id'), primary_key=True),
-    db.Column('ingredient_id', db.Integer, db.ForeignKey('ingredient.id'), primary_key=True)
-)
+# recipe_ingredients = db.Table('recipe_ingredients',
+#     db.Column('recipe_id', db.Integer, db.ForeignKey('recipe.id'), primary_key=True),
+#     db.Column('ingredient_id', db.Integer, db.ForeignKey('ingredient.id'), primary_key=True)
+# )
 
 class Ingredient(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), index=True, unique=True)
     category = db.Column(db.Text)
-    subcategory = db.Column(db.Text)
-    storage_location = db.Column(db.Text)
     is_present = db.Column(db.Boolean)
     is_included = db.Column(db.Boolean)
 
@@ -28,11 +26,9 @@ class Recipe(db.Model):
     recipe_yield = db.Column(db.Text)
     url = db.Column(db.Text)
     is_included = db.Column(db.Boolean)
-    # instruction_list = db.Column(db.Text)
     ingredients = db.relationship('Ingredient', secondary=recipe_ingredients, lazy='subquery',
         backref=db.backref('recipes', lazy=True))
     instructions = db.relationship('Instruction', backref='recipe', lazy=True)
-    categories = db.relationship('Category', backref='recipe', lazy=True)
 
     def __repr__(self):
         return '<Recipe {}>'.format(self.name)
@@ -48,7 +44,22 @@ class Instruction(db.Model):
 class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.Text)
-    recipe_id = db.Column(db.Integer, db.ForeignKey('recipe.id'))
 
     def __repr__(self):
         return '<Category {}>'.format(self.name)
+
+class Substitution(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    option = db.Column(db.Text)
+    recipe_item_id = db.Column(db.Integer, db.ForeignKey('recipe_item.id'))
+
+class RecipeIngredient(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    recipe_id = db.Column(db.Integer, db.ForeignKey('recipe.id'))
+    ingredient_id = db.Column(db.Integer, db.ForeignKey('ingredient.id'))
+    is_optional = db.Column(db.Boolean)
+    substitutions = db.relationship('Substitution', backref='recipeItem', lazy=True)
+    ingredient_text = db.Column(db.Text)
+
+    def __repr__(self):
+        return '<Recipe Item {}>'.format(self.name)

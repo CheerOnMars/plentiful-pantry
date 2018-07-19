@@ -1,7 +1,27 @@
 import os
 import json
+import csv
 from app import db, models as m
 
+""" Seed Ingredient """
+def get_ingredients():
+    with open('data/ingredients.csv', 'r') as f:
+        reader = csv.reader(f)
+        recipe_list = list(reader)
+        return recipe_list
+
+for ingredient in get_ingredients():
+    ing = m.Ingredient(
+        name=ingredient[0].capitalize(),
+        category=ingredient[1],
+        is_present= True if ingredient[2] == "True" else False,
+        is_included = True
+    )
+
+    db.session.add(ing)
+    db.session.commit()
+
+""" Seed Recipe and corresponding tables"""
 def get_recipes():
     recipes_file = os.path.join(os.path.dirname(__file__), '..', 'recipes.json')
     # import pdb; pdb.set_trace()
@@ -14,9 +34,9 @@ def create_or_retrieve_ingredient(record):
     If the ingredient exists load and return the Model instance.
     Otherwise create the ingredient and return the Model instance.
     """
-    ing = m.Ingredient.query.filter_by(name=record).first()
+    ing = m.RecipeIngredient.query.filter_by(ingredient_text=record).first()
     if not ing:
-        ing = m.Ingredient(name=record)
+        ing = m.RecipeIngredient(ingredient_text=record)
         db.session.add(ing)
         db.session.commit()
 
@@ -78,7 +98,7 @@ for recipe in get_recipes():
         ingredients=ingredients,
         instructions=instructions,
         # instructions=[m.Instruction(text=instructions)],
-        categories=categories
+        # categories=categories
     )
     db.session.add(rec)
     db.session.commit()
