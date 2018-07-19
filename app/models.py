@@ -26,7 +26,7 @@ class Recipe(db.Model):
     recipe_yield = db.Column(db.Text)
     url = db.Column(db.Text)
     is_included = db.Column(db.Boolean)
-    ingredients = db.relationship('Ingredient', secondary=recipe_ingredients, lazy='subquery',
+    ingredients = db.relationship('Ingredient', secondary='RecipeIngredient', lazy='subquery',
         backref=db.backref('recipes', lazy=True))
     instructions = db.relationship('Instruction', backref='recipe', lazy=True)
 
