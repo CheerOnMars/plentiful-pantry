@@ -43,29 +43,29 @@ def create_instruction(record):
 
     return step
 
-# def create_or_retrieve_category(record):
-#     """Create or retrieve an category.
-#
-#     If the category exists load and return the Model instance.
-#     Otherwise create the ingredicategoryent and return the Model instance.
-#     """
-#     cat = m.Category.query.filter_by(name=record).first()
-#     if not cat:
-#         cat = m.Category(name=record)
-#         db.session.add(cat)
-#         db.session.commit()
+def create_or_retrieve_category(record):
+    """Create or retrieve an category.
+
+    If the category exists load and return the Model instance.
+    Otherwise create the ingredicategoryent and return the Model instance.
+    """
+    cat = m.Category.query.filter_by(name=record).first()
+    if not cat:
+        cat = m.Category(name=record)
+        db.session.add(cat)
+        db.session.commit()
 
     return cat
 
 def run_it():
     for recipe in get_recipes():
-        # categories = []
+        categories = []
         instructions = []
 
         for instruction in recipe['recipeInstructions']:
             instructions.append(create_instruction(instruction))
 
-        # categories.append(create_or_retrieve_category(recipe['recipeCategory']))
+        categories.append(create_or_retrieve_category(recipe['recipeCategory']))
 
         rec = m.Recipe(
             name=recipe['name'],
