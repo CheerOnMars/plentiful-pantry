@@ -47,7 +47,7 @@ class Recipe(db.Model):
     url = db.Column(db.Text)
     is_included = db.Column(db.Boolean)
     ingredients = db.relationship('RecipeIngredient', back_populates='recipe', uselist=True)
-    # instructions = db.relationship('Instruction', backref='recipe', lazy=True)
+    instructions = db.relationship('Instruction', backref='recipe', lazy=True)
 
     def __repr__(self):
         return '<Recipe {}>'.format(self.name)
@@ -66,6 +66,8 @@ class Category(db.Model):
 
     def __repr__(self):
         return '<Category {}>'.format(self.name)
+
+# class Inventory(db.Model):
 
 # class Substitution(db.Model):
 #     id = db.Column(db.Integer, primary_key=True)
