@@ -1,11 +1,6 @@
 from datetime import datetime
 from app import db
 
-# recipe_ingredients = db.Table('recipe_ingredients',
-#     db.Column('recipe_id', db.Integer, db.ForeignKey('recipe.id'), primary_key=True),
-#     db.Column('ingredient_id', db.Integer, db.ForeignKey('ingredient.id'), primary_key=True)
-# )
-
 class RecipeIngredient(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipe.id'))
@@ -33,7 +28,7 @@ class Ingredient(db.Model):
     inventory =  db.relationship('Inventory', backref='ingredient', lazy='dynamic')
 
     def __repr__(self):
-        return '{}'.format(self.name)
+        return '<Ingredient {}>'.format(self.name)
 
 class Recipe(db.Model):
     id = db.Column(db.Integer, primary_key=True)
