@@ -68,7 +68,7 @@ class Inventory(db.Model):
     # ingredient = db.relationship('Ingredient', back_populates='inventory', uselist=True)
 
     def __repr__(self):
-        return '<Inventory {}>'.format(self.ingredient_id)
+        return '<Inventory {}>'.format(self.is_present)
 
 class Substitution(db.Model):
     id = db.Column(db.Integer, primary_key=True)
