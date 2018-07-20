@@ -1,7 +1,7 @@
 import os
 from flask import render_template, flash, redirect, url_for, request
 from app import app, db
-from app.models import Recipe, Ingredient, Instruction, Category, RecipeIngredient
+from app.models import Recipe, Ingredient, Instruction, Category, RecipeIngredient, Inventory, Substitution
 from app.forms import InventoryForm
 
 # import pdb; pdb.set_trace()

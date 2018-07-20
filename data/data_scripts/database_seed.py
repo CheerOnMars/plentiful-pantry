@@ -16,12 +16,16 @@ for ingredient in get_ingredients():
     ing = m.Ingredient(
         name=ingredient[0],
         category=ingredient[1],
-        is_present= True if ingredient[2] == "True" else False,
-        is_included = True
+        # is_present= True if ingredient[2] == "True" else False,
+        # is_included = True
     )
 
     db.session.add(ing)
     db.session.commit()
+
+
+""" Seed Inventory """
+
 
 """ Seed Recipe and corresponding tables"""
 def get_recipes():
@@ -75,7 +79,7 @@ def run_it():
             source = "Good and Cheap by Leann Brown",
             recipe_yield=recipe['recipeYield'],
             url=recipe['recipeURL'],
-            is_included=True,
+            # is_included=True,
             instructions=instructions,
             # ingredients=recipe_ingredients,
         )
