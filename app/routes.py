@@ -1,18 +1,19 @@
 import os
 from flask import render_template, flash, redirect, url_for, request
 from app import app, db
-from app.models import Recipe, Ingredient, Instruction, Category
+from app.models import Recipe, Ingredient, Instruction, Category, RecipeIngredient, Inventory, Substitution
+from app.forms import InventoryForm
 
 # import pdb; pdb.set_trace()
 
-import json
-with open('data/recipes.json') as f:
-    json_recipes_struct = json.load(f)
-
-import csv
-with open('data/ingredients.csv', 'r') as f:
-    reader = csv.reader(f)
-    csv_ingredients_struct = list(reader)
+# import json
+# with open('data/recipes.json') as f:
+#     json_recipes_struct = json.load(f)
+#
+# import csv
+# with open('data/ingredients.csv', 'r') as f:
+#     reader = csv.reader(f)
+#     csv_ingredients_struct = list(reader)
 
 @app.route('/')
 @app.route('/index')
@@ -37,3 +38,9 @@ def recipe(id):
     user = {'username': 'Super Sario'}
     recipe = Recipe.query.get(id)
     return render_template('recipe.html', title='Recipe', user=user, recipe=recipe)
+
+@app.route('/inventory')
+def inventory():
+    ingredients = Ingredient.query.order_by(Ingredient.name.asc())
+    form = InventoryForm()
+    return render_template('inventory.html', title='Inventory', form=form, ingredients=ingredients)

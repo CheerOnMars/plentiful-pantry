@@ -1,5 +1,4 @@
-ingredient_name,ingredient_category,is_present,ingredient_subcategory,storage_location
-adobo sauce,Condiments,False
+adobo sauce,Condiments,True
 all spice,Spices,True
 allspice berries,Spices,True
 almonds,Nuts,True
@@ -279,10 +278,10 @@ vodka,Beverage,True
 whipping cream,Dairy/Dairy Substitutes,True
 white beans,Beans,True
 white fish,Meat/Fish,True
-white rice,Grains,True
 white vinegar,Oils/Vinegars,True
 winter squash,Produce,True
 Worcestershire sauce,Condiments,True
 wrap,Grains,True
 Yogurt,Dairy/Dairy Substitutes,True
 zucchini,Produce,True
+Water,Beverage,True
