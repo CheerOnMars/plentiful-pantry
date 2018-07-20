@@ -50,15 +50,11 @@ class Instruction(db.Model):
     text = db.Column(db.Text)
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipe.id'))
 
-    def __repr__(self):
-        return '<Instruction {}>'.format(self.text)
 
 class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.Text)
 
-    def __repr__(self):
-        return '<Category {}>'.format(self.name)
 
 class Inventory(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -67,13 +63,7 @@ class Inventory(db.Model):
 
     # ingredient = db.relationship('Ingredient', back_populates='inventory', uselist=True)
 
-    def __repr__(self):
-        return '<Inventory {}>'.format(self.is_present)
-
 class Substitution(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     option = db.Column(db.Text)
     recipe_ingredient_id = db.Column(db.Integer, db.ForeignKey('recipe_ingredient.id'))
-
-    def __repr__(self):
-        return '<Substitution {}>'.format(self.option)
