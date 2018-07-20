@@ -6,15 +6,6 @@ from app.forms import InventoryForm
 
 # import pdb; pdb.set_trace()
 
-# import json
-# with open('data/recipes.json') as f:
-#     json_recipes_struct = json.load(f)
-#
-# import csv
-# with open('data/ingredients.csv', 'r') as f:
-#     reader = csv.reader(f)
-#     csv_ingredients_struct = list(reader)
-
 @app.route('/')
 @app.route('/index')
 def index():
@@ -25,7 +16,8 @@ def index():
 @app.route('/ingredients')
 def ingredients():
     user = {'username': 'Super Sario'}
-    return render_template('ingredient_list.html', title='Ingredients', user=user, ingredients=csv_ingredients_struct)
+    ingredients = Ingredient.query.order_by(Ingredient.name.asc())
+    return render_template('ingredient_list.html', title='Ingredients', user=user, ingredients=ingredients)
 
 @app.route('/recipes')
 def recipes():
