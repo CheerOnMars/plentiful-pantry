@@ -7,7 +7,7 @@ anchovies,Meat/Fish,True
 apple cider,Beverage,False
 apple cider vinegar,Oils/Vinegars,True
 apples,Produce,False
-Asian noodles,Grains,True
+asian noodles,Grains,True
 asparagus,Produce,False
 avocado,Produce,False
 bacon,Meat/Fish,False
@@ -57,7 +57,7 @@ chickpeas,Beans,True
 chiles,Produce,False
 chili flakes,Spices,True
 chili paste,Spices,True
-Chili pepper,Spices,True
+chili pepper,Spices,True
 chili powder,Spices,True
 chili sauce,Condiments,True
 chimichurri,Condiments,False
@@ -140,8 +140,8 @@ jam,Condiments,True
 kale,Produce,True
 kimchi,Condiments,False
 kohlrabi,Produce,False
-Korean red pepper powder,Spices,False
-Korean salted shrimp,Meat/Fish,False
+korean red pepper powder,Spices,False
+korean salted shrimp,Meat/Fish,False
 lard,Condiments,False
 leeks,Produce,True
 lemon balm leaves,Spices,False
@@ -159,15 +159,16 @@ meat,Meat/Fish,True
 melon,Produce,False
 milk,Dairy/Dairy Substitutes,True
 mint,Spices,True
+misc,Misc,True
 molasses,Baking,True
-Monterey jack,Dairy/Dairy Substitutes,False
+monterey jack,Dairy/Dairy Substitutes,False
 mozzarella,Dairy/Dairy Substitutes,False
 mushrooms,Produce,False
 mustard,Condiments,True
 mustard seeds,Spices,True
 navy beans,Beans,True
 neutral oil,Oils/Vinegars,True
-Non-dairy milk,Dairy/Dairy Substitutes,True
+non-dairy milk,Dairy/Dairy Substitutes,True
 noodles,Grains,True
 nutmeg,Spices,True
 nuts,Nuts,True
@@ -223,7 +224,7 @@ rice wine vinegar,Oils/Vinegars,True
 ricotta cheese,Dairy/Dairy Substitutes,False
 rolled oats,Grains,True
 rolls,Grains,True
-Romano,Dairy/Dairy Substitutes,True
+romano,Dairy/Dairy Substitutes,True
 rosemary,Spices,True
 roti,Grains,False
 sage,Spices,True
@@ -239,7 +240,7 @@ sesame oil,Oils/Vinegars,True
 sesame seeds,Spices,True
 shallots,Produce,True
 shrimp,Meat/Fish,False
-Sichuan,Spices,False
+sichuan,Spices,False
 soba noodles,Grains,True
 sour cream,Dairy/Dairy Substitutes,True
 spaghetti,Grains,True
@@ -256,9 +257,9 @@ sunchokes,Produce,False
 sweet potatoes,Produce,True
 swiss chard,Produce,True
 tahini,Condiments,True
-Tamari/Soy Sauce,Condiments,True
+tamari/Soy Sauce,Condiments,True
 thyme,Spices,True
-Tilapia,Meat/Fish,False
+tilapia,Meat/Fish,False
 tofu,Beans,True
 tomatoes,Produce,True
 tortilla chips,Grains,True
@@ -280,8 +281,8 @@ white beans,Beans,True
 white fish,Meat/Fish,True
 white vinegar,Oils/Vinegars,True
 winter squash,Produce,True
-Worcestershire sauce,Condiments,True
+worcestershire sauce,Condiments,True
 wrap,Grains,True
-Yogurt,Dairy/Dairy Substitutes,True
+yogurt,Dairy/Dairy Substitutes,True
 zucchini,Produce,True
-Water,Beverage,True
+water,Beverage,True
