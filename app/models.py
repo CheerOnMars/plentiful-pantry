@@ -30,7 +30,7 @@ class Ingredient(db.Model):
     name = db.Column(db.String(64), index=True, unique=True)
     category = db.Column(db.Text)
     recipes = db.relationship('RecipeIngredient', back_populates='ingredient', uselist=True)
-    inventory =  db.relationship('Inventory', backref='ingredient', lazy=True)
+    inventory =  db.relationship('Inventory', backref='ingredient', lazy='dynamic')
 
     def __repr__(self):
         return '<Ingredient {}>'.format(self.name)
@@ -73,7 +73,7 @@ class Inventory(db.Model):
     # ingredient = db.relationship('Ingredient', back_populates='inventory', uselist=True)
 
     def __repr__(self):
-        return '<Inventory {}>'.format(self.ingredient_id, self.is_present)
+        return '<Inventory {}>'.format(self.ingredient_id)
 
 class Substitution(db.Model):
     id = db.Column(db.Integer, primary_key=True)
