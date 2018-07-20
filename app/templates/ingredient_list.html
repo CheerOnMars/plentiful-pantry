@@ -4,7 +4,7 @@
     <h1>Ingredient List</h1>
     <ul>
       {% for ingredient in ingredients %}
-      <div><li>{{ ingredient[0].capitalize() }}</li></div>
+      <div><li>{{ ingredient.name.capitalize() }}</li></div>
       {% endfor %}
     </ul>
 {% endblock %}
