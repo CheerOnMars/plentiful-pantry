@@ -23,12 +23,16 @@ def ingredients():
 def recipes():
     user = {'username': 'Super Sario'}
     recipes = Recipe.query.order_by(Recipe.name.asc())
-    return render_template('recipes.html', title='Recipes', user=user, recipes=recipes)
+    recipe_ingredients = RecipeIngredient.query.all()
+    ingredients = Ingredient.query.all()
+    return render_template('recipes.html', title='Recipes', user=user, recipes=recipes, ingredients=ingredients, recipe_ingredients=recipe_ingredients)
 
 @app.route('/recipe/<id>')
 def recipe(id):
     user = {'username': 'Super Sario'}
     recipe = Recipe.query.get(id)
+    recipe_ingredients = RecipeIngredient.query.all()
+    ingredients = Ingredient.query.all()
     return render_template('recipe.html', title='Recipe', user=user, recipe=recipe)
 
 @app.route('/inventory')
