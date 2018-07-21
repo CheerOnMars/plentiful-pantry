@@ -2,47 +2,6 @@
   {
     "@context": "http://schema.org/",
     "@type": "Recipe",
-    "name": "Agua Fresca Every Which Way",
-    "author": {
-      "@type": "Person",
-      "name": "Leanne Brown"
-    },
-    "datePublished": "2017-06-22 11:00:39",
-    "image": "https://www.leannebrown.com/wp-content/uploads/2017/03/agua-fresca.jpg",
-    "description": "A basic recipe for making agua fresca and a bunch of ideas for flavors to make it your own.",
-    "recipeYield": "4 to 6",
-    "recipeIngredient": [
-      "2 cups fruit (chopped)",
-      "4 cups water",
-      "1 tsp vanilla",
-      "lemon juice (to taste)",
-      "lime juices (to taste)",
-      "sugar",
-      "mint leaves",
-      "basil or thai basil",
-      "lemon balm leaves",
-      "blueberry and lemon",
-      "cucumber and lemon",
-      "mango and lime",
-      "melon",
-      "orange",
-      "papaya",
-      "peach and vanilla",
-      "pineapple and mint",
-      "strawberry and basil"
-    ],
-    "recipeInstructions": [
-      "For a very lightly flavored agua fresca, just mix the water and fruit together. Done! Obviously, if you want more fruit flavor, then use less water; if you want less flavor, then use more water.",
-      "I usually run my agua fresca through the blender, however. If you want the drink to be clear, strain the pulpy leftovers of the fruit after blending. If you\u2019re using blueberries or oranges or other fruit with a skin, you\u2019ll almost certainly want to strain it.",
-      "For some fruits, you can also choose to leave the pulp: it\u2019s particularly great when making a melon agua fresca since it mostly disappears.",
-      "Serve over ice. Try some of the variations I\u2019ve suggested or whatever fruits you like!"
-    ],
-    "recipeCategory": "Drink",
-    "recipeURL": "https://www.leannebrown.com/agua-fresca-way/"
-  },
-  {
-    "@context": "http://schema.org/",
-    "@type": "Recipe",
     "name": "Anything Goes Raita",
     "author": {
       "@type": "Person",
