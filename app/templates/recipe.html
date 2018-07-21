@@ -7,19 +7,19 @@
 
   <p> Category: {{ recipe.category }} </p>
   <p> Servings: {{ recipe.recipe_yield }} </p>
-  <p> Ingredients: </p>
+<p><u> Ingredients </u></p>
   <ul>
     {% for ingredient in rec_ingredients %}
-    <li>  {{ ingredient.ingredient.name.capitalize() }}</li>
+    <li>  {{ ingredient.ingredient_text }}</li>
     {% endfor %}
   </ul>
-  <p> Instructions: </p>
+  <p><u> Instructions: </u></p>
   <ol>
     {% for instruction in recipe.instructions %}
     <li>  {{ instruction.text }}</li>
     {% endfor %}
   </ol>
-  <img src={{ recipe.image }} alt={{ recipe.name }} style="width:200px;height:auto;">
+  <img src={{ recipe.image }} alt={{ recipe.name }} style="width:400px;height:auto;">
   <p> Source: <a href={{ recipe.url }}>{{ recipe.source }}</a></p>
 </div>
 {% endblock %}

@@ -3,7 +3,7 @@
 {% block content %}
 <h1>{{ user.username }}'s Recipes!</h1>
 {% for recipe in recipes %}
-<div><p><b>{{ recipe.id }}. {{ recipe.name }}</b></p>
+<div><p><b>{{ recipe.id }}. <a href="{{ url_for('recipe', id=recipe.id) }}">{{ recipe.name }}</a></b></p>
   <p> </p>
   <p> {{ recipe.description }} </p>
   <p> {{ recipe.image }} </p>
@@ -11,12 +11,13 @@
   <p> Source: {{ recipe.source }} </p>
   <p> Servings: {{ recipe.recipe_yield }} </p>
   <p> {{ recipe.url }} </p>
-  <p> {{ recipe.is_included }} </p>
+  <p><u> Ingredients: </u></p>
   <ul>
     {% for ingredient in recipe.ingredients %}
     <li>  {{ ingredient.ingredient.name.capitalize() }}</li>
     {% endfor %}
   </ul>
+  <p><u> Instructions: </u></p>
   <ol>
     {% for instruction in recipe.instructions %}
     <li>  {{ instruction.text }}</li>
