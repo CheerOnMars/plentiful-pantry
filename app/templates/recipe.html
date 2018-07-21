@@ -10,7 +10,7 @@
   <p> Ingredients: </p>
   <ul>
     {% for ingredient in rec_ingredients %}
-    <li>  {{ ingredient.ingredient.name }}</li>
+    <li>  {{ ingredient.ingredient.name.capitalize() }}</li>
     {% endfor %}
   </ul>
   <p> Instructions: </p>
