@@ -14,7 +14,7 @@
   <p> {{ recipe.is_included }} </p>
   <ul>
     {% for ingredient in recipe.ingredients %}
-    <li>  {{ ingredient.name }}</li>
+    <li>  {{ ingredient.ingredient.name.capitalize() }}</li>
     {% endfor %}
   </ul>
   <ol>
