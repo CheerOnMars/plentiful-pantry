@@ -23,7 +23,22 @@ for ingredient in get_ingredients():
 
 
 """ Seed Inventory """
+def get_inventory():
+    with open('data/ingredients.csv', 'r') as f:
+        reader = csv.reader(f)
+        recipe_list = list(reader)
+        return recipe_list
 
+for item in get_inventory():
+    option = item[0]
+    presence = True if item[2] == "True" else False
+    ing = m.Ingredient.query.filter_by(name=option).first()
+    inv = m.Inventory(
+        ingredient=ing,
+        is_present=presence,
+    )
+    db.session.add(inv)
+    db.session.commit()
 
 """ Seed Recipe and corresponding tables"""
 def get_recipes():
