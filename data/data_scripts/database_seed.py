@@ -100,13 +100,14 @@ def run_it():
         for ingredient in recipe['recipeIngredient']:
             ing_name = ingredient_dict[ingredient]
 
+
             ing = m.Ingredient.query.filter(m.Ingredient.name == ing_name).first()
             if not ing:
                 ing = m.Ingredient(name=ing_name)
                 # db.session.add(ing)
                 # db.session.commit()
 
-            association = m.RecipeIngredient(ingredient=ing, is_optional=False)
+            association = m.RecipeIngredient(ingredient=ing, is_optional=False, ingredient_text=ingredient)
             rec.ingredients.append(association)
 
         db.session.add(rec)
