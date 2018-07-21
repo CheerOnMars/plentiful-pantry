@@ -31,9 +31,8 @@ def recipes():
 def recipe(id):
     user = {'username': 'Super Sario'}
     recipe = Recipe.query.get(id)
-    recipe_ingredients = RecipeIngredient.query.all()
-    ingredients = Ingredient.query.all()
-    return render_template('recipe.html', title='Recipe', user=user, recipe=recipe)
+    rec_ingredients = recipe.ingredients
+    return render_template('recipe.html', title='Recipe', user=user, recipe=recipe, rec_ingredients=rec_ingredients)
 
 @app.route('/inventory')
 def inventory():

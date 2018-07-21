@@ -4,13 +4,13 @@
 <div><p><b>{{ recipe.id }}. {{ recipe.name }}</b></p>
   <p> </p>
   <p> {{ recipe.description }} </p>
-   <img src={{ recipe.image }} alt={{ recipe.name }} style="width:400px;height:auto;">
+
   <p> Category: {{ recipe.category }} </p>
   <p> Servings: {{ recipe.recipe_yield }} </p>
   <p> Ingredients: </p>
   <ul>
-    {% for ingredient in recipe.ingredients %}
-    <li>  {{ ingredient.name }}</li>
+    {% for ingredient in rec_ingredients %}
+    <li>  {{ ingredient.ingredient.name }}</li>
     {% endfor %}
   </ul>
   <p> Instructions: </p>
@@ -19,6 +19,7 @@
     <li>  {{ instruction.text }}</li>
     {% endfor %}
   </ol>
-  Source: <a href={{ recipe.url }}>{{ recipe.source }}</a>
+  <img src={{ recipe.image }} alt={{ recipe.name }} style="width:200px;height:auto;">
+  <p> Source: <a href={{ recipe.url }}>{{ recipe.source }}</a></p>
 </div>
 {% endblock %}
