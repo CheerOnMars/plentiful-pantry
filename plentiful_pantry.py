@@ -1,6 +1,10 @@
 from app import app, db
-from app.models import Recipe, Ingredient, Instruction, Category, RecipeIngredient, Inventory, Substitution
+from app.models import Recipe, Ingredient, Instruction, Category,
+    RecipeIngredient, Inventory, Substitution
 
 @app.shell_context_processor
 def make_shell_context():
-    return {'db': db, 'Recipe': Recipe, 'Ingredient': Ingredient, 'Instruction': Instruction, 'Category': Category, 'RecipeIngredient': RecipeIngredient, 'Inventory': Inventory, 'Substitution': Substitution}
+    return {'db': db, 'Recipe': Recipe, 'Ingredient': Ingredient,
+    'Instruction': Instruction, 'Category': Category,
+    'RecipeIngredient': RecipeIngredient, 'Inventory': Inventory,
+    'Substitution': Substitution}

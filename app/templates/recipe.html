@@ -9,7 +9,7 @@
   <p> Servings: {{ recipe.recipe_yield }} </p>
 <p><u> Ingredients </u></p>
   <ul>
-    {% for ingredient in rec_ingredients %}
+    {% for ingredient in recipe_ingredients %}
     <li>  {{ ingredient.ingredient_text }}</li>
     {% endfor %}
   </ul>
@@ -21,5 +21,6 @@
   </ol>
   <img src={{ recipe.image }} alt={{ recipe.name }} style="width:400px;height:auto;">
   <p> Source: <a href={{ recipe.url }}>{{ recipe.source }}</a></p>
+  <p><a href="{{ url_for('edit_recipe', id=recipe.id) }}">Edit recipe</a></p>
 </div>
 {% endblock %}
