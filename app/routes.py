@@ -2,7 +2,7 @@ import os
 from flask import render_template, flash, redirect, url_for, request
 from app import app, db
 from app.models import Recipe, Ingredient, Instruction, Category, RecipeIngredient, Inventory, Substitution
-from app.forms import InventoryForm
+from app.forms import InventoryForm, RecipeForm
 
 # import pdb; pdb.set_trace()
 
@@ -36,6 +36,25 @@ def recipe(id):
 
 @app.route('/inventory')
 def inventory():
-    ingredients = Ingredient.query.order_by(Ingredient.name.asc())
+    # ingredients = Ingredient.query.order_by(Ingredient.name.asc())
+    inventory = Inventory.query.all()
+    produce = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Produce')
+    dairy = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Dairy/Dairy Substitutes')
+    eggs = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Eggs')
+    meat = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Meat/Fish')
+    condiments = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Condiments')
+    spices = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Spices')
+    nuts = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Nuts')
+    beverages = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Beverage')
+    oils = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Oils/Vinegars')
+    grains = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Grains')
+    beans = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Beans')
+    baking = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Baking')
+    dessert = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Dessert')
+    misc = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Misc')
+    categories = [produce, dairy, eggs, meat, condiments, spices, nuts, beverages, oils, grains, beans, baking, dessert, misc]
     form = InventoryForm()
-    return render_template('inventory.html', title='Inventory', form=form, ingredients=ingredients)
+    if form.validate_on_submit():
+        flash('Inventory updated'.format())
+        return redirect('/index')
+    return render_template('inventory.html', title='Inventory', form=form, inventory=inventory, produce=produce, dairy=dairy, eggs=eggs, meat=meat, condiments=condiments, spices=spices, nuts=nuts, beverages=beverages, oils=oils, grains=grains, beans=beans, baking=baking, dessert=dessert, misc=misc, categories=categories)

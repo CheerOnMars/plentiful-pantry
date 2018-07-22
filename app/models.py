@@ -50,18 +50,20 @@ class Instruction(db.Model):
     text = db.Column(db.Text)
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipe.id'))
 
-
 class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.Text)
-
 
 class Inventory(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     ingredient_id = db.Column(db.Integer, db.ForeignKey('ingredient.id'))
     is_present = db.Column(db.Boolean)
 
+    # ingredient = db.relationship('Ingredient', back_populates="inventory")
     # ingredient = db.relationship('Ingredient', back_populates='inventory', uselist=True)
+    # category = db.Column(db.Text, db.ForeignKey('ingredient.category'))
+    # def check_category(self):
+    #     return self.ingredient.category
 
 class Substitution(db.Model):
     id = db.Column(db.Integer, primary_key=True)

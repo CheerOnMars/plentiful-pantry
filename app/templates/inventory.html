@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Manage Food Inventory</h1>
+
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        {% for category in categories %}
+        <ul>
+        {% for ingredient in category %}
+
+        <li><b>{{ ingredient.ingredient.name.capitalize() }}:  </b>
+
+              {{ ingredient.is_present }}
+              {{ form.is_present.label }}
+              {{ form.is_present(size=32) }}
+
+          </li>
+        {% endfor %}
+        </ul>
+        {% endfor %}
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
