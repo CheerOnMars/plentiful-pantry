@@ -74,10 +74,18 @@ def edit_recipe(id):
         recipe.description = form.description.data
         recipe.recipe_yield = form.recipe_yield.data
         recipe.category = form.category.data
-        recipe.image_url = form.image_url.data
+        recipe.image = form.image.data
         recipe.source = form.source.data
-        recipe.recipe_url = form.recipe_url.data
+        recipe.url = form.url.data
         db.session.commit()
         flash('Your changes have been saved.')
         return redirect(url_for('recipe', id=recipe.id))
+    elif request.method == 'GET':
+        form.name.data = recipe.name
+        form.description.data = recipe.description
+        form.recipe_yield.data = recipe.recipe_yield
+        form.category.data = recipe.category
+        form.image.data = recipe.image
+        form.source.data = recipe.source
+        form.url.data = recipe.url
     return render_template('edit_recipe.html', title='Edit Recipe', form=form, recipe=recipe, recipe_ingredients=recipe_ingredients)
