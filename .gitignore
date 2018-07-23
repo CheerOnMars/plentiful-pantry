@@ -108,6 +108,8 @@ pretrash_files/
 /pretrash
 .DS_Store
 TEMP/
+data/__init__.py
+data/data_scripts/__init__.py
 
 # db files
 /app.db
