@@ -11,7 +11,19 @@ from app.forms import InventoryForm, EditRecipeForm
 def index():
     user = {'username': 'Super Sario'}
     recipes = Recipe.query.order_by(Recipe.name.asc())
-    return render_template('index.html', title='Home', user=user, recipes=recipes)
+    condiments = Recipe.query.filter_by(category='Condiment')
+    mains = Recipe.query.filter_by(category='Main course')
+    drinks = Recipe.query.filter_by(category='Drink')
+    sandwiches = Recipe.query.filter_by(category='Sandwich')
+    breads = Recipe.query.filter_by(category='Bread / pastry')
+    salads = Recipe.query.filter_by(category='Salad')
+    desserts = Recipe.query.filter_by(category='Dessert')
+    snacks = Recipe.query.filter_by(category='Snack')
+    sides = Recipe.query.filter_by(category='Side dish')
+    appetizers = Recipe.query.filter_by(category='Appetizer')
+    soups = Recipe.query.filter_by(category='Soup')
+    rec_dict = {condiments: 'Condiments', mains: 'Main courses', drinks: 'Drinks', sandwiches: 'Sandwiches', breads: 'Breads', salads: 'Salads', desserts: 'Desserts', snacks: 'Snacks', desserts: 'Dessert', snacks: 'Snacks', sides: 'Sides', appetizers: 'Appetizers', soups: 'Soup'}
+    return render_template('index.html', title='Home', user=user, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups, rec_dict=rec_dict)
 
 @app.route('/ingredients')
 def ingredients():
@@ -52,7 +64,10 @@ def inventory():
     baking = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Baking')
     dessert = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Dessert')
     misc = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Misc')
-    cat_dict = {produce: 'Product', dairy: 'Dairy', eggs: 'Eggs', meat: 'Meat', condiments: 'Condiments', spices: 'Spices', nuts: 'Nuts', beverages: 'Beverages', oils: 'Oils/Vinegars', grains: 'Grains', beans: "Beans", baking: 'Baking', dessert:'Dessert', misc: 'Misc'}
+    cat_dict = {produce: 'Produce', dairy: 'Dairy', eggs: 'Eggs', meat: 'Meat',
+        condiments: 'Condiments', spices: 'Spices', nuts: 'Nuts',
+        beverages: 'Beverages', oils: 'Oils/Vinegars', grains: 'Grains',
+        beans: "Beans", baking: 'Baking', dessert:'Dessert', misc: 'Misc'}
 
     form = InventoryForm()
     if form.validate_on_submit():
@@ -62,7 +77,11 @@ def inventory():
         # item.is_present = form.is_present.data
         # db.session.commit()
         return redirect(url_for('index'))
-    return render_template('inventory.html', title='Inventory', form=form, inventory=inventory, produce=produce, dairy=dairy, eggs=eggs, meat=meat, condiments=condiments, spices=spices, nuts=nuts, beverages=beverages, oils=oils, grains=grains, beans=beans, baking=baking, dessert=dessert, misc=misc, cat_dict= cat_dict)
+    return render_template('inventory.html', title='Inventory', form=form,
+        inventory=inventory, produce=produce, dairy=dairy, eggs=eggs, meat=meat,
+        condiments=condiments, spices=spices, nuts=nuts, beverages=beverages,
+        oils=oils, grains=grains, beans=beans, baking=baking, dessert=dessert,
+        misc=misc, cat_dict= cat_dict)
 
 @app.route('/edit_recipe/<id>', methods=['GET', 'POST'])
 def edit_recipe(id):
@@ -88,4 +107,5 @@ def edit_recipe(id):
         form.image.data = recipe.image
         form.source.data = recipe.source
         form.url.data = recipe.url
-    return render_template('edit_recipe.html', title='Edit Recipe', form=form, recipe=recipe, recipe_ingredients=recipe_ingredients)
+    return render_template('edit_recipe.html', title='Edit Recipe', form=form,
+        recipe=recipe, recipe_ingredients=recipe_ingredients)

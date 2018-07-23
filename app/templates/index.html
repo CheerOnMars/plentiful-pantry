@@ -1,10 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>{{ user.username }}'s Recipes!</h1>
-    {% for recipe in recipes %}
-    <div><p><b><a href="{{ url_for('recipe', id=recipe.id) }}">{{ recipe.name }}</a></b></p>
-      <p> {{ recipe.description }} </p>
-    </div>
+  <h1>{{ user.username }}'s Recipes!</h1>
+
+  {% for rec in rec_dict %}
+
+  <b>{{ rec_dict[rec] }}</b>
+    {% for recipe in rec %}
+
+      <div><p><b><a href="{{ url_for('recipe', id=recipe.id) }}">{{ recipe.name }}</a></b> {{ recipe.description }} </p>
+      </div>
+
     {% endfor %}
+
+  {% endfor %}
+
 {% endblock %}
