@@ -4,12 +4,14 @@
     <h1>Manage Food Inventory</h1>
 
     <form action="" method="post" novalidate>
+            <p>{{ form.submit() }}</p>
         {{ form.hidden_tag() }}
-        {% for cat in categories %}
+        {% for cat in cat_dict %}
+        <b>{{ cat_dict[cat] }}</b>
         <ul>
         {% for ingredient in cat %}
 
-        <li><b>{{ ingredient.ingredient.name.capitalize() }}:  </b>
+          <li>{{ ingredient.id }}. {{ ingredient.ingredient.name.capitalize() }}:
 
               {{ ingredient.is_present }}
               {{ form.is_present.label }}
@@ -19,6 +21,6 @@
         {% endfor %}
         </ul>
         {% endfor %}
-        <p>{{ form.submit() }}</p>
+
     </form>
 {% endblock %}
