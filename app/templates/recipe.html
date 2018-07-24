@@ -12,7 +12,7 @@
 <p><u> Ingredients </u></p>
   <ul>
     {% for ingredient in recipe_ingredients %}
-    <li>  {{ ingredient.ingredient_text }} {{ ingredient.ingredient.inventory.inventory.is_present }}  </li>
+    <li>  {{ ingredient.ingredient_text }}. Ingredient_id: {{ ingredient.ingredient_id }} Inventory: {{ inventory[ingredient.ingredient_id].is_present }} </li>
     {% endfor %}
   </ul>
   <p><u> Instructions: </u></p>
