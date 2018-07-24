@@ -112,21 +112,9 @@ def edit_recipe(id):
     return render_template('edit_recipe.html', title='Edit Recipe', form=form,
         recipe=recipe, recipe_ingredients=recipe_ingredients)
 
-@app.route('/')
 @app.route('/options')
 def options():
     user = {'username': 'Super Sario'}
-    recipes = Recipe.query.order_by(Recipe.name.asc())
-    condiments = Recipe.query.filter_by(category='Condiment')
-    mains = Recipe.query.filter_by(category='Main course')
-    drinks = Recipe.query.filter_by(category='Drink')
-    sandwiches = Recipe.query.filter_by(category='Sandwich')
-    breads = Recipe.query.filter_by(category='Bread / pastry')
-    salads = Recipe.query.filter_by(category='Salad')
-    desserts = Recipe.query.filter_by(category='Dessert')
-    snacks = Recipe.query.filter_by(category='Snack')
-    sides = Recipe.query.filter_by(category='Side dish')
-    appetizers = Recipe.query.filter_by(category='Appetizer')
-    soups = Recipe.query.filter_by(category='Soup')
-    rec_dict = {condiments: 'Condiments', mains: 'Main courses', drinks: 'Drinks', sandwiches: 'Sandwiches', breads: 'Breads', salads: 'Salads', desserts: 'Desserts', snacks: 'Snacks', desserts: 'Dessert', snacks: 'Snacks', sides: 'Sides', appetizers: 'Appetizers', soups: 'Soup'}
-    return render_template('options.html', title='Options', user=user, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups, rec_dict=rec_dict)
+    all_recipes = Recipe.query.order_by(Recipe.name.asc())
+    recipes = Recipe.find_options(all_recipes)
+    return render_template('options.html', title='Options', user=user, recipes=recipes)
