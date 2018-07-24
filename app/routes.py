@@ -44,7 +44,8 @@ def recipe(id):
     user = {'username': 'Super Sario'}
     recipe = Recipe.query.get(id)
     recipe_ingredients = recipe.ingredients
-    return render_template('recipe.html', title='Recipe', user=user, recipe=recipe, recipe_ingredients=recipe_ingredients)
+    inventory = Inventory.query.all()
+    return render_template('recipe.html', title='Recipe', user=user, recipe=recipe, recipe_ingredients=recipe_ingredients, inventory=inventory)
 
 @app.route('/inventory', methods=['GET', 'POST'])
 def inventory():
