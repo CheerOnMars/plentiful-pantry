@@ -5,16 +5,28 @@ from app.models import Recipe, Ingredient, Instruction, Category, RecipeIngredie
 from app.forms import InventoryForm, EditRecipeForm
 
 recipe_options = []
+inventory = Inventory.query.all()
 
 beet_salad = Recipe.query.get(11)
 
 print (beet_salad)
-
+cookable = True
 for ingredient in beet_salad.ingredients:
-    print (ingredient)
+    print (ingredient.ingredient_id, ingredient.ingredient.name, inventory[ingredient.ingredient_id].is_present)
+    # print (inventory[ingredient.ingredient_id].is_present)
 
-inventory = Inventory.query.all()
+    # print (ingredient.ingredient.name)
+    if inventory[ingredient.ingredient_id].is_present == False:
+        cookable = False
+        print (cookable)
+        print ()
 
+# inventory = Inventory.query.all()
+#
+print (cookable)
 
-for ing in inventory:
-    print (ing.is_present)
+if cookable == True
+
+#
+# for ing in inventory:
+#     print (ing.is_present)
