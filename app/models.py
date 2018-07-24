@@ -41,11 +41,21 @@ class Recipe(db.Model):
     url = db.Column(db.Text)
     ingredients = db.relationship('RecipeIngredient', back_populates='recipe', uselist=True)
     instructions = db.relationship('Instruction', backref='recipe', lazy=True)
-
-    # def find_options:
-    #     recipe_options = []
-
-
+    
+    def find_options(set):
+        recipe_options = []
+        inventory = Inventory.query.all()
+        recipes = Recipe.query.all()
+        for recipe in recipes:
+            cookable = True
+            print (recipe)
+            for ingredient in recipe.ingredients:
+                if ingredient.ingredient.name != 'water':
+                    if inventory[ingredient.ingredient_id-1].is_present == False:
+                        cookable = False
+            if cookable == True:
+                recipe_options.append(recipe)
+        return recipe_options
 
     def __repr__(self):
         return '<Recipe {}>'.format(self.name)
