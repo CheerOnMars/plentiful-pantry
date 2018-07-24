@@ -27,3 +27,20 @@ Requests module
 
 Beautiful Soup
   - pip install beautifulsoup4
+
+Heroku
+ - heroku apps:create plentiful-pantry
+
+Heroku Postgres Database
+ - heroku addons:add heroku-postgresql:hobby-dev
+ - URL for the newly created database is stored in a DATABASE_URL environment variable
+ - heroku config:set LOG_TO_STDOUT=1
+ - heroku addons:create searchbox:starter
+
+Requirements
+- pip freeze > requirements.txt
+- pip install -r requirements.txt
+
+Procfile
+  - heroku config:set FLASK_APP=plentiful_pantry.py
+
