@@ -42,4 +42,4 @@ Requirements
 - pip install -r requirements.txt
 
 Procfile
-  - heroku config:set FLASK_APP=plentiful_pantry.py
+  - heroku config:set FLASK_APP=plentiful-pantry.py
