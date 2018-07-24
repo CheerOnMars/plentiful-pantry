@@ -50,6 +50,7 @@ def recipe(id):
 @app.route('/inventory', methods=['GET', 'POST'])
 def inventory():
     # ingredients = Ingredient.query.order_by(Ingredient.name.asc())
+    ingredients = Ingredient.query.all()
     inventory = Inventory.query.all()
     produce = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Produce')
     dairy = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Dairy/Dairy Substitutes')
