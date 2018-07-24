@@ -42,6 +42,11 @@ class Recipe(db.Model):
     ingredients = db.relationship('RecipeIngredient', back_populates='recipe', uselist=True)
     instructions = db.relationship('Instruction', backref='recipe', lazy=True)
 
+    # def find_options:
+    #     recipe_options = []
+
+
+
     def __repr__(self):
         return '<Recipe {}>'.format(self.name)
 
