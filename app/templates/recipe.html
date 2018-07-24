@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p><a href="{{ url_for('recipe', id=recipe.id-1) }}">Previous recipe</a>
-<a href="{{ url_for('recipe', id=recipe.id+1) }}">Next recipe</a></p>
+<section class="recipe-nav"><a href="{{ url_for('recipe', id=recipe.id-1) }}"> Previous recipe </a>
+<a href="{{ url_for('recipe', id=recipe.id+1) }}"> Next recipe </a></section>
+<section class="recipe-container">
 <div><p><b>{{ recipe.id }}. {{ recipe.name }}</b></p>
   <p> </p>
   <p> {{ recipe.description }} </p>
@@ -23,7 +24,7 @@
   </ol>
   <img src={{ recipe.image }} alt={{ recipe.name }} style="width:400px;height:auto;">
   <p> Source: <a href={{ recipe.url }}>{{ recipe.source }}</a></p>
-  <p><a href="{{ url_for('edit_recipe', id=recipe.id) }}">Edit recipe</a></p>
-
+  <p><a class="recipe-pic" href="{{ url_for('edit_recipe', id=recipe.id) }}">Edit recipe</a></p>
 </div>
+</section>
 {% endblock %}
