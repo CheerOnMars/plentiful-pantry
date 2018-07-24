@@ -2,9 +2,9 @@
 
 {% block app_content %}
 
-<a href="{{ url_for('recipe', id=recipe.id-1) }}"> Previous recipe </a> |
-<a href="{{ url_for('recipe', id=recipe.id+1) }}"> Next recipe </a> |
-<a href="{{ url_for('edit_recipe', id=recipe.id) }}"> Edit recipe </a>
+<a href="{{ url_for('main.recipe', id=recipe.id-1) }}"> Previous recipe </a> |
+<a href="{{ url_for('main.recipe', id=recipe.id+1) }}"> Next recipe </a> |
+<a href="{{ url_for('main.edit_recipe', id=recipe.id) }}"> Edit recipe </a>
 
 <h1>{{ recipe.id }}. {{ recipe.name }}</h1>
 
@@ -21,11 +21,11 @@
       {% if inventory[ingredient.ingredient_id-1].is_present == True %}
     </td>
     <td>
-      <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Remove  </a>
+      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id) }}"> Remove  </a>
     </td>
     {% else %}
     <td>
-      <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Add  </a>
+      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id) }}"> Add  </a>
     </td>
     {% endif %}
   </tr>

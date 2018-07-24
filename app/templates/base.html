@@ -14,13 +14,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ url_for('index') }}">Plentiful Pantry | <small> Making the most of your groceries</small></a>
+      <a class="navbar-brand" href="{{ url_for('main.index') }}">Plentiful Pantry | <small> Make the most of your groceries! </small></a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="{{ url_for('index') }}">Recipe Index</a></li>
-        <li><a href="{{ url_for('inventory') }}">Inventory</a> </li>
-        <li><a href="{{ url_for('options') }}">Options</a></li>
+        <li><a href="{{ url_for('main.index') }}">Recipe Index</a></li>
+        <li><a href="{{ url_for('main.inventory') }}">Inventory</a> </li>
+        <li><a href="{{ url_for('main.options') }}">Options</a></li>
       </ul>
     </div>
   </div>

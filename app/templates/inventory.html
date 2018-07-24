@@ -20,11 +20,11 @@
     <td>  </td>
     {% if ingredient.is_present == True %}
     <td>
-      <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Remove  </a>
+      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id) }}"> Remove  </a>
     </td>
     {% else %}
     <td>
-      <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Add  </a>
+      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id) }}"> Add  </a>
     </td>
     {% endif %}
   </tr>

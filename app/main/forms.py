@@ -1,3 +1,4 @@
+from flask import request
 from flask_wtf import FlaskForm
 from wtforms import StringField, BooleanField, SubmitField, IntegerField, TextAreaField
 from wtforms.validators import DataRequired, ValidationError, DataRequired, EqualTo

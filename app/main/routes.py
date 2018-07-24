@@ -1,16 +1,17 @@
-import os
-from flask import render_template, flash, redirect, url_for, request
-from app import app, db
+from flask import render_template, flash, redirect, url_for, request, current_app
+from app import db
 from app.models import Recipe, Ingredient, Instruction, Category, RecipeIngredient, Inventory, Substitution
-from app.forms import EditRecipeForm, EditInventoryForm
+from app.main.forms import EditRecipeForm, EditInventoryForm
+from app.main import bp
 
 # import pdb; pdb.set_trace()
 
-@app.route('/')
+@bp.route('/')
 def home():
     return render_template('home.html', title='Home')
 
-@app.route('/index')
+
+@bp.route('/index')
 def index():
     user = {'username': 'Super Sario'}
     recipes = Recipe.query.order_by(Recipe.name.asc())
@@ -28,7 +29,8 @@ def index():
     rec_dict = {condiments: 'Condiments', mains: 'Main courses', drinks: 'Drinks', sandwiches: 'Sandwiches', breads: 'Breads', salads: 'Salads', desserts: 'Desserts', snacks: 'Snacks', desserts: 'Dessert', snacks: 'Snacks', sides: 'Sides', appetizers: 'Appetizers', soups: 'Soup'}
     return render_template('index.html', title='Index', user=user, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups, rec_dict=rec_dict)
 
-@app.route('/recipe/<id>')
+
+@bp.route('/recipe/<id>')
 def recipe(id):
     user = {'username': 'Super Sario'}
     recipe = Recipe.query.get(id)
@@ -36,7 +38,8 @@ def recipe(id):
     inventory = Inventory.query.all()
     return render_template('recipe.html', title='Recipe', user=user, recipe=recipe, recipe_ingredients=recipe_ingredients, inventory=inventory)
 
-@app.route('/edit_recipe/<id>', methods=['GET', 'POST'])
+
+@bp.route('/edit_recipe/<id>', methods=['GET', 'POST'])
 def edit_recipe(id):
     recipe = Recipe.query.get(id)
     recipe_ingredients = recipe.ingredients
@@ -51,7 +54,7 @@ def edit_recipe(id):
         recipe.url = form.url.data
         db.session.commit()
         flash('Your changes have been saved.')
-        return redirect(url_for('recipe', id=recipe.id))
+        return redirect(url_for('main.recipe', id=recipe.id))
     elif request.method == 'GET':
         form.name.data = recipe.name
         form.description.data = recipe.description
@@ -63,7 +66,8 @@ def edit_recipe(id):
     return render_template('edit_recipe.html', title='Edit Recipe', form=form,
         recipe=recipe, recipe_ingredients=recipe_ingredients)
 
-@app.route('/inventory')
+
+@bp.route('/inventory')
 def inventory():
     ingredients = Ingredient.query.all()
     inventory = Inventory.query.all()
@@ -85,7 +89,8 @@ def inventory():
 
     return render_template('inventory.html', title='Inventory', inventory=inventory, produce=produce, dairy=dairy, eggs=eggs, meat=meat, condiments=condiments, spices=spices, nuts=nuts, beverages=beverages, oils=oils, grains=grains, beans=beans, baking=baking, dessert=dessert, misc=misc, cat_dict= cat_dict)
 
-@app.route('/options')
+
+@bp.route('/options')
 def options():
     user = {'username': 'Super Sario'}
     all_recipes = Recipe.query.order_by(Recipe.name.asc())
@@ -93,15 +98,17 @@ def options():
 
     return render_template('options.html', title='Options', user=user, recipes=recipes)
 
-@app.route('/inventory/toggle/<id>', methods=['GET', 'POST'])
+
+@bp.route('/inventory/toggle/<id>', methods=['GET', 'POST'])
 def toggle_inventory_item(id):
     inventory_item = Inventory.query.get(id)
     inventory_item.toggle_status()
     db.session.commit()
-    return redirect(url_for('inventory'))
+    return redirect(url_for('main.inventory'))
+
 
 """Holding pen for routes that will likely soon retire"""
-# @app.route('/recipes')
+# @bp.route('/recipes')
 # def recipes():
 #     user = {'username': 'Super Sario'}
 #     recipes = Recipe.query.order_by(Recipe.name.asc())
@@ -109,7 +116,7 @@ def toggle_inventory_item(id):
 #     ingredients = Ingredient.query.all()
 #     return render_template('recipes.html', title='Recipes', user=user, recipes=recipes, ingredients=ingredients, recipe_ingredients=recipe_ingredients)
 #
-# @app.route('/ingredients')
+# @bp.route('/ingredients')
 # def ingredients():
 #     user = {'username': 'Super Sario'}
 #     ingredients = Ingredient.query.order_by(Ingredient.name.asc())
