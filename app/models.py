@@ -41,7 +41,7 @@ class Recipe(db.Model):
     url = db.Column(db.Text)
     ingredients = db.relationship('RecipeIngredient', back_populates='recipe', uselist=True)
     instructions = db.relationship('Instruction', backref='recipe', lazy=True)
-    
+
     def find_options(set):
         recipe_options = []
         inventory = Inventory.query.all()
@@ -73,6 +73,14 @@ class Inventory(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     ingredient_id = db.Column(db.Integer, db.ForeignKey('ingredient.id'))
     is_present = db.Column(db.Boolean)
+
+    def show_status(self):
+        if self.is_present == True:
+            status = "In Stock"
+        else:
+            status = "Out of Stock"
+        print (str(status))
+
 
     # ingredient = db.relationship('Ingredient', back_populates="inventory")
     # ingredient = db.relationship('Ingredient', back_populates='inventory', uselist=True)
