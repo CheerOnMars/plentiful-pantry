@@ -25,12 +25,6 @@ def index():
     rec_dict = {condiments: 'Condiments', mains: 'Main courses', drinks: 'Drinks', sandwiches: 'Sandwiches', breads: 'Breads', salads: 'Salads', desserts: 'Desserts', snacks: 'Snacks', desserts: 'Dessert', snacks: 'Snacks', sides: 'Sides', appetizers: 'Appetizers', soups: 'Soup'}
     return render_template('index.html', title='Home', user=user, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups, rec_dict=rec_dict)
 
-@app.route('/ingredients')
-def ingredients():
-    user = {'username': 'Super Sario'}
-    ingredients = Ingredient.query.order_by(Ingredient.name.asc())
-    return render_template('ingredient_list.html', title='Ingredients', user=user, ingredients=ingredients)
-
 @app.route('/recipes')
 def recipes():
     user = {'username': 'Super Sario'}
@@ -46,28 +40,6 @@ def recipe(id):
     recipe_ingredients = recipe.ingredients
     inventory = Inventory.query.all()
     return render_template('recipe.html', title='Recipe', user=user, recipe=recipe, recipe_ingredients=recipe_ingredients, inventory=inventory)
-
-@app.route('/inventory')
-def inventory():
-    ingredients = Ingredient.query.all()
-    inventory = Inventory.query.all()
-    produce = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Produce')
-    dairy = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Dairy/Dairy Substitutes')
-    eggs = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Eggs')
-    meat = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Meat/Fish')
-    condiments = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Condiments')
-    spices = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Spices')
-    nuts = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Nuts')
-    beverages = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Beverage')
-    oils = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Oils/Vinegars')
-    grains = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Grains')
-    beans = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Beans')
-    baking = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Baking')
-    dessert = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Dessert')
-    misc = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Misc')
-    cat_dict = {produce: 'Produce', dairy: 'Dairy', eggs: 'Eggs', meat: 'Meat', condiments: 'Condiments', spices: 'Spices', nuts: 'Nuts', beverages: 'Beverages', oils: 'Oils/Vinegars', grains: 'Grains', beans: "Beans", baking: 'Baking', dessert:'Dessert', misc: 'Misc'}
-
-    return render_template('inventory.html', title='Inventory', inventory=inventory, produce=produce, dairy=dairy, eggs=eggs, meat=meat, condiments=condiments, spices=spices, nuts=nuts, beverages=beverages, oils=oils, grains=grains, beans=beans, baking=baking, dessert=dessert, misc=misc, cat_dict= cat_dict)
 
 @app.route('/edit_recipe/<id>', methods=['GET', 'POST'])
 def edit_recipe(id):
@@ -96,19 +68,33 @@ def edit_recipe(id):
     return render_template('edit_recipe.html', title='Edit Recipe', form=form,
         recipe=recipe, recipe_ingredients=recipe_ingredients)
 
-@app.route('/inventory/edit/<id>', methods=['GET', 'POST'])
-def edit_inventory_item(id):
-    inventory_item = Inventory.query.get(id)
+@app.route('/ingredients')
+def ingredients():
+    user = {'username': 'Super Sario'}
+    ingredients = Ingredient.query.order_by(Ingredient.name.asc())
+    return render_template('ingredient_list.html', title='Ingredients', user=user, ingredients=ingredients)
+
+@app.route('/inventory')
+def inventory():
     ingredients = Ingredient.query.all()
-    form = EditInventoryForm()
-    if form.validate_on_submit():
-        inventory_item.is_present = form.is_present.data
-        db.session.commit()
-        flash('Your changes have been saved.')
-        return redirect(url_for('edit_inventory_item', id=inventory_item.id+1))
-    elif request.method == 'GET':
-        form.is_present.data = inventory_item.is_present
-    return render_template('item_inventory.html', title='Edit Inventory Item', form=form, inventory_item=inventory_item, ingredients=ingredients)
+    inventory = Inventory.query.all()
+    produce = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Produce')
+    dairy = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Dairy/Dairy Substitutes')
+    eggs = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Eggs')
+    meat = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Meat/Fish')
+    condiments = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Condiments')
+    spices = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Spices')
+    nuts = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Nuts')
+    beverages = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Beverage')
+    oils = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Oils/Vinegars')
+    grains = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Grains')
+    beans = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Beans')
+    baking = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Baking')
+    dessert = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Dessert')
+    misc = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Misc')
+    cat_dict = {produce: 'Produce', dairy: 'Dairy', eggs: 'Eggs', meat: 'Meat', condiments: 'Condiments', spices: 'Spices', nuts: 'Nuts', beverages: 'Beverages', oils: 'Oils/Vinegars', grains: 'Grains', beans: "Beans", baking: 'Baking', dessert:'Dessert', misc: 'Misc'}
+
+    return render_template('inventory.html', title='Inventory', inventory=inventory, produce=produce, dairy=dairy, eggs=eggs, meat=meat, condiments=condiments, spices=spices, nuts=nuts, beverages=beverages, oils=oils, grains=grains, beans=beans, baking=baking, dessert=dessert, misc=misc, cat_dict= cat_dict)
 
 @app.route('/options')
 def options():
@@ -132,3 +118,24 @@ def update_inventory_item(id):
     elif request.method == 'GET':
         form.is_present.data = inventory_item.is_present
     return render_template('_inv_sfrm.html', title='Edit Inventory Item', form=form, inventory_item=inventory_item, ingredients=ingredients)
+
+@app.route('/inventory/edit/<id>', methods=['GET', 'POST'])
+def edit_inventory_item(id):
+    inventory_item = Inventory.query.get(id)
+    ingredients = Ingredient.query.all()
+    form = EditInventoryForm()
+    if form.validate_on_submit():
+        inventory_item.is_present = form.is_present.data
+        db.session.commit()
+        flash('Your changes have been saved.')
+        return redirect(url_for('edit_inventory_item', id=inventory_item.id+1))
+    elif request.method == 'GET':
+        form.is_present.data = inventory_item.is_present
+    return render_template('item_inventory.html', title='Edit Inventory Item', form=form, inventory_item=inventory_item, ingredients=ingredients)
+
+@app.route('/inventory/toggle/<id>', methods=['GET', 'POST'])
+def toggle_inventory_item(id):
+    inventory_item = Inventory.query.get(id)
+    inventory_item.toggle_status()
+    db.session.commit()
+    return redirect(url_for('inventory'))

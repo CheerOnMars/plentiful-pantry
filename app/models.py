@@ -80,6 +80,11 @@ class Inventory(db.Model):
         else:
             return "Out of Stock"
 
+    def toggle_status(self):
+        if self.is_present == True:
+            self.is_present = False
+        else:
+            self.is_present = True
 
 class Substitution(db.Model):
     id = db.Column(db.Integer, primary_key=True)

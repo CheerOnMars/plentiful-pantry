@@ -16,6 +16,8 @@
       <tr>
         <td> {{ ingredient.ingredient.name.capitalize() }}: </td>
         <td> {{ ingredient.show_status() }} </td>
+        <td> <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Toggle  </a> </td>
+        <td>  - </td>
         <td> <a href="{{ url_for('update_inventory_item', id=ingredient.id) }}"> Update  </a> </td>
       </tr>
       {% endfor %}
