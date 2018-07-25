@@ -7,6 +7,9 @@ from app.forms import EditRecipeForm, EditInventoryForm
 # import pdb; pdb.set_trace()
 
 @app.route('/')
+def home():
+    return render_template('home.html', title='Home')
+
 @app.route('/index')
 def index():
     user = {'username': 'Super Sario'}
@@ -23,7 +26,7 @@ def index():
     appetizers = Recipe.query.filter_by(category='Appetizer')
     soups = Recipe.query.filter_by(category='Soup')
     rec_dict = {condiments: 'Condiments', mains: 'Main courses', drinks: 'Drinks', sandwiches: 'Sandwiches', breads: 'Breads', salads: 'Salads', desserts: 'Desserts', snacks: 'Snacks', desserts: 'Dessert', snacks: 'Snacks', sides: 'Sides', appetizers: 'Appetizers', soups: 'Soup'}
-    return render_template('index.html', title='Home', user=user, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups, rec_dict=rec_dict)
+    return render_template('index.html', title='Index', user=user, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups, rec_dict=rec_dict)
 
 @app.route('/recipes')
 def recipes():
@@ -72,7 +75,7 @@ def edit_recipe(id):
 def ingredients():
     user = {'username': 'Super Sario'}
     ingredients = Ingredient.query.order_by(Ingredient.name.asc())
-    return render_template('ingredient_list.html', title='Ingredients', user=user, ingredients=ingredients)
+    return render_template('ingredients.html', title='Ingredients', user=user, ingredients=ingredients)
 
 @app.route('/inventory')
 def inventory():
@@ -103,35 +106,6 @@ def options():
     recipes = Recipe.find_options(all_recipes)
 
     return render_template('options.html', title='Options', user=user, recipes=recipes)
-
-"""Test - can I loop through?"""
-@app.route('/inventory/update/<id>', methods=['GET', 'POST'])
-def update_inventory_item(id):
-    inventory_item = Inventory.query.get(id)
-    ingredients = Ingredient.query.all()
-    form = EditInventoryForm()
-    if form.validate_on_submit():
-        inventory_item.is_present = form.is_present.data
-        db.session.commit()
-        flash('Your changes have been saved.')
-        return redirect(url_for('inventory'))
-    elif request.method == 'GET':
-        form.is_present.data = inventory_item.is_present
-    return render_template('_inv_sfrm.html', title='Edit Inventory Item', form=form, inventory_item=inventory_item, ingredients=ingredients)
-
-@app.route('/inventory/edit/<id>', methods=['GET', 'POST'])
-def edit_inventory_item(id):
-    inventory_item = Inventory.query.get(id)
-    ingredients = Ingredient.query.all()
-    form = EditInventoryForm()
-    if form.validate_on_submit():
-        inventory_item.is_present = form.is_present.data
-        db.session.commit()
-        flash('Your changes have been saved.')
-        return redirect(url_for('edit_inventory_item', id=inventory_item.id+1))
-    elif request.method == 'GET':
-        form.is_present.data = inventory_item.is_present
-    return render_template('item_inventory.html', title='Edit Inventory Item', form=form, inventory_item=inventory_item, ingredients=ingredients)
 
 @app.route('/inventory/toggle/<id>', methods=['GET', 'POST'])
 def toggle_inventory_item(id):
