@@ -42,7 +42,7 @@ class Recipe(db.Model):
     ingredients = db.relationship('RecipeIngredient', back_populates='recipe', uselist=True)
     instructions = db.relationship('Instruction', backref='recipe', lazy=True)
 
-    def find_options(set):
+    def find_options(self):
         recipe_options = []
         inventory = Inventory.query.all()
         recipes = Recipe.query.all()

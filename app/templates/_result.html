@@ -1,6 +1,6 @@
 <section class="recipe-thumbnail">
   <figure>
-    <img class="thumbnail" src={{ recipe.image }} alt={{ recipe.name }}>
+    <img class="thumbnail" width="100px" src={{ recipe.image }} alt={{ recipe.name }}>
     <figcaption>
       <a href="{{ url_for('recipe', id=recipe.id) }}">{{ recipe.name }}</a>
     </figcaption>
