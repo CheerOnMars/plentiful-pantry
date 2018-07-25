@@ -1,34 +1,38 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-<section class="main">
-  <section class="page-headline">
-    <h1>Manage Food Inventory</h1>
-  </section>
 
-  <section class="inventory-form">
+<h1>Manage Food Inventory</h1>
 
-    {% for cat in cat_dict %}
-    <p>{{ cat_dict[cat] }}</p>
+{% for cat in cat_dict %}
+<h4> {{ cat_dict[cat] }}</h4>
 
-    <table class="ingredient-list">
-      {% for ingredient in cat %}
-      <tr>
-        <td width=auto> {{ ingredient.ingredient.name.capitalize() }}: </td>
-        <td width=100px> {{ ingredient.show_status() }} </td>
-        <td>  </td>
-        {% if ingredient.is_present == True %}
-        <td>  <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Remove  </a> </td>
-        {% else %}
-        <td>  <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Add  </a> </td>
-        {% endif %}
-      </tr>
-      {% endfor %}
-    </table>
+<table class="table table-hover">
 
-    {% endfor %}
+  {% for ingredient in cat %}
+  <tr>
+    <td>
+     {{ ingredient.ingredient.name.capitalize() }}
+    </td>
+    <td >
+      {{ ingredient.show_status() }}
+    </td>
+    <td>  </td>
+    {% if ingredient.is_present == True %}
+    <td>
+      <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Remove  </a>
+    </td>
+    {% else %}
+    <td>
+      <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Add  </a>
+    </td>
+    {% endif %}
+  </tr>
+  {% endfor %}
 
-  </section>
+</table>
 
-</section>
+{% endfor %}
+
+
 {% endblock %}

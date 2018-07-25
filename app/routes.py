@@ -28,14 +28,6 @@ def index():
     rec_dict = {condiments: 'Condiments', mains: 'Main courses', drinks: 'Drinks', sandwiches: 'Sandwiches', breads: 'Breads', salads: 'Salads', desserts: 'Desserts', snacks: 'Snacks', desserts: 'Dessert', snacks: 'Snacks', sides: 'Sides', appetizers: 'Appetizers', soups: 'Soup'}
     return render_template('index.html', title='Index', user=user, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups, rec_dict=rec_dict)
 
-@app.route('/recipes')
-def recipes():
-    user = {'username': 'Super Sario'}
-    recipes = Recipe.query.order_by(Recipe.name.asc())
-    recipe_ingredients = RecipeIngredient.query.all()
-    ingredients = Ingredient.query.all()
-    return render_template('recipes.html', title='Recipes', user=user, recipes=recipes, ingredients=ingredients, recipe_ingredients=recipe_ingredients)
-
 @app.route('/recipe/<id>')
 def recipe(id):
     user = {'username': 'Super Sario'}
@@ -70,12 +62,6 @@ def edit_recipe(id):
         form.url.data = recipe.url
     return render_template('edit_recipe.html', title='Edit Recipe', form=form,
         recipe=recipe, recipe_ingredients=recipe_ingredients)
-
-@app.route('/ingredients')
-def ingredients():
-    user = {'username': 'Super Sario'}
-    ingredients = Ingredient.query.order_by(Ingredient.name.asc())
-    return render_template('ingredients.html', title='Ingredients', user=user, ingredients=ingredients)
 
 @app.route('/inventory')
 def inventory():
@@ -113,3 +99,18 @@ def toggle_inventory_item(id):
     inventory_item.toggle_status()
     db.session.commit()
     return redirect(url_for('inventory'))
+
+"""Holding pen for routes that will likely soon retire"""
+# @app.route('/recipes')
+# def recipes():
+#     user = {'username': 'Super Sario'}
+#     recipes = Recipe.query.order_by(Recipe.name.asc())
+#     recipe_ingredients = RecipeIngredient.query.all()
+#     ingredients = Ingredient.query.all()
+#     return render_template('recipes.html', title='Recipes', user=user, recipes=recipes, ingredients=ingredients, recipe_ingredients=recipe_ingredients)
+#
+# @app.route('/ingredients')
+# def ingredients():
+#     user = {'username': 'Super Sario'}
+#     ingredients = Ingredient.query.order_by(Ingredient.name.asc())
+#     return render_template('ingredients.html', title='Ingredients', user=user, ingredients=ingredients)

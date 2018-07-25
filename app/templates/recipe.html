@@ -1,50 +1,54 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-<section class="main">
-  <section class="page-headline">
-    <h1>{{ recipe.id }}. {{ recipe.name }}</h1>
-  </section>
 
-  <section class="recipe-nav">
-    <a href="{{ url_for('recipe', id=recipe.id-1) }}"> Previous recipe </a> |
-    <a href="{{ url_for('recipe', id=recipe.id+1) }}"> Next recipe </a> |
-    <a href="{{ url_for('edit_recipe', id=recipe.id) }}"> Edit recipe </a>
-  </section>
+<a href="{{ url_for('recipe', id=recipe.id-1) }}"> Previous recipe </a> |
+<a href="{{ url_for('recipe', id=recipe.id+1) }}"> Next recipe </a> |
+<a href="{{ url_for('edit_recipe', id=recipe.id) }}"> Edit recipe </a>
 
-  <section class="recipe-details">
-    <p> {{ recipe.description }} </p>
-    <p> Category: {{ recipe.category }} </p>
-    <p> Servings: {{ recipe.recipe_yield }} </p>
+<h1>{{ recipe.id }}. {{ recipe.name }}</h1>
 
-    <section class="ingredient-list">
-      <p> Ingredients </p>
-      <ul>
-        {% for ingredient in recipe_ingredients %}
-        <li>
-          {{ ingredient.ingredient_text }}. {{ inventory[ingredient.ingredient_id-1].is_present }}
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
+<p> {{ recipe.description }} </p>
+<p> Category: {{ recipe.category }} </p>
+<p> Servings: {{ recipe.recipe_yield }} </p>
 
-    <section class="instruction-list">
-      <p> Instructions: </p>
-      <ol>
-        {% for instruction in recipe.instructions %}
-        <li> {{ instruction.text }} </li>
-        {% endfor %}
-      </ol>
-    </section>
+<h4> Ingredients </h4>
+<table class="table table-hover">
+  {% for ingredient in recipe_ingredients %}
+  <tr>
+    <td>
+      {{ ingredient.ingredient_text }}
+      {% if inventory[ingredient.ingredient_id-1].is_present == True %}
+    </td>
+    <td>
+      <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Remove  </a>
+    </td>
+    {% else %}
+    <td>
+      <a href="{{ url_for('toggle_inventory_item', id=ingredient.id) }}"> Add  </a>
+    </td>
+    {% endif %}
+  </tr>
+  {% endfor %}
+</table>
 
-    <figure>
-      <img src={{ recipe.image }} alt={{ recipe.name }}>
-      <figcaption class="source-info">
-        Source: <a href={{ recipe.url }}>{{ recipe.source }}</a>
-      </figcaption>
-    </figure>
+<h4> Instructions </h4>
+<table class="table table-hover">
+  {% for instruction in recipe.instructions %}
+  <tr>
+    <td>
+    {{ instruction.text }}
+  </td>
+  </tr>
+  {% endfor %}
+</table>
 
-  </section>
+<figure>
+  <img class="figure-img" width="200px" src={{ recipe.image }} alt={{ recipe.name }}>
+  <figcaption class="figure-caption">
+    Source: <a href={{ recipe.url }}>{{ recipe.source }}</a>
+  </figcaption>
+</figure>
 
-</section>
+
 {% endblock %}

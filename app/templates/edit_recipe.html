@@ -2,24 +2,13 @@
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
-<section class="main">
-  <section class="page-headline">
-    <h1>Edit Recipe</h1>
-  </section>
+<h1>Edit Recipe</h1>
+<div class="row">
+  <div class="row">
+    <div class="col-md-4">
+      {{ wtf.quick_form(form) }}
+    </div>
+  </div>
 
-
-  <form action="" method="post">
-    {{ form.hidden_tag() }}
-    <section class="">
-      <p>{{ form.name.label }}  {{ form.name(size=32) }} </p>
-      <p> {{ form.description.label }} {{ form.description(cols=50, rows=4) }} </p>
-      <p> {{ form.category.label }}  {{ form.category(size=32) }} </p>
-      <p> {{ form.image.label }}  {{ form.image(size=32) }} </p>
-      <p> {{ form.source.label }}  {{ form.source(size=32) }} </p>
-      <p> {{ form.url.label }}  {{ form.url(size=32) }} </p>
-      <p>{{ form.submit() }}</p>
-    </section>
-  </form>
-
-</section>
+</div>
 {% endblock %}
