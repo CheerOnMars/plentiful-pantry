@@ -32,10 +32,9 @@ class InventorySubForm(FlaskForm):
         return self
 
 class EditInventoryForm(FlaskForm):
-    is_present = BooleanField('Present?', validators=[DataRequired()])
+    is_present = BooleanField('Present?')
     submit = SubmitField('Save inventory')
     id = IntegerField('Id')
-    status = BooleanField('Status?', validators=[DataRequired()])
 
     def update_inventory(self, id):
         return self

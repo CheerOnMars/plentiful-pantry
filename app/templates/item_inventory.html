@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 
-
 {% block app_content %}
 <section class="main">
   <section class="page-headline">
@@ -9,18 +8,17 @@
 
   <section class="inventory-nav">
     <a href="{{ url_for('edit_inventory_item', id=inventory_item.id-1) }}"> Previous item </a> |
-    <a href="{{ url_for('edit_inventory_item', id=inventory_item.id+1) }}"> Next item </a> |
+    <a href="{{ url_for('edit_inventory_item', id=inventory_item.id+1) }}"> Next item </a> 
   </section>
 
   <form action="" method="post">
     {{ form.hidden_tag() }}
-    {{ inventory_item.id }}. {{ inventory_item.ingredient.name.capitalize() }}:
+    {{ inventory_item.id }}. {{ inventory_item.ingredient.name.capitalize() }} {{ inventory_item.is_present }}:
 
     {{ form.is_present.label }}
     {{ form.is_present(size=32) }}
     {{ form.submit() }}
   </form>
-
 
 </section>
 {% endblock %}
