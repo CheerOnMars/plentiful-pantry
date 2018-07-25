@@ -1,6 +1,6 @@
 <form action="" method="post">
     {{ form.hidden_tag() }}
-    {{ inventory_item.id }}. {{ inventory_item.ingredient.name.capitalize() }}. In stock? 
+    {{ inventory_item.id }}. {{ inventory_item.ingredient.name.capitalize() }}. In stock?
     {{ form.is_present(size=32) }}
     {{ form.submit() }}
   </form>

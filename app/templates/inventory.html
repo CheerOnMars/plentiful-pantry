@@ -11,15 +11,15 @@
     {% for cat in cat_dict %}
     <p>{{ cat_dict[cat] }}</p>
 
-    <ul class="ingredient-list">
+    <table class="ingredient-list">
       {% for ingredient in cat %}
-      <li>
-        <a href="{{ url_for('update_inventory_item', id=ingredient.id) }}"> Update </a>
-        {{ ingredient.ingredient.name.capitalize() }}:
-        In stock? {{ ingredient.is_present }}
-      </li>
+      <tr>
+        <td> {{ ingredient.ingredient.name.capitalize() }}: </td>
+        <td> {{ ingredient.show_status() }} </td>
+        <td> <a href="{{ url_for('update_inventory_item', id=ingredient.id) }}"> Update  </a> </td>
+      </tr>
       {% endfor %}
-    </ul>
+    </table>
 
     {% endfor %}
 
