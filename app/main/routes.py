@@ -106,11 +106,11 @@ def toggle_inventory_item(id):
     db.session.commit()
     return redirect(url_for('main.inventory'))
 
-
-# @bp.route('/recipe/toggle/<id>/rec<rec>', methods=['GET', 'POST'])
-# def toggle_recipe_item(id):
+#
+# @bp.route('/recipe/toggle/<rec>/<id>', methods=['GET', 'POST'])
+# def toggle_recipe_item(id, rec):
 #     inventory_item = Inventory.query.get(id)
 #     id = Recipe.query.get(rec)
 #     inventory_item.toggle_status()
 #     db.session.commit()
-#     return redirect('/recipe/<id>')
+#     return redirect('/recipe/<rec>')
