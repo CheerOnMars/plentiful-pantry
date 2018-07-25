@@ -2,7 +2,7 @@ import os
 from flask import render_template, flash, redirect, url_for, request
 from app import app, db
 from app.models import Recipe, Ingredient, Instruction, Category, RecipeIngredient, Inventory, Substitution
-from app.forms import InventoryForm, EditRecipeForm, EditInventoryForm
+from app.forms import EditRecipeForm, EditInventoryForm
 
 # import pdb; pdb.set_trace()
 
@@ -47,9 +47,8 @@ def recipe(id):
     inventory = Inventory.query.all()
     return render_template('recipe.html', title='Recipe', user=user, recipe=recipe, recipe_ingredients=recipe_ingredients, inventory=inventory)
 
-@app.route('/inventory', methods=['GET', 'POST'])
+@app.route('/inventory')
 def inventory():
-    # ingredients = Ingredient.query.order_by(Ingredient.name.asc())
     ingredients = Ingredient.query.all()
     inventory = Inventory.query.all()
     produce = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Produce')
@@ -66,27 +65,9 @@ def inventory():
     baking = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Baking')
     dessert = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Dessert')
     misc = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == 'Misc')
-    cat_dict = {produce: 'Produce', dairy: 'Dairy', eggs: 'Eggs', meat: 'Meat',
-        condiments: 'Condiments', spices: 'Spices', nuts: 'Nuts',
-        beverages: 'Beverages', oils: 'Oils/Vinegars', grains: 'Grains',
-        beans: "Beans", baking: 'Baking', dessert:'Dessert', misc: 'Misc'}
+    cat_dict = {produce: 'Produce', dairy: 'Dairy', eggs: 'Eggs', meat: 'Meat', condiments: 'Condiments', spices: 'Spices', nuts: 'Nuts', beverages: 'Beverages', oils: 'Oils/Vinegars', grains: 'Grains', beans: "Beans", baking: 'Baking', dessert:'Dessert', misc: 'Misc'}
 
-    form = InventoryForm()
-    # if form.validate_on_submit():
-    #     # flash('Inventory updated'.format())
-    #     item = Inventory.query.get(8)
-    #     item.is_present = form.is_present.data
-    #     db.session.commit()
-    #     flash('Your changes have been saved.')
-    #     return redirect(url_for('inventory'))
-    # elif request.method == 'GET':
-    #     item = Inventory.query.get(8)
-    #     form.is_present.data = item.is_present
-    return render_template('inventory.html', title='Inventory', form=form,
-        inventory=inventory, produce=produce, dairy=dairy, eggs=eggs, meat=meat,
-        condiments=condiments, spices=spices, nuts=nuts, beverages=beverages,
-        oils=oils, grains=grains, beans=beans, baking=baking, dessert=dessert,
-        misc=misc, cat_dict= cat_dict)
+    return render_template('inventory.html', title='Inventory', inventory=inventory, produce=produce, dairy=dairy, eggs=eggs, meat=meat, condiments=condiments, spices=spices, nuts=nuts, beverages=beverages, oils=oils, grains=grains, beans=beans, baking=baking, dessert=dessert, misc=misc, cat_dict= cat_dict)
 
 @app.route('/edit_recipe/<id>', methods=['GET', 'POST'])
 def edit_recipe(id):
@@ -136,3 +117,18 @@ def options():
     recipes = Recipe.find_options(all_recipes)
 
     return render_template('options.html', title='Options', user=user, recipes=recipes)
+
+"""Test - can I loop through?"""
+@app.route('/inventory/update/<id>', methods=['GET', 'POST'])
+def update_inventory_item(id):
+    inventory_item = Inventory.query.get(id)
+    ingredients = Ingredient.query.all()
+    form = EditInventoryForm()
+    if form.validate_on_submit():
+        inventory_item.is_present = form.is_present.data
+        db.session.commit()
+        flash('Your changes have been saved.')
+        return redirect(url_for('inventory'))
+    elif request.method == 'GET':
+        form.is_present.data = inventory_item.is_present
+    return render_template('_inv_sfrm.html', title='Edit Inventory Item', form=form, inventory_item=inventory_item, ingredients=ingredients)
