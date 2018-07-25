@@ -46,3 +46,6 @@ Procfile
 
 Bootstrap
   - pip install flask-bootstrap
+
+python-dotenv
+  - pip install python-dotenv
