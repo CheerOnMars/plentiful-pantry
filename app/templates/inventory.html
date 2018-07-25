@@ -1,26 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
+<section>
+  <section class="page-headline">
     <h1>Manage Food Inventory</h1>
+  </section>
 
+  <section class="inventory-form">
     <form action="" method="post" novalidate>
-            <p>{{ form.submit() }}</p>
-        {{ form.hidden_tag() }}
-        {% for cat in cat_dict %}
-        <b>{{ cat_dict[cat] }}</b>
-        <ul>
+      <p>{{ form.submit() }}</p>
+      {{ form.hidden_tag() }}
+
+      {% for cat in cat_dict %}
+      <p>{{ cat_dict[cat] }}</p>
+
+      <ul class="ingredient-list">
         {% for ingredient in cat %}
-
-          <li>{{ ingredient.id }}. {{ ingredient.ingredient.name.capitalize() }}:
-
-              {{ ingredient.is_present }}
-              {{ form.is_present.label }}
-              {{ form.is_present(size=32) }}
-
-          </li>
+        <li>{{ ingredient.id }}. {{ ingredient.ingredient.name.capitalize() }}:
+          {{ ingredient.is_present }}
+          {{ form.is_present.label }}
+          {{ form.is_present(size=32) }}
+        </li>
         {% endfor %}
-        </ul>
-        {% endfor %}
+      </ul>
+
+      {% endfor %}
 
     </form>
+  </section>
+
+</section>
 {% endblock %}

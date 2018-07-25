@@ -1,19 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <section class="recipe-collection">
+<section>
+  <section class="page-headline">
+    <h1>{{ user.username }}'s Recipes!</h1>
+  </section>
 
-        <section class="page-headline">
-            <h1>{{ user.username }}'s Recipes!</h1>
-        </section>
+  <section class="recipe-collection">
+    {% for recipe in recipes %}
+    {% include '_result.html' %}
+    {% endfor %}
+  </section>
 
-        <section class="recipe-index">
-
-            {% for recipe in recipes %}
-              {% include '_result.html' %}
-            {% endfor %}
-
-        </section>
-
-    </section>
+</section>
 {% endblock %}

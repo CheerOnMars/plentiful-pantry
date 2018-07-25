@@ -1,30 +1,50 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="recipe-nav"><a href="{{ url_for('recipe', id=recipe.id-1) }}"> Previous recipe </a>
-<a href="{{ url_for('recipe', id=recipe.id+1) }}"> Next recipe </a></section>
-<section class="recipe-container">
-<div><p><b>{{ recipe.id }}. {{ recipe.name }}</b></p>
-  <p> </p>
-  <p> {{ recipe.description }} </p>
+<section>
+  <section class="page-headline">
+    <h1>{{ recipe.id }}. {{ recipe.name }}</h1>
+  </section>
 
-  <p> Category: {{ recipe.category }} </p>
-  <p> Servings: {{ recipe.recipe_yield }} </p>
-<p><u> Ingredients </u></p>
-  <ul>
-    {% for ingredient in recipe_ingredients %}
-    <li>  {{ ingredient.ingredient_text }}. {{ inventory[ingredient.ingredient_id-1].is_present }} </li>
-    {% endfor %}
-  </ul>
-  <p><u> Instructions: </u></p>
-  <ol>
-    {% for instruction in recipe.instructions %}
-    <li>  {{ instruction.text }}</li>
-    {% endfor %}
-  </ol>
-  <img src={{ recipe.image }} alt={{ recipe.name }} style="width:400px;height:auto;">
-  <p> Source: <a href={{ recipe.url }}>{{ recipe.source }}</a></p>
-  <p><a class="recipe-pic" href="{{ url_for('edit_recipe', id=recipe.id) }}">Edit recipe</a></p>
-</div>
+  <section class="recipe-nav">
+    <a href="{{ url_for('recipe', id=recipe.id-1) }}"> Previous recipe </a> |
+    <a href="{{ url_for('recipe', id=recipe.id+1) }}"> Next recipe </a> |
+    <a href="{{ url_for('edit_recipe', id=recipe.id) }}"> Edit recipe </a>
+  </section>
+
+  <section class="recipe-details">
+    <p> {{ recipe.description }} </p>
+    <p> Category: {{ recipe.category }} </p>
+    <p> Servings: {{ recipe.recipe_yield }} </p>
+
+    <section class="ingredient-list">
+      <p> Ingredients </p>
+      <ul>
+        {% for ingredient in recipe_ingredients %}
+        <li>
+          {{ ingredient.ingredient_text }}. {{ inventory[ingredient.ingredient_id-1].is_present }}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="instruction-list">
+      <p> Instructions: </p>
+      <ol>
+        {% for instruction in recipe.instructions %}
+        <li> {{ instruction.text }} </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <figure>
+      <img src={{ recipe.image }} alt={{ recipe.name }}>
+      <figcaption class="source-info">
+        Source: <a href={{ recipe.url }}>{{ recipe.source }}</a>
+      </figcaption>
+    </figure>
+
+  </section>
+
 </section>
 {% endblock %}

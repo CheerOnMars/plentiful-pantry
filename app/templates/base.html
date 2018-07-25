@@ -1,36 +1,40 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Custom styles for this template -->
-    <link href="/static/style.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {% if title %}
-    <title>{{ title }} - Plentiful Pantry </title>
-    {% else %}
-    <title>Welcome to Plentiful Pantry!</title>
-    {% endif %}
 
-  </head>
-    <body>
-      <nav>
-        <div>Plentiful Pantry:
-        <a href="{{ url_for('index') }}">Home</a>
-        <a href="{{ url_for('ingredients') }}">Ingredient List</a>
-        <a href="{{ url_for('recipes') }}">All Recipes</a>
-        <a href="{{ url_for('inventory') }}">Inventory</a>
-        <a href="{{ url_for('options') }}">Options</a>
-        </div>
-      </nav>
-        <hr>
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <ul>
-          {% for message in messages %}
-          <li>{{ message }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-{% endwith %}
-        {% block content %}{% endblock %}
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <!-- Custom styles for this template -->
+  <link href="/static/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% if title %}
+  <title>{{ title }} - Plentiful Pantry </title>
+  {% else %}
+  <title>Welcome to Plentiful Pantry!</title>
+  {% endif %}
+</head>
+
+<body>
+  <nav>
+    Plentiful Pantry
+    <a href="{{ url_for('index') }}">Home</a> |
+    <a href="{{ url_for('ingredients') }}">Ingredient List</a> |
+    <a href="{{ url_for('recipes') }}">All Recipes</a> |
+    <a href="{{ url_for('inventory') }}">Inventory</a> |
+    <a href="{{ url_for('options') }}">Options</a>
+  </nav>
+  <hr>
+
+  <section class="flashed-messages">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </section>
+
+</body>
 </html>

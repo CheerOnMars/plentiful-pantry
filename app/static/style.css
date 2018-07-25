@@ -1,123 +1,79 @@
 
-html * {
-  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
-}
-
 body {
-  background-color: lightgrey;
-  background-size: 100% auto;
-}
 
-footer {
-  margin-top: 5em;
-  padding: 1em;
-  text-align: center;
-  border-top: 1px solid black;
-}
-
-h1, h2, h3, h4, h5 {
-  font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
 }
 
 img {
-  /* margin: 1em auto; */
   border: 1px solid black;
-}
-
-figure {
-  text-align: center;
-  width: 10em;
-}
-
-figcaption {
-  height: 2.5em;
+  width: 20em;
+  height: auto
 }
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
 }
 
-.font {
+label {
 
+}
+
+p {
+
+}
+
+ul {
+
+}
+
+ol {
+
+}
+
+li {
+
+}
+
+.thumbnail {
+  width: 10em;
+  height: auto;
 }
 
 .page-headline {
   text-align: center;
-  padding: 1em;
+}
+
+.recipe-nav {
+  text-align: center;
+}
+
+.ingredient-list {
+
+}
+
+.instruction-list {
+
 }
 
 .recipe-collection {
-  text-align: center;
+
 }
 
-.recipe-index {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.recipe-details {
+  
 }
 
-.recipe-index-name{
-  text-align: center;
-  font-size: .7em;
-  vertical-align: text-bottom;
+.recipe-thumbnail {
+
 }
 
-.recipe-item {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 1em;
+.inventory-form {
+
 }
 
-.recipe-nav{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  padding-left: 1em;
+.source-info {
+
 }
 
-.recipe-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  padding: 1em;
-}
+.flashed-messages {
 
-.recipe-index-pic {
-  justify-content: center;
-  align-content: center;
-  width: 10em;
-  height: auto
-}
-
-.ingredients {
-  align-content: center;
-  margin: 1em;
-  padding-right: 2em;
-  padding-right: 2em;
-}
-
-.pagination  {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-}
-
-.search-form {
-  padding-left: 4em;
-  padding-right: 4em;
-  text-align: center;
-  border-bottom: 1px solid black;
-  background-color: darkgrey;
 }

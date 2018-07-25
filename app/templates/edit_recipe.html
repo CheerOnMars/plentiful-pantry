@@ -1,16 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
+<section>
+  <section class="page-headline">
     <h1>Edit Recipe</h1>
-    <form action="" method="post">
+  </section>
+
+
+  <form action="" method="post">
     {{ form.hidden_tag() }}
-    <div>
-    <p><b> {{ form.name.label }}  {{ form.name(size=32) }} </b></p>
-    <p> {{ form.description.label }} {{ form.description(cols=50, rows=4) }} </p>
-    <p> {{ form.category.label }}  {{ form.category(size=32) }} </p>
-    <p> {{ form.image.label }}  {{ form.image(size=32) }} </p>
-    <p> {{ form.source.label }}  {{ form.source(size=32) }} </p>
-    <p> {{ form.url.label }}  {{ form.url(size=32) }} </p>
-    <p>{{ form.submit() }}</p>
-    </form>
+    <section class="">
+      <p>{{ form.name.label }}  {{ form.name(size=32) }} </p>
+      <p> {{ form.description.label }} {{ form.description(cols=50, rows=4) }} </p>
+      <p> {{ form.category.label }}  {{ form.category(size=32) }} </p>
+      <p> {{ form.image.label }}  {{ form.image(size=32) }} </p>
+      <p> {{ form.source.label }}  {{ form.source(size=32) }} </p>
+      <p> {{ form.url.label }}  {{ form.url(size=32) }} </p>
+      <p>{{ form.submit() }}</p>
+    </section>
+  </form>
+
+</section>
 {% endblock %}

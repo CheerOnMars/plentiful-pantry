@@ -1,28 +1,48 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>{{ user.username }}'s Recipes!</h1>
-{% for recipe in recipes %}
-<div><p><b>{{ recipe.id }}. <a href="{{ url_for('recipe', id=recipe.id) }}">{{ recipe.name }}</a></b></p>
-  <p> </p>
-  <p> {{ recipe.description }} </p>
-  <p> {{ recipe.image }} </p>
-  <p> {{ recipe.category }} </p>
-  <p> Source: {{ recipe.source }} </p>
-  <p> Servings: {{ recipe.recipe_yield }} </p>
-  <p> {{ recipe.url }} </p>
-  <p><u> Ingredients: </u></p>
-  <ul>
-    {% for ingredient in recipe.ingredients %}
-    <li>  {{ ingredient.ingredient.name.capitalize() }}</li>
+<section>
+  <section class="page-headline">
+    <h1>{{ user.username }}'s Recipes!</h1>
+  </section>
+
+  <section class="recipe-collection">
+    {% for recipe in recipes %}
+
+    <section class="recipe-details">
+      <p>
+        {{ recipe.id }}.
+        <a href="{{ url_for('recipe', id=recipe.id) }}">{{ recipe.name }}</a>
+        - {{ recipe.category }}
+      </p>
+      <p> {{ recipe.description }} </p>
+      <p> Servings: {{ recipe.recipe_yield }} </p>
+
+      <section class="ingredient-list">
+        <p>Ingredients: </p>
+        <ul>
+          {% for ingredient in recipe.ingredients %}
+          <li>  {{ ingredient.ingredient.name.capitalize() }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="instruction-list">
+        <p> Instructions: </p>
+        <ol>
+          {% for instruction in recipe.instructions %}
+          <li>  {{ instruction.text }}</li>
+          {% endfor %}
+        </ol>
+      </section>
+
+      <p class="source-info">
+        Source: <a href={{ recipe.url }}>{{ recipe.source }}</a>
+      </p>
+
+    </section>
     {% endfor %}
-  </ul>
-  <p><u> Instructions: </u></p>
-  <ol>
-    {% for instruction in recipe.instructions %}
-    <li>  {{ instruction.text }}</li>
-    {% endfor %}
-  </ol>
-</div>
-{% endfor %}
+  </section>
+  
+</section>
 {% endblock %}
