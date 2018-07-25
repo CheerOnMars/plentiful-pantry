@@ -18,14 +18,17 @@
   <tr>
     <td>
       {{ ingredient.ingredient_text }}
-      {% if inventory[ingredient.ingredient_id-1].is_present == True %}
     </td>
+    <td >
+      {{ inventory[ingredient.ingredient_id-1].show_status() }}
+    </td>
+      {% if inventory[ingredient.ingredient_id-1].is_present == True %}
     <td>
-      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id) }}"> Remove  </a>
+      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.ingredient_id) }}"> Remove  </a>
     </td>
     {% else %}
     <td>
-      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id) }}"> Add  </a>
+      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.ingredient_id) }}"> Add  </a>
     </td>
     {% endif %}
   </tr>

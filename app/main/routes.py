@@ -107,17 +107,10 @@ def toggle_inventory_item(id):
     return redirect(url_for('main.inventory'))
 
 
-"""Holding pen for routes that will likely soon retire"""
-# @bp.route('/recipes')
-# def recipes():
-#     user = {'username': 'Super Sario'}
-#     recipes = Recipe.query.order_by(Recipe.name.asc())
-#     recipe_ingredients = RecipeIngredient.query.all()
-#     ingredients = Ingredient.query.all()
-#     return render_template('recipes.html', title='Recipes', user=user, recipes=recipes, ingredients=ingredients, recipe_ingredients=recipe_ingredients)
-#
-# @bp.route('/ingredients')
-# def ingredients():
-#     user = {'username': 'Super Sario'}
-#     ingredients = Ingredient.query.order_by(Ingredient.name.asc())
-#     return render_template('ingredients.html', title='Ingredients', user=user, ingredients=ingredients)
+# @bp.route('/recipe/toggle/<id>/rec<rec>', methods=['GET', 'POST'])
+# def toggle_recipe_item(id):
+#     inventory_item = Inventory.query.get(id)
+#     id = Recipe.query.get(rec)
+#     inventory_item.toggle_status()
+#     db.session.commit()
+#     return redirect('/recipe/<id>')
