@@ -2,7 +2,7 @@ import os
 from flask import render_template, flash, redirect, url_for, request
 from app import app, db
 from app.models import Recipe, Ingredient, Instruction, Category, RecipeIngredient, Inventory, Substitution
-from app.forms import InventoryForm, EditRecipeForm
+from app.forms import InventoryForm, EditRecipeForm, EditInventoryForm
 
 # import pdb; pdb.set_trace()
 
@@ -72,13 +72,16 @@ def inventory():
         beans: "Beans", baking: 'Baking', dessert:'Dessert', misc: 'Misc'}
 
     form = InventoryForm()
-    if form.validate_on_submit():
-        flash('Inventory updated'.format())
-        # item = Inventory.query.filter_by(id=id).first_or_404()
-        # item = Inventory(id=form.id.data)
-        # item.is_present = form.is_present.data
-        # db.session.commit()
-        return redirect(url_for('index'))
+    # if form.validate_on_submit():
+    #     # flash('Inventory updated'.format())
+    #     item = Inventory.query.get(8)
+    #     item.is_present = form.is_present.data
+    #     db.session.commit()
+    #     flash('Your changes have been saved.')
+    #     return redirect(url_for('inventory'))
+    # elif request.method == 'GET':
+    #     item = Inventory.query.get(8)
+    #     form.is_present.data = item.is_present
     return render_template('inventory.html', title='Inventory', form=form,
         inventory=inventory, produce=produce, dairy=dairy, eggs=eggs, meat=meat,
         condiments=condiments, spices=spices, nuts=nuts, beverages=beverages,
@@ -112,9 +115,24 @@ def edit_recipe(id):
     return render_template('edit_recipe.html', title='Edit Recipe', form=form,
         recipe=recipe, recipe_ingredients=recipe_ingredients)
 
+@app.route('/inventory/edit/<id>', methods=['GET', 'POST'])
+def edit_inventory_item(id):
+    inventory_item = Inventory.query.get(id)
+    ingredients = Ingredient.query.all()
+    form = EditInventoryForm()
+    if form.validate_on_submit():
+        inventory_item.is_present = form.is_present.data
+        db.session.commit()
+        flash('Your changes have been saved.')
+        return redirect(url_for('edit_inventory_item', id=inventory_item.id+1))
+    elif request.method == 'GET':
+        form.is_present.data = inventory_item.is_present
+    return render_template('item_inventory.html', title='Edit Inventory Item', form=form, inventory_item=inventory_item, ingredients=ingredients)
+
 @app.route('/options')
 def options():
     user = {'username': 'Super Sario'}
     all_recipes = Recipe.query.order_by(Recipe.name.asc())
     recipes = Recipe.find_options(all_recipes)
+
     return render_template('options.html', title='Options', user=user, recipes=recipes)

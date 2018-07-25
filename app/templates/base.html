@@ -1,40 +1,43 @@
-<html>
+{% extends 'bootstrap/base.html' %}
 
-<head>
-  <meta charset="utf-8" />
-  <!-- Custom styles for this template -->
-  <link href="/static/style.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  {% if title %}
-  <title>{{ title }} - Plentiful Pantry </title>
-  {% else %}
-  <title>Welcome to Plentiful Pantry!</title>
+{% block title %}
+{% if title %}{{ title }} {% else %}Welcome to Plentiful Pantry! {% endif %}
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ url_for('index') }}">Plentiful Pantry | <small> Making the most of your groceries</small></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('ingredients') }}">Ingredient List</a></li>
+        <li><a href="{{ url_for('recipes') }}">All Recipes</a></li>
+        <li><a href="{{ url_for('inventory') }}">Inventory</a> </li>
+        <li><a href="{{ url_for('options') }}">Options</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  {% for message in messages %}
+  <div class="alert alert-info" role="alert">{{ message }}</div>
+  {% endfor %}
   {% endif %}
-</head>
-
-<body>
-  <nav>
-    Plentiful Pantry
-    <a href="{{ url_for('index') }}">Home</a> |
-    <a href="{{ url_for('ingredients') }}">Ingredient List</a> |
-    <a href="{{ url_for('recipes') }}">All Recipes</a> |
-    <a href="{{ url_for('inventory') }}">Inventory</a> |
-    <a href="{{ url_for('options') }}">Options</a>
-  </nav>
-  <hr>
-
-  <section class="flashed-messages">
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    <ul>
-      {% for message in messages %}
-      <li>{{ message }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-    {% endwith %}
-    {% block content %}{% endblock %}
-  </section>
-
-</body>
-</html>
+  {% endwith %}
+  {% block app_content %}{% endblock %}
+</div>
+{% endblock %}

@@ -1,6 +1,7 @@
 
 body {
-
+  background-size: 100% auto;
+  background-color:
 }
 
 img {
@@ -33,6 +34,26 @@ li {
 
 }
 
+header {
+
+}
+
+.website-title {
+  text-align: center;
+}
+
+.page-header {
+
+}
+
+.main {
+
+}
+
+.site-nav {
+  
+}
+
 .thumbnail {
   width: 10em;
   height: auto;
@@ -59,7 +80,7 @@ li {
 }
 
 .recipe-details {
-  
+
 }
 
 .recipe-thumbnail {

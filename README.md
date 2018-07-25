@@ -43,3 +43,6 @@ Requirements
 
 Procfile
   - heroku config:set FLASK_APP=plentiful-pantry.py
+
+Bootstrap
+  - pip install flask-bootstrap

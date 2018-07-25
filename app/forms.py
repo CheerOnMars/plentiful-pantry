@@ -21,3 +21,21 @@ class EditRecipeForm(FlaskForm):
     source = StringField('Recipe Creator: ')
     url = StringField('Recipe URL: ')
     submit = SubmitField('Save recipe')
+
+class InventorySubForm(FlaskForm):
+    is_present = BooleanField('Present?', validators=[DataRequired()])
+    submit = SubmitField('Save inventory')
+    id = IntegerField('Id')
+    status = BooleanField('Status?', validators=[DataRequired()])
+
+    def update_inventory(self, id):
+        return self
+
+class EditInventoryForm(FlaskForm):
+    is_present = BooleanField('Present?', validators=[DataRequired()])
+    submit = SubmitField('Save inventory')
+    id = IntegerField('Id')
+    status = BooleanField('Status?', validators=[DataRequired()])
+
+    def update_inventory(self, id):
+        return self
