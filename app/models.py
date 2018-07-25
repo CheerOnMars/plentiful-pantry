@@ -76,17 +76,10 @@ class Inventory(db.Model):
 
     def show_status(self):
         if self.is_present == True:
-            status = "In Stock"
+            return "In Stock"
         else:
-            status = "Out of Stock"
-        print (str(status))
+            return "Out of Stock"
 
-
-    # ingredient = db.relationship('Ingredient', back_populates="inventory")
-    # ingredient = db.relationship('Ingredient', back_populates='inventory', uselist=True)
-    # category = db.Column(db.Text, db.ForeignKey('ingredient.category'))
-    # def check_category(self):
-    #     return self.ingredient.category
 
 class Substitution(db.Model):
     id = db.Column(db.Integer, primary_key=True)
