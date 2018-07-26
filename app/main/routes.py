@@ -4,11 +4,20 @@ from app.models import Recipe, Ingredient, Instruction, Category, RecipeIngredie
 from app.main.forms import EditRecipeForm, EditInventoryForm
 from app.main import bp
 
+
+
 # import pdb; pdb.set_trace()
 
-@bp.route('/')
-def home():
-    return render_template('home.html', title='Home')
+@bp.route('/recipes/<category>')
+def home(category):
+    user = {'username': 'Super Sario'}
+    rec_cat_dict = { 'mains': 'Main course', 'sides': 'Side dish', 'salads': 'Salad', 'soups': 'Soup', 'appetizers': 'Appetizer', 'sandwiches': 'Sandwich', 'breads': 'Bread / pastry', 'snacks': 'Snack', 'desserts': 'Dessert', 'drinks': 'Drink', 'condiments': 'Condiment', 'all': 'all'}
+    categories = Category.query.order_by(Category.name.asc())
+    if category == 'all':
+        recipes = Recipe.query.order_by(Recipe.name.asc())
+    else:
+        recipes = Recipe.query.filter_by(category=rec_cat_dict[category])
+    return render_template('recipes_category.html', title='Recipes', categories=categories, user=user, recipes=recipes, category=category, rec_cat_dict=rec_cat_dict)
 
 
 @bp.route('/index')
@@ -26,7 +35,7 @@ def index():
     sides = Recipe.query.filter_by(category='Side dish')
     appetizers = Recipe.query.filter_by(category='Appetizer')
     soups = Recipe.query.filter_by(category='Soup')
-    rec_dict = {condiments: 'Condiment', mains: 'Main course', drinks: 'Drink', sandwiches: 'Sandwich', breads: 'Bread / pastry', salads: 'Salad', desserts: 'Dessert', snacks: 'Snack', sides: 'Side dish', appetizers: 'Appetizer', soups: 'Soup'}
+    rec_dict = { mains: 'Main course', sides: 'Side dish', salads: 'Salad', soups: 'Soup', appetizers: 'Appetizer', sandwiches: 'Sandwich', breads: 'Bread / pastry', snacks: 'Snack', desserts: 'Dessert', drinks: 'Drink', condiments: 'Condiment'}
     return render_template('index.html', title='Index', user=user, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups, rec_dict=rec_dict)
 
 
@@ -96,8 +105,10 @@ def options():
     user = {'username': 'Super Sario'}
     all_recipes = Recipe.query.order_by(Recipe.name.asc())
     my_recipes = Recipe.find_options(all_recipes)
+    categories = Category.query.order_by(Category.name.asc())
+    flip_rec_dict = { "Main course": "mains", "Side dish": "sides", "Salad": "salads", "Soup": "soups", "Appetizer": "appetizers", "Sandwich": "sandwiches", "Bread / pastry": "breads", "Snack": "snacks", "Dessert": "desserts", "Drink": "drinks", "Condiment": "condiments"}
 
-    return render_template('options.html', title='Options', user=user, my_recipes=my_recipes)
+    return render_template('options.html', title='Options', user=user, my_recipes=my_recipes, categories=categories, flip_rec_dict=flip_rec_dict)
 
 
 @bp.route('/options_category/<rec_category>')
@@ -106,9 +117,22 @@ def options_category(rec_category):
     cat_recipes = Recipe.query.filter_by(category=str(rec_category))
     all_recipes = Recipe.query.order_by(Recipe.name.asc())
     my_cat_recipes = Recipe.find_options(cat_recipes)
+    categories = Category.query.order_by(Category.name.asc())
+    recipes = Recipe.query.order_by(Recipe.name.asc())
+    condiments = Recipe.query.filter_by(category='Condiment')
+    mains = Recipe.query.filter_by(category='Main course')
+    drinks = Recipe.query.filter_by(category='Drink')
+    sandwiches = Recipe.query.filter_by(category='Sandwich')
+    breads = Recipe.query.filter_by(category='Bread / pastry')
+    salads = Recipe.query.filter_by(category='Salad')
+    desserts = Recipe.query.filter_by(category='Dessert')
+    snacks = Recipe.query.filter_by(category='Snack')
+    sides = Recipe.query.filter_by(category='Side dish')
+    appetizers = Recipe.query.filter_by(category='Appetizer')
+    soups = Recipe.query.filter_by(category='Soup')
+    flip_rec_dict = { "Main course": "mains", "Side dish": "sides", "Salad": "salads", "Soup": "soups", "Appetizer": "appetizers", "Sandwich": "sandwiches", "Bread / pastry": "breads", "Snack": "snacks", "Dessert": "desserts", "Drink": "drinks", "Condiment": "condiments"}
 
-
-    return render_template('options_category.html', title='Option Category', user=user, my_cat_recipes=my_cat_recipes, rec_category=rec_category)
+    return render_template('options_category.html', title='Option Category', user=user, my_cat_recipes=my_cat_recipes, rec_category=rec_category, categories=categories, flip_rec_dict=flip_rec_dict, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups)
 
 
 @bp.route('/inventory/toggle/<id>', methods=['GET', 'POST'])

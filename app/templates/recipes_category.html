@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div>
+  <h3>{{ user.username }}'s Recipes!</h3>
+
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      {% for category in categories %}
+      <li><a href="{{ url_for('recipes_category', category=category.name )}}">{{ category.name }} </a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% for recipe in recipes %}
+  {% include '_result.html' %}
+  {% endfor %}
+
+
+</div>
+{% endblock %}
