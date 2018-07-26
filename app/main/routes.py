@@ -90,6 +90,7 @@ def inventory():
     return render_template('inventory.html', title='Inventory', inventory=inventory, produce=produce, dairy=dairy, eggs=eggs, meat=meat, condiments=condiments, spices=spices, nuts=nuts, beverages=beverages, oils=oils, grains=grains, beans=beans, baking=baking, dessert=dessert, misc=misc, cat_dict= cat_dict)
 
 
+
 @bp.route('/options')
 def options():
     user = {'username': 'Super Sario'}
@@ -97,7 +98,6 @@ def options():
     my_recipes = Recipe.find_options(all_recipes)
 
     return render_template('options.html', title='Options', user=user, my_recipes=my_recipes)
-
 
 @bp.route('/inventory/toggle/<id>', methods=['GET', 'POST'])
 def toggle_inventory_item(id):
