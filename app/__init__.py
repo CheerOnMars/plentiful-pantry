@@ -19,7 +19,6 @@ def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
 
-    db.create_all(app)
     db.init_app(app)
     migrate.init_app(app, db)
     bootstrap.init_app(app)
