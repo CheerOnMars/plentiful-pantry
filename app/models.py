@@ -53,7 +53,6 @@ class Recipe(db.Model):
     def find_options(self):
         recipe_options = []
         inventory = Inventory.query.all()
-        # recipes = self.recipes
         for recipe in self:
             cookable = True
             for ingredient in recipe.ingredients:
@@ -67,8 +66,8 @@ class Recipe(db.Model):
     def find_category_options(rec_category):
         recipe_options = []
         inventory = Inventory.query.all()
-        recipes = Recipe.query.filter_by(category=rec_category)
-        for recipe in recipes:
+        cat_recipes = Recipe.query.filter_by(category=rec_category)
+        for recipe in cat_recipes:
             cookable = True
             for ingredient in recipe.ingredients:
                 if ingredient.ingredient.name != 'water':
@@ -77,6 +76,7 @@ class Recipe(db.Model):
             if cookable == True:
                 recipe_options.append(recipe)
         return recipe_options
+
 
     def category_recipes(category):
         recipe_options = []
