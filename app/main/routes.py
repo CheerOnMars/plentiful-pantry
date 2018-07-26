@@ -108,7 +108,7 @@ def options_category(rec_category):
     my_cat_recipes = Recipe.find_options(cat_recipes)
 
 
-    return render_template('options_category.html', title='Option Category', user=user, my_cat_recipes=my_cat_recipes)
+    return render_template('options_category.html', title='Option Category', user=user, my_cat_recipes=my_cat_recipes, rec_category=rec_category)
 
 
 @bp.route('/inventory/toggle/<id>', methods=['GET', 'POST'])
