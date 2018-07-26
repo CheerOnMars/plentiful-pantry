@@ -26,7 +26,7 @@ def index():
     sides = Recipe.query.filter_by(category='Side dish')
     appetizers = Recipe.query.filter_by(category='Appetizer')
     soups = Recipe.query.filter_by(category='Soup')
-    rec_dict = {condiments: 'Condiments', mains: 'Main courses', drinks: 'Drinks', sandwiches: 'Sandwiches', breads: 'Breads', salads: 'Salads', desserts: 'Desserts', snacks: 'Snacks', desserts: 'Dessert', snacks: 'Snacks', sides: 'Sides', appetizers: 'Appetizers', soups: 'Soup'}
+    rec_dict = {condiments: 'Condiment', mains: 'Main course', drinks: 'Drink', sandwiches: 'Sandwich', breads: 'Bread / pastry', salads: 'Salad', desserts: 'Dessert', snacks: 'Snack', sides: 'Side dish', appetizers: 'Appetizer', soups: 'Soup'}
     return render_template('index.html', title='Index', user=user, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups, rec_dict=rec_dict)
 
 
@@ -94,9 +94,9 @@ def inventory():
 def options():
     user = {'username': 'Super Sario'}
     all_recipes = Recipe.query.order_by(Recipe.name.asc())
-    recipes = Recipe.find_options(all_recipes)
+    my_recipes = Recipe.find_options(all_recipes)
 
-    return render_template('options.html', title='Options', user=user, recipes=recipes)
+    return render_template('options.html', title='Options', user=user, my_recipes=my_recipes)
 
 
 @bp.route('/inventory/toggle/<id>', methods=['GET', 'POST'])

@@ -27,6 +27,14 @@ class Ingredient(db.Model):
     recipes = db.relationship('RecipeIngredient', back_populates='ingredient', uselist=True)
     inventory =  db.relationship('Inventory', backref='ingredient', lazy='dynamic')
 
+    def category_ingredients(category):
+        ingredient_options = []
+        ingredients = Ingredient.query.all()
+        for ingredient in ingredients:
+            if ingredient.category == category:
+                ingredient_options.append(ingredient)
+        return ingredient_options
+
     def __repr__(self):
         return '<Ingredient {}>'.format(self.name)
 
@@ -42,18 +50,53 @@ class Recipe(db.Model):
     ingredients = db.relationship('RecipeIngredient', back_populates='recipe', uselist=True)
     instructions = db.relationship('Instruction', backref='recipe', lazy=True)
 
-    def find_options(self):
+    def find_options(recipes):
         recipe_options = []
         inventory = Inventory.query.all()
-        recipes = Recipe.query.all()
+        # recipes = Recipe.query.all()
         for recipe in recipes:
             cookable = True
-            print (recipe)
             for ingredient in recipe.ingredients:
                 if ingredient.ingredient.name != 'water':
                     if inventory[ingredient.ingredient_id-1].is_present == False:
                         cookable = False
             if cookable == True:
+                recipe_options.append(recipe)
+        return recipe_options
+
+    # def find_my_options(self):
+    #     recipe_options = []
+    #     inventory = Inventory.query.all()
+    #     # recipes = Recipe.query.all()
+    #     for recipe in self:
+    #         cookable = True
+    #         for ingredient in recipe.ingredients:
+    #             if ingredient.ingredient.name != 'water':
+    #                 if inventory[ingredient.ingredient_id-1].is_present == False:
+    #                     cookable = False
+    #         if cookable == True:
+    #             recipe_options.append(recipe)
+    #     return recipe_options
+
+    def find_category_options(rec_category):
+        recipe_options = []
+        inventory = Inventory.query.all()
+        recipes = Recipe.query.filter_by(category=rec_category)
+        for recipe in recipes:
+            cookable = True
+            for ingredient in recipe.ingredients:
+                if ingredient.ingredient.name != 'water':
+                    if inventory[ingredient.ingredient_id-1].is_present == False:
+                        cookable = False
+            if cookable == True:
+                recipe_options.append(recipe)
+        return recipe_options
+
+    def category_recipes(category):
+        recipe_options = []
+        recipes = Recipe.query.all()
+        for recipe in recipes:
+            if recipe.category == category:
                 recipe_options.append(recipe)
         return recipe_options
 
@@ -73,6 +116,14 @@ class Inventory(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     ingredient_id = db.Column(db.Integer, db.ForeignKey('ingredient.id'))
     is_present = db.Column(db.Boolean)
+
+    def category_inventory(category):
+        inventory_options = []
+        inventory = Inventory.query.all()
+        for inv in inventory:
+            if inv.ingredient.category == category:
+                inventory_options.append(inv)
+        return inventory_options
 
     def show_status(self):
         if self.is_present == True:
