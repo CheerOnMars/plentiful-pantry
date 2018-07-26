@@ -99,6 +99,18 @@ def options():
 
     return render_template('options.html', title='Options', user=user, my_recipes=my_recipes)
 
+
+@bp.route('/options_category/<rec_category>')
+def options_category(rec_category):
+    user = {'username': 'Super Sario'}
+    cat_recipes = Recipe.query.filter_by(category=str(rec_category))
+    all_recipes = Recipe.query.order_by(Recipe.name.asc())
+    my_cat_recipes = Recipe.find_options(cat_recipes)
+
+
+    return render_template('options_category.html', title='Option Category', user=user, my_cat_recipes=my_cat_recipes)
+
+
 @bp.route('/inventory/toggle/<id>', methods=['GET', 'POST'])
 def toggle_inventory_item(id):
     inventory_item = Inventory.query.get(id)
