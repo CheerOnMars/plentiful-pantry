@@ -22,7 +22,30 @@
     <td >
       {{ inventory[ingredient.ingredient_id-1].show_status() }}
     </td>
-
+    <td>
+      {{ ingredient.ingredient.category }}
+    </td>
+    <td>
+      {{ recipe.id }}
+    </td>
+    <td>
+      {{ ingredient.ingredient.id }}
+    </td>
+    <td>
+      {{ inventory[ingredient.ingredient_id-1].is_present }}
+    </td>
+    <td>
+      {{ flip_rec_dict[ingredient.ingredient.category]  }}
+    </td>
+    {% if inventory[ingredient.ingredient_id-1].is_present  == True %}
+    <td>
+      <a href="{{ url_for('main.toggle_recipe_inventory_item', ingredient=ingredient.ingredient.id, category=flip_rec_dict[ingredient.ingredient.category], recipe=recipe.id) }}"> Remove  </a>
+    </td>
+    {% else %}
+    <td>
+      <a href="{{ url_for('main.toggle_recipe_inventory_item', ingredient=ingredient.ingredient.id, category=flip_rec_dict[ingredient.ingredient.category], recipe=recipe.id) }}"> Add  </a>
+    </td>
+    {% endif %}
   </tr>
   {% endfor %}
 </table>
@@ -32,8 +55,8 @@
   {% for instruction in recipe.instructions %}
   <tr>
     <td>
-    {{ instruction.text }}
-  </td>
+      {{ instruction.text }}
+    </td>
   </tr>
   {% endfor %}
 </table>

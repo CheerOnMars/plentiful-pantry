@@ -29,10 +29,12 @@ def recipes_category(category):
 @bp.route('/recipe/<id>')
 def recipe(id):
     user = {'username': 'Super Sario'}
+    flip_rec_dict = {'Produce': 'produce', 'Dairy/Dairy Substitutes': 'dairy', 'Eggs': 'eggs', 'Meat/Fish': 'meat', 'Condiments': 'condiments', 'Spices': 'spices', 'Nuts': 'nuts', 'Beverage': 'beverages', 'Oils/Vinegars': 'oils', 'Grains': 'grains', 'Beans': 'beans', 'Baking': 'baking', 'Dessert': 'dessert', 'Misc': 'misc', 'All': 'all'}
+    ing_cat_dict = {'produce': 'Produce', 'dairy': 'Dairy/Dairy Substitutes', 'eggs': 'Eggs', 'meat': 'Meat/Fish', 'condiments': 'Condiments', 'spices': 'Spices', 'nuts': 'Nuts', 'beverages': 'Beverage', 'oils': 'Oils/Vinegars', 'grains': 'Grains', 'beans': 'Beans', 'baking': 'Baking', 'dessert': 'Dessert', 'misc': 'Misc', 'all': 'All'}
     recipe = Recipe.query.get(id)
     recipe_ingredients = recipe.ingredients
     inventory = Inventory.query.all()
-    return render_template('recipe.html', title='Recipe', user=user, recipe=recipe, recipe_ingredients=recipe_ingredients, inventory=inventory)
+    return render_template('recipe.html', title='Recipe', user=user, recipe=recipe, recipe_ingredients=recipe_ingredients, inventory=inventory, flip_rec_dict=flip_rec_dict, ing_cat_dict=ing_cat_dict)
 
 
 @bp.route('/edit_recipe/<id>', methods=['GET', 'POST'])
@@ -65,7 +67,7 @@ def edit_recipe(id):
 
 @bp.route('/inventory/<category>')
 def inventory(category):
-    user = {'username': 'Super Super Sario'}
+    user = {'username': 'Super Sario'}
     ingredients = Ingredient.query.all()
     flip_rec_dict = {'Produce': 'produce', 'Dairy/Dairy Substitutes': 'dairy', 'Eggs': 'eggs', 'Meat/Fish': 'meat', 'Condiments': 'condiments', 'Spices': 'spices', 'Nuts': 'nuts', 'Beverage': 'beverages', 'Oils/Vinegars': 'oils', 'Grains': 'grains', 'Beans': 'beans', 'Baking': 'baking', 'Dessert': 'dessert', 'Misc': 'misc', 'All': 'all'}
     ing_cat_dict = {'produce': 'Produce', 'dairy': 'Dairy/Dairy Substitutes', 'eggs': 'Eggs', 'meat': 'Meat/Fish', 'condiments': 'Condiments', 'spices': 'Spices', 'nuts': 'Nuts', 'beverages': 'Beverage', 'oils': 'Oils/Vinegars', 'grains': 'Grains', 'beans': 'Beans', 'baking': 'Baking', 'dessert': 'Dessert', 'misc': 'Misc', 'all': 'All'}
@@ -96,3 +98,10 @@ def toggle_inventory_item(id, category):
     inventory_item.toggle_status()
     db.session.commit()
     return redirect(url_for('main.inventory', category=category))
+
+@bp.route('/recipe_inventory/toggle/<ingredient>/<category>/<recipe>', methods=['GET', 'POST'])
+def toggle_recipe_inventory_item(ingredient, category, recipe):
+    inventory_item = Inventory.query.get(ingredient)
+    inventory_item.toggle_status()
+    db.session.commit()
+    return redirect(url_for('main.recipe', id=recipe))
