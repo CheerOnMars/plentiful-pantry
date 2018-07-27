@@ -22,7 +22,6 @@ def create_app(config_class=Config):
     db.init_app(app)
     migrate.init_app(app, db)
     bootstrap.init_app(app)
-    python data/data_scripts/database_seed.py
 
     from app.errors import bp as errors_bp
     app.register_blueprint(errors_bp)
