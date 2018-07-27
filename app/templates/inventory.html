@@ -2,17 +2,23 @@
 
 {% block app_content %}
 
-<h1>Manage Food Inventory</h1>
+<h1>Manage {{ user.username }}'s Pantry </h1>
+<nav class="navbar navbar-default">
+  <ul class="nav navbar-nav">
+    {% for category in ing_cat_dict %}
 
-{% for cat in cat_dict %}
-<h4> {{ cat_dict[cat] }}</h4>
+    <li><a href="{{ url_for('main.inventory', category=category) }}">{{ ing_cat_dict[category]  }} </a></li>
+    {% endfor %}
+  </ul>
+</div>
+
 
 <table class="table table-hover">
 
-  {% for ingredient in cat %}
+  {% for ingredient in inventory %}
   <tr>
     <td>
-     {{ ingredient.ingredient.name.capitalize() }}
+      {{ ingredient.ingredient.name.capitalize() }}
     </td>
     <td >
       {{ ingredient.show_status() }}
@@ -31,8 +37,6 @@
   {% endfor %}
 
 </table>
-
-{% endfor %}
 
 
 {% endblock %}
