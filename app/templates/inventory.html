@@ -1,42 +1,42 @@
 {% extends "base.html" %}
 
 {% block app_content %}
+<div>
+  <h1>Manage Pantry </h1>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+          {% for category in ing_cat_dict %}
+          <li><a href="{{ url_for('main.inventory', category=category) }}">{{ ing_cat_dict[category] }} </a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<h1>Manage {{ user.username }}'s Pantry </h1>
-<nav class="navbar navbar-default">
-  <ul class="nav navbar-nav">
-    {% for category in ing_cat_dict %}
 
-    <li><a href="{{ url_for('main.inventory', category=category) }}">{{ ing_cat_dict[category] }} </a></li>
+  <table class="table table-hover">
+    {% for ingredient in inventory %}
+    <tr>
+      <td>
+        {{ ingredient.ingredient.name.capitalize() }}
+      </td>
+      <td >
+        {{ ingredient.show_status() }}
+      </td>
+      {% if ingredient.is_present == True %}
+      <td>
+        <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id, category=category ) }}"> Remove  </a>
+      </td>
+      {% else %}
+      <td>
+        <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id, category=category ) }}"> Add  </a>
+      </td>
+      {% endif %}
+    </tr>
     {% endfor %}
-  </ul>
+  </table>
+
 </div>
-
-
-<table class="table table-hover">
-
-  {% for ingredient in inventory %}
-  <tr>
-    <td>
-      {{ ingredient.ingredient.name.capitalize() }}
-    </td>
-    <td >
-      {{ ingredient.show_status() }}
-    </td>
-
-    {% if ingredient.is_present == True %}
-    <td>
-      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id, category=category ) }}"> Remove  </a>
-    </td>
-    {% else %}
-    <td>
-      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id, category=category ) }}"> Add  </a>
-    </td>
-    {% endif %}
-  </tr>
-  {% endfor %}
-
-</table>
-
-
 {% endblock %}

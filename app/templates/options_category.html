@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-
-    <h1>{{ user.username }}'s Recipes  - {{ rec_category.capitalize() }} </h1>
+<div>
+    <h1>Recipes Options  - {{ rec_category.capitalize() }} </h1>
 
     <nav class="navbar navbar-default">
       <ul class="nav navbar-nav">
@@ -15,5 +15,5 @@
     {% for recipe in recipes %}
     {% include '_result.html' %}
     {% endfor %}
-
+</div>
 {% endblock %}
