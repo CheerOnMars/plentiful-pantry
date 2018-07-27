@@ -23,13 +23,14 @@
     <td >
       {{ ingredient.show_status() }}
     </td>
+
     {% if ingredient.is_present == True %}
     <td>
-      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id, category=flip_rec_dict[ingredient.ingredient.category] ) }}"> Remove  </a>
+      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id, category=category ) }}"> Remove  </a>
     </td>
     {% else %}
     <td>
-      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id, category=flip_rec_dict[ingredient.ingredient.category] ) }}"> Add  </a>
+      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id, category=category ) }}"> Add  </a>
     </td>
     {% endif %}
   </tr>
