@@ -65,15 +65,15 @@ def edit_recipe(id):
 
 @bp.route('/inventory/<category>')
 def inventory(category):
-    user = {'username': 'Super Sario'}
+    user = {'username': 'Super Super Sario'}
     ingredients = Ingredient.query.all()
+    flip_rec_dict = {'Produce': 'produce', 'Dairy/Dairy Substitutes': 'dairy', 'Eggs': 'eggs', 'Meat/Fish': 'meat', 'Condiments': 'condiments', 'Spices': 'spices', 'Nuts': 'nuts', 'Beverage': 'beverages', 'Oils/Vinegars': 'oils', 'Grains': 'grains', 'Beans': 'beans', 'Baking': 'baking', 'Dessert': 'dessert', 'Misc': 'misc', 'All': 'all'}
     ing_cat_dict = {'produce': 'Produce', 'dairy': 'Dairy/Dairy Substitutes', 'eggs': 'Eggs', 'meat': 'Meat/Fish', 'condiments': 'Condiments', 'spices': 'Spices', 'nuts': 'Nuts', 'beverages': 'Beverage', 'oils': 'Oils/Vinegars', 'grains': 'Grains', 'beans': 'Beans', 'baking': 'Baking', 'dessert': 'Dessert', 'misc': 'Misc', 'all': 'All'}
     if category == 'all':
         inventory = Inventory.query.all()
     else:
         inventory = Inventory.query.join(Inventory, Ingredient.inventory).filter(Ingredient.category == ing_cat_dict[category])
-
-    return render_template('inventory.html', title='Inventory',  user=user, inventory=inventory, ing_cat_dict=ing_cat_dict, category=category)
+    return render_template('inventory.html', title='Inventory', user=user, inventory=inventory, ing_cat_dict=ing_cat_dict, category=category, flip_rec_dict=flip_rec_dict)
 
 
 @bp.route('/options_category/<category>')
@@ -90,51 +90,9 @@ def options_category(category):
         recipes = Recipe.find_options(cat_recipes)
     return render_template('options_category.html', title='My Recipes', rec_category=category, categories=categories, user=user, recipes=recipes, rec_cat_dict=rec_cat_dict, flip_rec_dict=flip_rec_dict)
 
-
-@bp.route('/inventory/toggle/<id>', methods=['GET', 'POST'])
-def toggle_inventory_item(id):
+@bp.route('/inventory/toggle/<id>/<category>', methods=['GET', 'POST'])
+def toggle_inventory_item(id, category):
     inventory_item = Inventory.query.get(id)
     inventory_item.toggle_status()
     db.session.commit()
-    return redirect(url_for('main.inventory'))
-
-
-"""Routes that will likely retire"""
-
-@bp.route('/options')
-def options():
-    user = {'username': 'Super Sario'}
-    all_recipes = Recipe.query.order_by(Recipe.name.asc())
-    my_recipes = Recipe.find_options(all_recipes)
-    categories = Category.query.order_by(Category.name.asc())
-    flip_rec_dict = { "Main course": "mains", "Side dish": "sides", "Salad": "salads", "Soup": "soups", "Appetizer": "appetizers", "Sandwich": "sandwiches", "Bread / pastry": "breads", "Snack": "snacks", "Dessert": "desserts", "Drink": "drinks", "Condiment": "condiments"}
-
-    return render_template('options.html', title='Options', user=user, my_recipes=my_recipes, categories=categories, flip_rec_dict=flip_rec_dict)
-
-
-@bp.route('/index')
-def index():
-    user = {'username': 'Super Sario'}
-    recipes = Recipe.query.order_by(Recipe.name.asc())
-    condiments = Recipe.query.filter_by(category='Condiment')
-    mains = Recipe.query.filter_by(category='Main course')
-    drinks = Recipe.query.filter_by(category='Drink')
-    sandwiches = Recipe.query.filter_by(category='Sandwich')
-    breads = Recipe.query.filter_by(category='Bread / pastry')
-    salads = Recipe.query.filter_by(category='Salad')
-    desserts = Recipe.query.filter_by(category='Dessert')
-    snacks = Recipe.query.filter_by(category='Snack')
-    sides = Recipe.query.filter_by(category='Side dish')
-    appetizers = Recipe.query.filter_by(category='Appetizer')
-    soups = Recipe.query.filter_by(category='Soup')
-    rec_dict = { mains: 'Main course', sides: 'Side dish', salads: 'Salad', soups: 'Soup', appetizers: 'Appetizer', sandwiches: 'Sandwich', breads: 'Bread / pastry', snacks: 'Snack', desserts: 'Dessert', drinks: 'Drink', condiments: 'Condiment'}
-    return render_template('index.html', title='Index', user=user, recipes=recipes, condiments=condiments, mains=mains, drinks=drinks, sandwiches=sandwiches, breads=breads, salads=salads, desserts=desserts, snacks=snacks, sides=sides, appetizers=appetizers, soups=soups, rec_dict=rec_dict)
-
-#
-# @bp.route('/recipe/toggle/<rec>/<id>', methods=['GET', 'POST'])
-# def toggle_recipe_item(id, rec):
-#     inventory_item = Inventory.query.get(id)
-#     id = Recipe.query.get(rec)
-#     inventory_item.toggle_status()
-#     db.session.commit()
-#     return redirect('/recipe/<rec>')
+    return redirect(url_for('main.inventory', category=category))

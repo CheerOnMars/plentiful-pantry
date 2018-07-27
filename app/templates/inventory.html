@@ -7,7 +7,7 @@
   <ul class="nav navbar-nav">
     {% for category in ing_cat_dict %}
 
-    <li><a href="{{ url_for('main.inventory', category=category) }}">{{ ing_cat_dict[category]  }} </a></li>
+    <li><a href="{{ url_for('main.inventory', category=category) }}">{{ ing_cat_dict[category] }} </a></li>
     {% endfor %}
   </ul>
 </div>
@@ -23,14 +23,13 @@
     <td >
       {{ ingredient.show_status() }}
     </td>
-    <td>  </td>
     {% if ingredient.is_present == True %}
     <td>
-      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id) }}"> Remove  </a>
+      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id, category=flip_rec_dict[ingredient.ingredient.category] ) }}"> Remove  </a>
     </td>
     {% else %}
     <td>
-      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id) }}"> Add  </a>
+      <a href="{{ url_for('main.toggle_inventory_item', id=ingredient.id, category=flip_rec_dict[ingredient.ingredient.category] ) }}"> Add  </a>
     </td>
     {% endif %}
   </tr>
