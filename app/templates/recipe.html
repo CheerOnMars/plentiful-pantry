@@ -2,11 +2,9 @@
 
 {% block app_content %}
 
-<a href="{{ url_for('main.recipe', id=recipe.id-1) }}"> Previous recipe </a> |
-<a href="{{ url_for('main.recipe', id=recipe.id+1) }}"> Next recipe </a> |
 <a href="{{ url_for('main.edit_recipe', id=recipe.id) }}"> Edit recipe </a>
 
-<h1>{{ recipe.id }}. {{ recipe.name }}</h1>
+<h1>{{ recipe.name }}</h1>
 
 <p> {{ recipe.description }} </p>
 <p> Category: {{ recipe.category }} </p>
